@@ -9,23 +9,12 @@ html {
 }
 
 body {
-  background-color: #1c1c1c;
-  color: #eaeaea;
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
 }
 
 #hero {
-  background-image: url(./assets/hero-background.jpg);
-  background-position: -500px -500px;
-
-  @media (min-width: 400px) {
-    background-image: url(./assets/hero-background.jpg);
-    background-position: -250px -500px;
-  }
-
-  @media (min-width: 700px) {
-    background-image: url(./assets/hero-background.jpg);
-    background-position: -50px -50px;
-  }
+  background-image: url(./assets/hero-light-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

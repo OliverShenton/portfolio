@@ -12,9 +12,15 @@ import vscImg from "../assets/tech-vsc.svg";
 import viteImg from "../assets/tech-vite.png";
 import jestImg from "../assets/tech-jest.png";
 import restapiImg from "../assets/tech-rest-api.png";
+import postmanImg from "../assets/tech-postman.svg";
+import frontendImg from "../assets/tech-title-frontend.svg";
+import backendImg from "../assets/tech-title-backend.svg";
+import testingImg from "../assets/tech-title-testing.png";
+import toolsImg from "../assets/tech-title-tools.svg";
 
 export const TECHSTACK = {
   frontend: [
+    { name: "Frontend", image: frontendImg },
     { name: "HTML", image: htmlImg },
     { name: "CSS", image: cssImg },
     { name: "TailwindCSS", image: tailwindcssImg },
@@ -23,15 +29,21 @@ export const TECHSTACK = {
     { name: "Vite", image: viteImg },
   ],
   backend: [
+    { name: "Backend", image: backendImg },
     { name: "Node.js", image: nodeImg },
+    { name: "REST APIs", image: restapiImg },
     { name: "PostgreSQL", image: postgresqlImg },
     { name: "MongoDB", image: mongodbImg },
-    { name: "Jest", image: jestImg },
-    { name: "REST APIs", image: restapiImg },
   ],
-  other: [
-    { name: "NPM", image: npmImg },
+  testing: [
+    { name: "Testing", image: testingImg },
+    { name: "Postman", image: postmanImg },
+    { name: "Jest", image: jestImg },
+  ],
+  tools: [
+    { name: "Tools", image: toolsImg },
     { name: "Git", image: gitImg },
-    { name: "Visual Studio Code", image: vscImg },
+    { name: "NPM", image: npmImg },
+    { name: "VSC", image: vscImg },
   ],
 };

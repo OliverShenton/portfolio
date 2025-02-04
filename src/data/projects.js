@@ -1,52 +1,43 @@
+import TutorMatchImg from "../assets/project-tutormatch.webp";
 import ChatApplicationImg from "../assets/project-chat-app.webp";
 import WeatherTrackerImg from "../assets/project-weather-tracker.webp";
 import NoughtsAndCrossesImg from "../assets/project-noughts-and-crosses.webp";
 import InvestmentCalculatorImg from "../assets/project-investment-calculator.webp";
 
-export const PROJECTS_S = [
+export const PROJECTS = [
+  {
+    image: TutorMatchImg,
+    name: "TutorMatch (in progress)",
+    description:
+      "A full-stack web application that connects students with tutors, featuring a user-friendly interface, real-time messaging, a bookin system, and payment plans.",
+    link: "https://github.com/OliverShenton/os-nodejs-chat-app",
+  },
   {
     image: ChatApplicationImg,
-    name: "Chat App",
-    description: "An instant messaging app created using Node.js and Socket.IO.",
+    name: "Real-Time Chat App",
+    description:
+      "A real-time messaging app built with Node.js and Socket.IO, enabling seamless communication with typing indicators and notifications.",
     link: "https://github.com/OliverShenton/os-nodejs-chat-app",
   },
   {
     image: WeatherTrackerImg,
-    name: "Weather Tracker",
-    description: "Utilises OpenWeather API to retrieve local weather data.",
+    name: "Live Weather Tracker",
+    description:
+      "A weather tracking app that fetches live data using the OpenWeather API, displaying real-time forecasts and interactive visuals.",
     link: "https://github.com/OliverShenton/weather-tracker",
   },
   {
     image: NoughtsAndCrossesImg,
-    name: "Noughts & Crosses",
-    description: "A simple game of noughts and crosses, created using react.js.",
-    link: "https://github.com/OliverShenton/learning-react/tree/main/tic-tac-toe",
-  },
-];
-
-export const PROJECTS_L = [
-  {
-    image: ChatApplicationImg,
-    name: "Chat App",
-    description: "An instant messaging app created using Node.js and Socket.IO.",
-    link: "https://github.com/OliverShenton/os-nodejs-chat-app",
-  },
-  {
-    image: WeatherTrackerImg,
-    name: "Weather Tracker",
-    description: "Utilises OpenWeather API to retrieve local weather data.",
-    link: "https://github.com/OliverShenton/weather-tracker",
-  },
-  {
-    image: NoughtsAndCrossesImg,
-    name: "Noughts & Crosses",
-    description: "A simple game of noughts and crosses, created using react.js.",
+    name: "Interactive Noughts & Crosses",
+    description:
+      "A fun and interactive Tic-Tac-Toe game built with React.js, featuring smooth animations and engaging gameplay.",
     link: "https://github.com/OliverShenton/learning-react/tree/main/tic-tac-toe",
   },
   {
     image: InvestmentCalculatorImg,
-    name: "Investment Calculator",
-    description: "An investment calculator created using React.js.",
+    name: "Future Investment Calculator",
+    description:
+      "A powerful investment tool built with React.js, designed to help users calculate returns.",
     link: "https://github.com/OliverShenton/learning-react/tree/main/investment-calculator",
   },
 ];
