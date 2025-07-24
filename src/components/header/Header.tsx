@@ -125,9 +125,7 @@ const Header = () => {
         id="mobile-navigation-dropdown"
         aria-label="Mobile navigation dropdown"
         className="flex gap-6 text-gray-300">
-        <AnimatePresence>
-          {openMenu && <HamburgerNavigation onClose={() => setOpenMenu(false)} />}
-        </AnimatePresence>
+        <AnimatePresence>{openMenu && <HamburgerNavigation onClose={closeMenu} />}</AnimatePresence>
       </nav>
     </>
   );

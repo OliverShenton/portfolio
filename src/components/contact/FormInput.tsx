@@ -2,11 +2,11 @@ type FormInputProps = {
   id: string;
   placeholder: string;
   type?: string;
-  value: string;
-  onChange: (e: any) => void;
+  // value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const FormInput = ({ id, type = "text", value, onChange, placeholder }: FormInputProps) => {
+const FormInput = ({ id, type = "text", onChange, placeholder }: FormInputProps) => {
   return (
     <input
       id={id}

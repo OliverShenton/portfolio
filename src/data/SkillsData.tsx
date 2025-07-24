@@ -4,7 +4,6 @@ import { GiWireframeGlobe } from "react-icons/gi";
 import { IoIosCode } from "react-icons/io";
 import { IoSpeedometerOutline } from "react-icons/io5";
 import { MdOutlineWebhook } from "react-icons/md";
-import { VscTools } from "react-icons/vsc";
 
 export const SkillsData = [
   {

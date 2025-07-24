@@ -9,7 +9,7 @@ const MinimalProjectCard = ({ title, image }: MinimalProjectCardProps) => {
   return (
     <div className="group relative overflow-hidden rounded-xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300">
       {/* Image */}
-      <img
+      <Image
         src={image.src}
         alt={title}
         className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"

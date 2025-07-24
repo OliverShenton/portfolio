@@ -1,6 +1,6 @@
 import { easeInOut, motion } from "motion/react";
 
-import { VariantLabels, TargetAndTransition, Transition } from "framer-motion";
+import { VariantLabels, TargetAndTransition } from "framer-motion";
 
 type ButtonProps = {
   children: React.ReactNode;

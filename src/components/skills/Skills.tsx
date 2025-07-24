@@ -4,7 +4,7 @@ import Section from "../global/Section";
 import SkillCard from "./SkillCard";
 import { SkillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
