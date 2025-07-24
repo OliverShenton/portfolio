@@ -1,9 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0e0e0e;
+  --secondary-background: #28282b;
+  --text: #f5f5f7;
+  --highlight: #0071e3;
+  --secondary-highlight: #c65bdc;
+  letter-spacing: 0.1rem;
 }
+
+/* :root {
+  --background: #f5f5f7;
+  --secondary-background: #e5e7eb;
+  --footer: #002147;
+  --foreground: #1d1d1f;
+  --highlight: #0071e3;
+  --secondary-highlight: #c65bdc;
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +25,62 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  color: var(--text);
+  cursor: default;
+  line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  height: 100%;
+}
+
+/* Fix for mobile hamburger dropdown in landscape view */
+@media screen and (max-height: 420px) and (orientation: landscape) {
+  .hamburger-menu {
+    padding-top: 3.75rem;
+    padding-bottom: 1.5rem;
+    justify-content: flex-start;
+  }
+  .hero-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+#hero,
+#not-found {
+  background: radial-gradient(circle, var(--secondary-background), var(--background));
+}
+
+#projects,
+#about,
+#skills,
+#contact,
+#footer {
+  background: linear-gradient(
+    90deg,
+    var(--background),
+    var(--secondary-background),
+    var(--background)
+  );
+}
+
+@keyframes bgMotion {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.02) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-bg-motion {
+  animation: bgMotion 10s ease-in-out infinite;
 }

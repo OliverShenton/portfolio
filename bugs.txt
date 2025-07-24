@@ -1,0 +1,4 @@
+The header social links - The Github icon is too dark onm hover, so I cannot see it. Need to change this.
+
+Hero Animation - Hero should animate first, then the header animates drop down + fade
+
