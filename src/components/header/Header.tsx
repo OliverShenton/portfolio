@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { HamburgerNavigation, MainNavigation } from "./Navigation";
 import { AnimatePresence, motion } from "motion/react";
+import DesktopNavigation from "./DesktopNavigation";
+import MobileNavigation from "./MobileNavigation";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   // State and Refs
@@ -10,6 +12,10 @@ const Header = () => {
   const [scrolledProgress, setScrolledProgress] = useState(0);
   const [scrolled, setScrolled] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const headerStyle = !scrolled
+    ? "bg-transparent text-gray-300"
+    : "backdrop-blur-md bg-[var(--background)]/70 text-[var(--text)] shadow-sm";
 
   // Scroll progress hook
   useEffect(() => {
@@ -56,21 +62,14 @@ const Header = () => {
 
   return (
     <>
-      <header
-        id="header"
-        role="banner"
-        className={`fixed top-0 left-0 w-full z-50 ${
-          scrolled
-            ? "backdrop-blur-md bg-[var(--background)]/70 text-[var(--text)] shadow-sm"
-            : "bg-transparent backdrop-blur-md text-gray-300"
-        }`}>
-        <div className="p-4 md:px-6 max-w-7xl mx-auto flex items-center justify-between">
+      <header id="header" role="banner" className={`fixed top-0 left-0 w-full z-50 ${headerStyle}`}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
           {/* Title */}
           <h1 className="text-xl md:text-2xl z-50 uppercase font-bold">Oliver Shenton</h1>
 
           {/* Navigation menus */}
           {/* Mobile menu toggle */}
-          <div className="flex items-center md:hidden z-40">
+          <div className="flex items-center md:hidden z-40 px-4">
             <motion.button
               aria-label={openMenu ? "Close mobile menu" : "Open mobile menu"}
               aria-expanded={openMenu}
@@ -107,10 +106,8 @@ const Header = () => {
             </motion.button>
           </div>
 
-          {/* Desktop menu */}
-          <nav id="desktop-navigation" aria-label="Desktop navigation" className="hidden md:flex">
-            <MainNavigation />
-          </nav>
+          {/* Desktop navigation */}
+          <DesktopNavigation activeSection="" />
         </div>
 
         {/* Scroll Progress Bar */}
@@ -125,7 +122,7 @@ const Header = () => {
         id="mobile-navigation-dropdown"
         aria-label="Mobile navigation dropdown"
         className="flex gap-6 text-gray-300">
-        <AnimatePresence>{openMenu && <HamburgerNavigation onClose={closeMenu} />}</AnimatePresence>
+        <AnimatePresence>{openMenu && <MobileNavigation onClose={closeMenu} />}</AnimatePresence>
       </nav>
     </>
   );

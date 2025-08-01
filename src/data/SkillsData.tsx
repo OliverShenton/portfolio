@@ -5,7 +5,7 @@ import { IoIosCode } from "react-icons/io";
 import { IoSpeedometerOutline } from "react-icons/io5";
 import { MdOutlineWebhook } from "react-icons/md";
 
-export const SkillsData = [
+export const skillsData = [
   {
     id: 1,
     title: "React Specialist",

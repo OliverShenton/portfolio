@@ -29,7 +29,7 @@ const ArrowScroll = () => {
 
   return (
     <motion.div
-      className="absolute bottom-12 left-1/2 -translate-x-1/2 text-3xl text-gray-400 animate-bounce"
+      className="hidden md:block absolute bottom-12 left-1/2 -translate-x-1/2 text-3xl text-gray-400 animate-bounce"
       initial={{ opacity: 0 }}
       animate={showArrow ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.5 }}>

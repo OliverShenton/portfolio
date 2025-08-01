@@ -6,11 +6,9 @@ import { useState } from "react";
 
 const ContactForm = () => {
   const [state, handleSubmit, reset] = useForm("xgvejvvy");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [business, setBusiness] = useState("");
   const [message, setMessage] = useState("");
 
   // Success state
@@ -23,11 +21,9 @@ const ContactForm = () => {
           <button
             onClick={() => {
               reset();
-              setFirstName("");
-              setLastName("");
+              setname("");
               setEmail("");
               setPhone("");
-              setBusiness("");
               setMessage("");
             }}
             className="px-5 py-3 rounded bg-green-500 hover:bg-green-700 text-white cursor-pointer">
@@ -56,20 +52,12 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
-      <div className="flex space-x-6">
-        <FormInput
-          id="name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          placeholder="First Name"
-        />
-        <FormInput
-          id="name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          placeholder="Last Name"
-        />
-      </div>
+      <FormInput
+        id="name"
+        value={name}
+        onChange={(e) => setname(e.target.value)}
+        placeholder="First Name"
+      />
       <FormInput
         id="email"
         type="email"
@@ -83,12 +71,6 @@ const ContactForm = () => {
         type="tel"
         onChange={(e) => setPhone(e.target.value)}
         placeholder="Phone Number"
-      />
-      <FormInput
-        id="business"
-        value={business}
-        onChange={(e) => setBusiness(e.target.value)}
-        placeholder="Business Name"
       />
       <textarea
         id={message}

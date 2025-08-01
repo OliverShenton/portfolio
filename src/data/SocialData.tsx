@@ -2,14 +2,15 @@ import { FaFilePdf, FaGithub, FaLinkedinIn, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-export const SocialsData = [
+export const socialsData = [
   {
     id: 1,
     title: "Github",
     icon: <FaGithub />,
     href: "https://github.com/OliverShenton",
     hoverColor: "hover:bg-[#181717] hover:border-[#181717]",
-    hoverText: "hover:text-[#181717] ",
+    hoverText: "hover:text-white",
+    variant: "footer-social-link",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const SocialsData = [
     href: "https://www.linkedin.com/in/olivershenton/",
     hoverColor: "hover:bg-[#0077b5] hover:border-[#0077b5]",
     hoverText: "hover:text-[#0077b5] ",
+    variant: "footer-social-link",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const SocialsData = [
     href: "mailto:olivermshenton@outlook.com",
     hoverColor: "hover:bg-[#1d4ed8] hover:border-[#1d4ed8]",
     hoverText: "hover:text-[#1d4ed8] ",
+    variant: "footer-social-link",
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ export const SocialsData = [
     icon: <FaPhone />,
     href: "tel:+447473826533",
     hoverColor: "hover:bg-[#22c55e] hover:border-[#22c55e]",
+    variant: "footer-social-link",
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ export const SocialsData = [
     icon: <FaLocationDot />,
     href: "https://www.google.com/maps/place/Sandbach/",
     hoverColor: "hover:bg-[#f97316] hover:border-[#f97316]",
+    variant: "footer-social-link",
   },
   {
     id: 6,
@@ -47,5 +52,6 @@ export const SocialsData = [
     icon: <FaFilePdf />,
     href: "https://github.com/OliverShenton/cv/blob/main/Oliver%20Shenton.pdf",
     hoverColor: "hover:bg-[#dc2626] hover:border-[#dc2626]",
+    variant: "footer-social-link",
   },
 ];

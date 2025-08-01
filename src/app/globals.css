@@ -6,23 +6,7 @@
   --text: #f5f5f7;
   --highlight: #0071e3;
   --secondary-highlight: #c65bdc;
-  letter-spacing: 0.1rem;
-}
-
-/* :root {
-  --background: #f5f5f7;
-  --secondary-background: #e5e7eb;
-  --footer: #002147;
-  --foreground: #1d1d1f;
-  --highlight: #0071e3;
-  --secondary-highlight: #c65bdc;
-} */
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --tertiary-highlight: #4b5563;
 }
 
 html {
@@ -33,7 +17,6 @@ body {
   color: var(--text);
   cursor: default;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   height: 100%;
 }
@@ -52,15 +35,16 @@ body {
 }
 
 #hero,
-#not-found {
+#footer {
   background: radial-gradient(circle, var(--secondary-background), var(--background));
 }
 
+#projects-page,
+#project-slug-page,
 #projects,
 #about,
 #skills,
-#contact,
-#footer {
+#contact {
   background: linear-gradient(
     90deg,
     var(--background),
@@ -69,18 +53,40 @@ body {
   );
 }
 
-@keyframes bgMotion {
+/* Hero subtext outline */
+.text-outline {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--text);
+}
+
+/* Hero text shine effect */
+@keyframes shine {
   0% {
-    transform: scale(1) translateY(0);
-  }
-  50% {
-    transform: scale(1.02) translateY(-10px);
+    background-position: 200% 0;
   }
   100% {
-    transform: scale(1) translateY(0);
+    background-position: -200% 0;
   }
 }
 
-.animate-bg-motion {
-  animation: bgMotion 10s ease-in-out infinite;
+.animate-shine {
+  animation: shine linear infinite;
 }
+
+/* Tech carousel effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 23.3s linear infinite;
+}
+
+/* Animation time */
+/* distance = min width (200px) * number of items in map (7) */
+/* Duration = distance answer (1400px) / speed of px a sec (60) = duration for aniamtion time */

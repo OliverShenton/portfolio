@@ -3,6 +3,7 @@ import Section from "../global/Section";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
+import SectionTitle from "../global/SectionTitle";
 
 const ContactDetails = [
   { id: 1, label: "olivermshenton@outlook.com", icon: <MdEmail />, href: "" },
@@ -12,8 +13,14 @@ const ContactDetails = [
 
 const Contact = () => {
   return (
-    <Section id="contact" fullScreen>
-      <div className="flex items-center justify-between w-full">
+    <Section id="contact">
+      <SectionTitle title="Get In Touch" subtitle="Let's build something great together." />
+      {/* <ContactForm /> */}
+      {/* <div className="flex flex-col gap-20">
+        <ContactForm />
+        <SectionTitle title="Or contact me at:" /> */}
+      {/* </div> */}
+      {/* <div className="flex items-center justify-between w-full">
         <div className="flex-1 w-full text-start space-y-6">
           <div className="flex flex-col">Lets Get In Touch!</div>
           <p></p>
@@ -29,10 +36,8 @@ const Contact = () => {
             ))}
           </div>
         </div>
-        <div className="flex-1 items-end justify-end space-y-6">
-          <ContactForm />
-        </div>
-      </div>
+        <div className="flex-1 items-end justify-end space-y-6"></div>
+      </div> */}
     </Section>
   );
 };

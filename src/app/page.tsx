@@ -1,21 +1,22 @@
-// import About from "@/components/about/About";
-// import Contact from "@/components/contact/Contact";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 import Hero from "@/components/hero/Hero";
-// import Projects from "@/components/projects/Projects";
+import HeroParticles from "@/components/hero/HeroParticles";
+import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-10">
+        <HeroParticles />
+      </div>
+
       <Hero />
-      {/* <Projects /> */}
-      {/* <About /> */}
+      <About />
+      <Projects />
       <Skills />
-      {/* <Contact /> */}
-      <Footer />
+      <Contact />
     </>
   );
 }

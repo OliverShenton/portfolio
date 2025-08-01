@@ -15,7 +15,7 @@ const FormInput = ({ id, type = "text", value, onChange, placeholder }: FormInpu
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="p-4 border flex-1"
+      className="p-4 border border-neutral-600 rounded-xl bg-[#121212] z-20"
     />
   );
 };

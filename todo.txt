@@ -1,0 +1,4 @@
+* Hero needs to be optimised for mobile
+* Header nav links need some kind of highlight on active section
+* Text need aniamtion for each section. When title laods animate in and then animate back out.
+* Tech carousel fade on edges

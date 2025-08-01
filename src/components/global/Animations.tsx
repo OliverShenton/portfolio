@@ -23,3 +23,16 @@ export const fadeInUp = {
     },
   },
 };
+
+// Hero slide aniamtion
+export const slideVariants = {
+  initial: (direction: "next" | "prev") => ({
+    opacity: 0,
+    y: direction === "next" ? 50 : -50,
+  }),
+  animate: { opacity: 1, y: 0 },
+  exit: (direction: "next" | "prev") => ({
+    opacity: 0,
+    y: direction === "next" ? -50 : 50,
+  }),
+};

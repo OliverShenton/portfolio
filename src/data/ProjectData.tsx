@@ -22,13 +22,80 @@ import tictactoeImg1 from "../../public/images/projects/tic-tac-toe/image-1.png"
 // Weather Wizard
 import weatherwizardImg1 from "../../public/images/projects/weather-tracker/image-1.png";
 
-export const ProjectData = [
-  { id: 1, title: "Project 1", images: [portfolioImg1, portfolioImg1] },
-  { id: 2, title: "Project 2", images: [bookbarterImg1, portfolioImg1] },
-  { id: 3, title: "Project 3", images: [skillforgeImg1, portfolioImg1] },
-  { id: 4, title: "Project 4", images: [brewandbloomImg1, portfolioImg1] },
-  { id: 5, title: "Project 5", images: [bookmestudioImg1, portfolioImg1] },
-  { id: 6, title: "Project 6", images: [chatroomImg1, portfolioImg1] },
-  { id: 7, title: "Project 6", images: [tictactoeImg1, portfolioImg1] },
-  { id: 8, title: "Project 6", images: [weatherwizardImg1, portfolioImg1] },
+import { StaticImageData } from "next/image";
+
+type Project = {
+  id: number;
+  slug: string;
+  title: string;
+  featured: boolean;
+  images: StaticImageData[];
+  github: string;
+};
+
+export const projectData: Project[] = [
+  {
+    id: 1,
+    slug: "personal-portfolio",
+    title: "Portfolio",
+    featured: true,
+    images: [portfolioImg1],
+    github: "https://github.com/OliverShenton/portfolio",
+  },
+  {
+    id: 2,
+    slug: "book-barter",
+    title: "BookBarter",
+    featured: true,
+    images: [bookbarterImg1],
+    github: "",
+  },
+  {
+    id: 3,
+    slug: "skill-forge",
+    title: "SkillForge",
+    featured: true,
+    images: [skillforgeImg1],
+    github: "",
+  },
+  {
+    id: 4,
+    slug: "brew-and-bloom-cafe",
+    title: "Brew & Bloom Café",
+    featured: false,
+    images: [brewandbloomImg1],
+    github: "https://github.com/OliverShenton/brew-and-bloom-cafe",
+  },
+  {
+    id: 5,
+    slug: "book-me-studio",
+    title: "BookMe Studio",
+    featured: false,
+    images: [bookmestudioImg1],
+    github: "",
+  },
+  {
+    id: 6,
+    slug: "chat-room",
+    title: "Chat Room",
+    featured: false,
+    images: [chatroomImg1],
+    github: "",
+  },
+  {
+    id: 7,
+    slug: "tic-tac-toe",
+    title: "Tic-Tac-Toe",
+    featured: false,
+    images: [tictactoeImg1],
+    github: "",
+  },
+  {
+    id: 8,
+    slug: "weather-wizard",
+    title: "Weather Wizard",
+    featured: false,
+    images: [weatherwizardImg1],
+    github: "",
+  },
 ];

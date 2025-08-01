@@ -1,90 +1,91 @@
 "use client";
 
-import { FaCode } from "react-icons/fa";
-import { IoIosContact } from "react-icons/io";
-import ArrowScroll from "./ArrowScroll";
-import { motion } from "motion/react";
+import { useEffect, useState } from "react";
 import Section from "../global/Section";
-
-const CTAButtonData = [
-  {
-    id: 1,
-    text: "See My Work",
-    icon: <FaCode />,
-    href: "#projects",
-    className:
-      "bg-gradient-to-r from-yellow-600 to-orange-500 text-white shadow-lg hover:bg-gradient-to-br hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all",
-  },
-  {
-    id: 2,
-    text: "Get In Touch",
-    icon: <IoIosContact />,
-    href: "#contact",
-    className:
-      "border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-colors",
-  },
-];
+import { heroTextData } from "@/data/HeroData";
+import HeroSlides from "./HeroSlides";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Button } from "../global/Button";
+import { motion } from "motion/react";
+import HeroParticles from "./HeroParticles";
 
 const Hero = () => {
+  // States
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [direction, setDirection] = useState<"next" | "prev">("next");
+
+  // Slide count
+  const slideCount = 3;
+
+  // Previous slide handler
+  const handlePrev = () => {
+    setDirection("prev");
+    setCurrentSlide((prev) => (prev - 1 + slideCount) % slideCount);
+  };
+
+  // Next slide handler
+  const handleNext = () => {
+    setDirection("next");
+    setCurrentSlide((prev) => (prev + 1) % slideCount);
+  };
+
+  // Hero slides data
+  const { mainText, subText, textColor } = heroTextData[currentSlide];
+
+  // Timer for slide change
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 8000);
+    return () => clearInterval(timer);
+  }, [currentSlide]);
+
   return (
-    <>
-      <Section id="hero" fullScreen width="max-w-5xl" sectionClassName="hero-section" gap="gap-4">
-        <motion.h2
-          className="text-gray-400 uppercase text-sm sm:text-base"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2.25, duration: 0.75 }}>
-          React Developer • UI/UX Designer • Frontend Architect
-        </motion.h2>
+    <Section id="hero" fullScreen>
+      {/* Hero slides component */}
+      <HeroSlides
+        mainText={mainText}
+        subText={subText}
+        textColor={textColor}
+        direction={direction}
+      />
 
-        <span className="flex flex-wrap justify-center gap-2">
-          {["Oliver", "", "Shenton"].map((word, wi) => (
-            <span key={wi} className="flex">
-              {[...word].map((char, ci) => (
-                <motion.span
-                  key={`${wi}-${ci}`}
-                  className="font-extrabold text-6xl sm:text-7xl md:text-8xl tracking-[10px] bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500"
-                  initial={{ y: 50, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{
-                    delay: 0.5 + (wi * 7 + ci) * 0.05,
-                    duration: 1,
-                    type: "spring",
-                    mass: 1,
-                    stiffness: 250,
-                  }}>
-                  {char}
-                </motion.span>
-              ))}
-            </span>
-          ))}
-        </span>
+      {/* Dot indicators */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+        {heroTextData.map((_, idx) => (
+          <div
+            key={idx}
+            className={`w-2 h-2 rounded-full ${currentSlide === idx ? "bg-white" : "bg-white/30"}`}
+          />
+        ))}
+      </div>
 
+      {/* Scroll arrows */}
+      <motion.div
+        className="flex flex-col gap-4 text-5xl absolute bottom-12 right-12 z-10"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}>
         <motion.div
-          className="h-[1px] bg-gradient-to-r from-gray-600 to-transparent mx-auto"
-          initial={{ width: 0, opacity: 0 }}
-          animate={{ width: "5rem", opacity: 1 }}
-          transition={{ delay: 2, duration: 0.3, type: "spring", mass: 0.5, stiffness: 1000 }}
-        />
-
-        <motion.div
-          className="flex flex-col sm:flex-row gap-4 sm:gap-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2.25, duration: 0.75 }}>
-          {CTAButtonData.map((cta) => (
-            <a
-              key={cta.id}
-              href={cta.href}
-              className={`px-6 py-3 rounded-xl font-medium flex items-center gap-2 ${cta.className}`}>
-              <span>{cta.icon}</span>
-              <span>{cta.text}</span>
-            </a>
-          ))}
+          whileHover={{
+            rotate: [0, -10, 10, -8, 8, -5, 5, 0],
+            transition: { duration: 1, ease: "easeInOut" },
+          }}>
+          <Button onClick={handlePrev} variant="hero-arrow-button" ariaLabel="Previous slide">
+            <FaArrowLeft />
+          </Button>
         </motion.div>
-      </Section>
-      <ArrowScroll />
-    </>
+        <motion.div
+          whileHover={{
+            rotate: [0, -10, 10, -8, 8, -5, 5, 0],
+            transition: { duration: 1, ease: "easeInOut" },
+          }}>
+          <Button onClick={handleNext} variant="hero-arrow-button" ariaLabel="Next slide">
+            <FaArrowRight />
+          </Button>
+        </motion.div>
+      </motion.div>
+    </Section>
   );
 };
 
