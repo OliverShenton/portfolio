@@ -1,8 +1,8 @@
 "use client";
 
 import Section from "../global/Section";
-import SkillCard from "./SkillCard";
-import { skillsData } from "../../data/SkillsData";
+// import SkillCard from "./SkillCard";
+// import { skillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";
 // import { motion } from "framer-motion";
 

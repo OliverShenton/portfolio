@@ -11,7 +11,6 @@ export default function Home() {
       <div className="pointer-events-none fixed top-0 left-0 w-full h-full z-10">
         <HeroParticles />
       </div>
-
       <Hero />
       <About />
       <Projects />

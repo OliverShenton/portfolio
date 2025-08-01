@@ -1,7 +1,7 @@
 import Section from "../global/Section";
 import SectionTitle from "../global/SectionTitle";
-import { projectData } from "@/data/ProjectData";
-import MinimalProjectCard from "./ProjectCard";
+// import { projectData } from "@/data/ProjectData";
+// import MinimalProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (

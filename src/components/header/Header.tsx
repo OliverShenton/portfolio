@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
-import { usePathname } from "next/navigation";
 
 const Header = () => {
   // State and Refs
@@ -107,7 +106,7 @@ const Header = () => {
           </div>
 
           {/* Desktop navigation */}
-          <DesktopNavigation activeSection="" />
+          <DesktopNavigation />
         </div>
 
         {/* Scroll Progress Bar */}

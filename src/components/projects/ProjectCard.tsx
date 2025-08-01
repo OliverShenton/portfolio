@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image, { StaticImageData } from "next/image";
-import { FaCode, FaExternalLinkAlt, FaInfo } from "react-icons/fa";
+import { FaCode, FaInfo } from "react-icons/fa";
 import { Button, LinkButton } from "../global/Button";
 import { useState } from "react";
 import Modal from "./Modal";

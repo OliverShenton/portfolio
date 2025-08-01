@@ -1,13 +1,8 @@
 import { homePageNavigationData } from "@/data/NavigationData";
 import SocialNavigation from "./HeaderSocialNavigation";
 import { LinkButton } from "../global/Button";
-import { useEffect, useState } from "react";
 
-type DesktopNavigationProps = {
-  activeSection: string;
-};
-
-const DesktopNavigation = ({ activeSection }: DesktopNavigationProps) => {
+const DesktopNavigation = () => {
   return (
     <nav
       id="desktop-navigation"

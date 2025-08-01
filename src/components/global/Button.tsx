@@ -14,7 +14,7 @@ type LinkButtonProps = {
 
 type ButtonProps = {
   children: React.ReactNode;
-  onClick: (e: any) => void;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   ariaLabel?: string;
   variant?: keyof typeof buttonVariants;

@@ -7,7 +7,6 @@ import HeroSlides from "./HeroSlides";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Button } from "../global/Button";
 import { motion } from "motion/react";
-import HeroParticles from "./HeroParticles";
 
 const Hero = () => {
   // States

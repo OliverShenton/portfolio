@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import Section from "../global/Section";
 import SectionTitle from "../global/SectionTitle";
 import Carousel from "./Carousel";

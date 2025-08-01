@@ -4,7 +4,6 @@ type SectionProps = {
   sectionClassName?: string;
   fullScreen?: boolean;
   width?: string;
-  gap?: string;
 };
 
 const Section = ({
@@ -13,7 +12,6 @@ const Section = ({
   sectionClassName,
   fullScreen,
   width = "max-w-7xl",
-  gap,
 }: SectionProps) => {
   return (
     <section id={id} className={`relative ${sectionClassName}`}>

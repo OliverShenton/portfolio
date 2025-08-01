@@ -1,15 +1,14 @@
-import { MdEmail } from "react-icons/md";
+// import { MdEmail } from "react-icons/md";
 import Section from "../global/Section";
-import { FaPhone } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import ContactForm from "./ContactForm";
+// import { FaPhone } from "react-icons/fa";
+// import { FaLocationDot } from "react-icons/fa6";
 import SectionTitle from "../global/SectionTitle";
 
-const ContactDetails = [
-  { id: 1, label: "olivermshenton@outlook.com", icon: <MdEmail />, href: "" },
-  { id: 2, label: "(+44)7473826533", icon: <FaPhone />, href: "" },
-  { id: 3, label: "Sandbach, Cheshire, CW11", icon: <FaLocationDot />, href: "" },
-];
+// const ContactDetails = [
+//   { id: 1, label: "olivermshenton@outlook.com", icon: <MdEmail />, href: "" },
+//   { id: 2, label: "(+44)7473826533", icon: <FaPhone />, href: "" },
+//   { id: 3, label: "Sandbach, Cheshire, CW11", icon: <FaLocationDot />, href: "" },
+// ];
 
 const Contact = () => {
   return (
