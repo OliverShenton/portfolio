@@ -5,7 +5,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 
-const HeroParticles = () => {
+const ParticleBackground = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -15,10 +15,6 @@ const HeroParticles = () => {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
 
   // Reduced motion
   const prefersReducedMotion = useMemo(
@@ -63,7 +59,7 @@ const HeroParticles = () => {
           type: "circle",
         },
         opacity: {
-          value: prefersReducedMotion ? 0.05 : 0.1,
+          value: prefersReducedMotion ? 0.05 : 0.5,
           random: true,
           anim: {
             enable: true,
@@ -96,8 +92,8 @@ const HeroParticles = () => {
 
   if (init) {
     return (
-      <div className="fixed top-0 left-0 w-full h-full z-10">
-        <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
+      <div className="absolute inset-0 z-0">
+        <Particles id="tsparticles" options={options} />
       </div>
     );
   }
@@ -105,4 +101,4 @@ const HeroParticles = () => {
   return <></>;
 };
 
-export default HeroParticles;
+export default ParticleBackground;

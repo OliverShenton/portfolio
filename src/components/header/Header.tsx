@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
+import { RouterButton } from "../global/Button";
 
 const Header = () => {
   // State and Refs
@@ -14,7 +15,7 @@ const Header = () => {
 
   const headerStyle = !scrolled
     ? "bg-transparent text-gray-300"
-    : "backdrop-blur-md bg-[var(--background)]/70 text-[var(--text)] shadow-sm";
+    : "backdrop-blur-lg bg-[var(--background)]/50 text-[var(--text)] shadow-sm";
 
   // Scroll progress hook
   useEffect(() => {
@@ -62,9 +63,9 @@ const Header = () => {
   return (
     <>
       <header id="header" role="banner" className={`fixed top-0 left-0 w-full z-50 ${headerStyle}`}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+        <div className="max-w-[88rem] mx-auto flex items-center justify-between p-4 md:px-6">
           {/* Title */}
-          <h1 className="text-xl md:text-2xl z-50 uppercase font-bold">Oliver Shenton</h1>
+          <h1 className="text-xl md:text-2xl z-50 uppercase font-bold ">Oliver Shenton</h1>
 
           {/* Navigation menus */}
           {/* Mobile menu toggle */}

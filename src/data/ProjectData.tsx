@@ -4,6 +4,9 @@ import portfolioImg1 from "../../public/images/projects/portfolio/image-1.png";
 // BookBarter
 import bookbarterImg1 from "../../public/images/projects/book-barter/image-1.png";
 
+// QuickBites
+import quickBitesImg1 from "../../public/images/projects/quick-bites/image-1.png";
+
 // SkillForge
 import skillforgeImg1 from "../../public/images/projects/skill-forge/image-1.png";
 
@@ -25,18 +28,24 @@ import weatherwizardImg1 from "../../public/images/projects/weather-tracker/imag
 import { StaticImageData } from "next/image";
 
 type Project = {
+  // Base card
   id: number;
-  slug: string;
   title: string;
   featured: boolean;
   images: StaticImageData[];
   github: string;
+  demo: string;
+
+  // Modal (inc above)
+  description: string;
+  purpose: string;
+  websiteType: string;
 };
 
-export const projectData: Project[] = [
+export const projectData = [
   {
     id: 1,
-    slug: "personal-portfolio",
+    bgColor: "#3b82f6",
     title: "Portfolio",
     featured: true,
     images: [portfolioImg1],
@@ -44,23 +53,23 @@ export const projectData: Project[] = [
   },
   {
     id: 2,
-    slug: "book-barter",
+    bgColor: "#7c2d12",
     title: "BookBarter",
     featured: true,
     images: [bookbarterImg1],
-    github: "",
+    github: "/",
   },
   {
     id: 3,
-    slug: "skill-forge",
-    title: "SkillForge",
+    bgColor: "#eab308",
+    title: "QuickBites",
     featured: true,
-    images: [skillforgeImg1],
-    github: "",
+    images: [quickBitesImg1],
+    github: "/",
   },
   {
     id: 4,
-    slug: "brew-and-bloom-cafe",
+    bgColor: "#f97316",
     title: "Brew & Bloom Café",
     featured: false,
     images: [brewandbloomImg1],
@@ -68,34 +77,42 @@ export const projectData: Project[] = [
   },
   {
     id: 5,
-    slug: "book-me-studio",
+    bgColor: "",
     title: "BookMe Studio",
     featured: false,
     images: [bookmestudioImg1],
-    github: "",
+    github: "/",
   },
-  {
-    id: 6,
-    slug: "chat-room",
-    title: "Chat Room",
-    featured: false,
-    images: [chatroomImg1],
-    github: "",
-  },
+  { id: 6, bgColor: "", title: "Chat Room", featured: false, images: [chatroomImg1], github: "/" },
   {
     id: 7,
-    slug: "tic-tac-toe",
+    bgColor: "",
     title: "Tic-Tac-Toe",
     featured: false,
     images: [tictactoeImg1],
-    github: "",
+    github: "/",
   },
   {
     id: 8,
-    slug: "weather-wizard",
+    bgColor: "",
     title: "Weather Wizard",
     featured: false,
     images: [weatherwizardImg1],
-    github: "",
+    github: "/",
   },
+  // {
+  //   id: 9,
+  //   title: "QuickBites",
+  //   description:
+  //     "QuickBites is a fictional food blog for busy professionals. It shares fast, healthy, and budget-friendly recipes that can be made in under 30 minutes. It's aimed at people who love good food but don't have hours to spend in the kitchen.",
+  //   purpose: "",
+  //   websiteType: "Blog",
+  //   design: [],
+  //   pageRequirements: [],
+  //   targetAudience: [],
+  //   functionalRequirements: [],
+  //   nonFucntionalRequirements: [],
+  //   contentExpectations: "",
+  //   designAssetsAndBranding: "",
+  // },
 ];

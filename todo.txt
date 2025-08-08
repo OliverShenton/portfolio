@@ -2,3 +2,10 @@
 * Header nav links need some kind of highlight on active section
 * Text need aniamtion for each section. When title laods animate in and then animate back out.
 * Tech carousel fade on edges
+
+------------------------
+* Paralax scroll effect
+* Complete projects page and contact form page
+* Stagger aniamtions for projects and skils cards
+* Projects cards can be slightly mis aligned - make each column their own, then push the second down by a few py
+* Project card - links to complete

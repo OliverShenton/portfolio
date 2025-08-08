@@ -1,54 +1,50 @@
-"use client";
-
-import { motion } from "motion/react";
 import Image, { StaticImageData } from "next/image";
+import { LinkButton, RouterButton } from "../global/Button";
 import { FaCode, FaInfo } from "react-icons/fa";
-import { Button, LinkButton } from "../global/Button";
-import { useState } from "react";
-import Modal from "./Modal";
 
 type ProjectCardProps = {
   image: StaticImageData;
   title: string;
+  bgColor: string;
   github: string;
 };
 
-const ProjectCard = ({ image, title, github }: ProjectCardProps) => {
-  const [openModal, setOpenmodal] = useState(false);
-
-  const handleOpenModal = () => {
-    setOpenmodal(true);
-  };
-
-  const handleCloseModal = () => {
-    setOpenmodal(false);
-  };
-
+const ProjectCard = ({ image, title, bgColor, github }: ProjectCardProps) => {
   return (
-    <>
-      <motion.article className="group border border-neutral-700 rounded-xl">
-        <div className="p-10 bg-neutral-800 rounded-xl">
+    <article id="project-card" className="group">
+      <div className="relative z-0 border border-neutral-800 bg-neutral-900 rounded-xl overflow-hidden group-hover:border-white/25 transition-all duration-300">
+        {/* Background */}
+        <div
+          className="absolute z-10 h-full w-full opacity-10 group-hover:opacity-20 transition-transform duration-300"
+          style={{
+            backgroundImage: `radial-gradient(${bgColor}, 1px, transparent 1px)`,
+            backgroundSize: "10px 10px",
+          }}
+        />
+
+        {/* Image */}
+        <div className="relative p-8 z-20">
           <Image
             src={image}
             alt={title}
-            className="rounded-xl group-hover:scale-105 transition-transform duration-300"
+            className="rounded-xl group-hover:scale-102 transition-transform duration-300 group-hover:shadow-sm shadow-black/50"
           />
         </div>
-        <div className="flex items-center justify-between w-full p-4">
-          <h3 className="text-left font-bold text-3xl">{title}</h3>
-          <div className="flex items-center gap-4">
-            <LinkButton href={github} variant="project-card-button" target="_blank">
-              <FaCode />
-            </LinkButton>
-            <Button onClick={handleOpenModal} variant="project-card-button">
-              <FaInfo />
-            </Button>
-          </div>
-        </div>
-      </motion.article>
+      </div>
 
-      {openModal && <Modal onClose={handleCloseModal}>{title}</Modal>}
-    </>
+      {/* Title & CTA */}
+      <div className="flex items-center justify-between p-4">
+        <h3 className="text-2xl font-semibold">{title}</h3>
+        <div className="flex items-center gap-4">
+          <LinkButton href={github} variant="project-card-button">
+            <FaCode />
+          </LinkButton>
+          <RouterButton href={`/projects/${title}`} variant="project-card-button">
+            <FaInfo />
+          </RouterButton>
+        </div>
+      </div>
+    </article>
   );
 };
 
