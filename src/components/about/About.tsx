@@ -1,6 +1,5 @@
 "use client";
 
-import { techLogos } from "@/data/TechLogoData";
 import Section from "../global/Section";
 import SectionTitle from "../global/SectionTitle";
 import Carousel from "./Carousel";

@@ -8,7 +8,7 @@ import bookbarterImg1 from "../../public/images/projects/book-barter/image-1.png
 import quickBitesImg1 from "../../public/images/projects/quick-bites/image-1.png";
 
 // SkillForge
-import skillforgeImg1 from "../../public/images/projects/skill-forge/image-1.png";
+// import skillforgeImg1 from "../../public/images/projects/skill-forge/image-1.png";
 
 // Brew & Bloom Cafe
 import brewandbloomImg1 from "../../public/images/projects/brew-and-bloom/image-1.png";
@@ -27,20 +27,20 @@ import weatherwizardImg1 from "../../public/images/projects/weather-tracker/imag
 
 import { StaticImageData } from "next/image";
 
-type Project = {
-  // Base card
-  id: number;
-  title: string;
-  featured: boolean;
-  images: StaticImageData[];
-  github: string;
-  demo: string;
+// type Project = {
+//   // Base card
+//   id: number;
+//   title: string;
+//   featured: boolean;
+//   images: StaticImageData[];
+//   github: string;
+//   demo: string;
 
-  // Modal (inc above)
-  description: string;
-  purpose: string;
-  websiteType: string;
-};
+//   // Modal (inc above)
+//   description: string;
+//   purpose: string;
+//   websiteType: string;
+// };
 
 export const projectData = [
   {

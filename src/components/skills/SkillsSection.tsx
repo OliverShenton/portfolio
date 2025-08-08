@@ -4,8 +4,8 @@ import Section from "../global/Section";
 import SkillCard from "./SkillCard";
 import { skillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";
-import Carousel from "../about/Carousel";
-import Hr from "../global/Hr";
+// import Carousel from "../about/Carousel";
+// import Hr from "../global/Hr";
 // import { motion } from "framer-motion";
 
 const SkillsSection = () => {

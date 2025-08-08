@@ -8,7 +8,7 @@ import HeroSlides from "./HeroSlides";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState<"next" | "prev">("next");
+  // const [direction, setDirection] = useState<"next" | "prev">("next");
 
   const slideCount = 3;
 
@@ -16,9 +16,9 @@ const HeroSection = () => {
     setCurrentSlide((prev) => (prev + 1) % slideCount);
   };
 
-  const handlePrevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1) % slideCount);
-  };
+  // const handlePrevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1) % slideCount);
+  // };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,7 +39,7 @@ const HeroSection = () => {
         mainText={mainText}
         subText={subText}
         textColor={textColor}
-        direction={direction}
+        // direction={direction}
       />
 
       {/* Dots - Slide indicators */}

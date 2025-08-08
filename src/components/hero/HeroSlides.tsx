@@ -8,7 +8,7 @@ type HeroSlideData = {
   mainText: string;
   subText: string;
   textColor: string;
-  direction: "next" | "prev";
+  direction?: "next" | "prev";
 };
 
 const HeroSlides = ({ mainText, subText, textColor, direction }: HeroSlideData) => {
