@@ -25,7 +25,7 @@ import tictactoeImg1 from "../../public/images/projects/tic-tac-toe/image-1.png"
 // Weather Wizard
 import weatherwizardImg1 from "../../public/images/projects/weather-tracker/image-1.png";
 
-import { StaticImageData } from "next/image";
+// import { StaticImageData } from "next/image";
 
 // type Project = {
 //   // Base card
