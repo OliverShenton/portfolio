@@ -1,6 +1,6 @@
 "use client";
 
-import Section from "../global/Section";
+import Section from "../global/SectionContainer";
 import SectionTitle from "../global/SectionTitle";
 import Carousel from "./Carousel";
 

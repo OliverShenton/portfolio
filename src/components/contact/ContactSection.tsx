@@ -1,6 +1,6 @@
 import { RouterButton } from "../global/Button";
 import Hr from "../global/Hr";
-import SectionContainer from "../global/Section";
+import SectionContainer from "../global/SectionContainer";
 
 const ContactSection = () => {
   return (

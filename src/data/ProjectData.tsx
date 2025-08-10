@@ -25,80 +25,81 @@ import tictactoeImg1 from "../../public/images/projects/tic-tac-toe/image-1.png"
 // Weather Wizard
 import weatherwizardImg1 from "../../public/images/projects/weather-tracker/image-1.png";
 
-// import { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 
-// type Project = {
-//   // Base card
-//   id: number;
-//   title: string;
-//   featured: boolean;
-//   images: StaticImageData[];
-//   github: string;
-//   demo: string;
+type Project = {
+  id: number;
+  bgColor: string;
+  images: StaticImageData[];
+  title: string;
+  role: string;
+  github: string;
+};
 
-//   // Modal (inc above)
-//   description: string;
-//   purpose: string;
-//   websiteType: string;
-// };
-
-export const projectData = [
+export const projectData: Project[] = [
   {
     id: 1,
-    bgColor: "#3b82f6",
+    bgColor: "#00bfff",
     title: "Portfolio",
-    featured: true,
+    role: "Design & Development",
     images: [portfolioImg1],
     github: "https://github.com/OliverShenton/portfolio",
   },
   {
     id: 2,
-    bgColor: "#7c2d12",
+    bgColor: "#ffb347",
     title: "BookBarter",
-    featured: true,
+    role: "Design & Development",
     images: [bookbarterImg1],
     github: "/",
   },
   {
     id: 3,
-    bgColor: "#eab308",
+    bgColor: "#ffd700",
     title: "QuickBites",
-    featured: true,
+    role: "Design & Development",
     images: [quickBitesImg1],
     github: "/",
   },
   {
     id: 4,
-    bgColor: "#f97316",
+    bgColor: "#8fbc8f",
     title: "Brew & Bloom Café",
-    featured: false,
+    role: "Design & Development",
     images: [brewandbloomImg1],
     github: "https://github.com/OliverShenton/brew-and-bloom-cafe",
   },
   {
     id: 5,
-    bgColor: "",
+    bgColor: "#9370db",
     title: "BookMe Studio",
-    featured: false,
+    role: "Design & Development",
     images: [bookmestudioImg1],
     github: "/",
   },
-  { id: 6, bgColor: "", title: "Chat Room", featured: false, images: [chatroomImg1], github: "/" },
+  {
+    id: 6,
+    bgColor: "#4682b4",
+    title: "Chat Room",
+    role: "Design & Development",
+    images: [chatroomImg1],
+    github: "https://github.com/OliverShenton/os-nodejs-chat-app",
+  },
   {
     id: 7,
-    bgColor: "",
+    bgColor: "#ffd580",
     title: "Tic-Tac-Toe",
-    featured: false,
+    role: "Design & Development",
     images: [tictactoeImg1],
     github: "/",
   },
   {
     id: 8,
-    bgColor: "",
+    bgColor: "#87cefa",
     title: "Weather Wizard",
-    featured: false,
+    role: "Design & Development",
     images: [weatherwizardImg1],
-    github: "/",
+    github: "https://github.com/OliverShenton/weather-tracker",
   },
   // {
   //   id: 9,

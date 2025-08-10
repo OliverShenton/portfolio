@@ -1,5 +1,5 @@
 import { projectData } from "@/data/ProjectData";
-import SectionContainer from "../global/Section";
+import SectionContainer from "../global/SectionContainer";
 import ProjectCard from "./ProjectCard";
 import { RouterButton } from "../global/Button";
 import SectionTitle from "../global/SectionTitle";
@@ -20,6 +20,7 @@ const ProjectsSection = () => {
               bgColor={project.bgColor}
               image={project.images[0]}
               title={project.title}
+              role={project.role}
               github={project.github}
             />
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import Section from "../global/Section";
+import Section from "../global/SectionContainer";
 import SkillCard from "./SkillCard";
 import { skillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";

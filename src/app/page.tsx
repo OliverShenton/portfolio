@@ -3,7 +3,7 @@ import Hero from "@/components/hero/HeroSection";
 import Projects from "@/components/projects/ProjectsSection";
 import ContactSection from "@/components/contact/ContactSection";
 import Skills from "@/components/skills/SkillsSection";
-import ParticleBackground from "@/components/global/ParticleBackground";
+import ParticleBackground from "@/components/animated-backgrounds/ParticleBackground";
 
 export default function Home() {
   return (

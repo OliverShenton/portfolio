@@ -5,7 +5,11 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
 
-const ParticleBackground = () => {
+type ParticleBackgroundProps = {
+  zIndex?: string;
+};
+
+const ParticleBackground = ({ zIndex = "z-0" }: ParticleBackgroundProps) => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -92,7 +96,7 @@ const ParticleBackground = () => {
 
   if (init) {
     return (
-      <div className="absolute inset-0 z-0">
+      <div className={`absolute inset-0 ${zIndex}`}>
         <Particles id="tsparticles" options={options} />
       </div>
     );

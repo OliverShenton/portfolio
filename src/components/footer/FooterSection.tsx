@@ -3,7 +3,7 @@ import FooterSocialNavigation from "./FooterSocialNavigation";
 
 const FooterSection = () => {
   return (
-    <footer id="footer-section" className="relative">
+    <footer id="footer-section" className="relative z-50">
       <div className="max-w-[88rem] mx-auto space-y-12 px-6 md:px-8 py-12">
         {/* <Hr /> */}
         <div className="flex flex-col md:flex-row gap-12 items-center justify-between text-gray-300">

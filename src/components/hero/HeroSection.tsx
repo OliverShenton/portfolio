@@ -1,7 +1,7 @@
 "use client";
 
 import { heroTextData } from "@/data/HeroData";
-import SectionContainer from "../global/Section";
+import SectionContainer from "../global/SectionContainer";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import HeroSlides from "./HeroSlides";
