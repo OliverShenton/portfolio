@@ -4,9 +4,7 @@ import Section from "../global/SectionContainer";
 import SkillCard from "./SkillCard";
 import { skillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";
-// import Carousel from "../about/Carousel";
-// import Hr from "../global/Hr";
-// import { motion } from "framer-motion";
+import Carousel from "../about/Carousel";
 
 const SkillsSection = () => {
   return (
@@ -15,6 +13,7 @@ const SkillsSection = () => {
         title="Skills Overview"
         subtitle="A snapshot of my frontend expertise and technical toolkit."
       />
+      <Carousel />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 z-20">
         {skillsData.map((skill) => (
           <SkillCard
@@ -27,7 +26,6 @@ const SkillsSection = () => {
           />
         ))}
       </div>
-      {/* <Carousel /> */}
     </Section>
   );
 };

@@ -26,7 +26,7 @@ const ContactSection = () => {
           <h2 id="contact-heading" className="font-bold text-2xl md:text-3xl lg:text-4xl">
             Let&apos;s Create Something Amazing Together.
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl"> React • TypeScript • UI engineering.</p>
+          <p className="text-lg md:text-xl lg:text-2xl"> React • JavaScript & TypeScript • UI/UX</p>
           <Hr />
           <RouterButton href="/contact" variant="primary-button">
             Contact Me
