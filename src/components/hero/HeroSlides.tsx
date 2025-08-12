@@ -23,11 +23,11 @@ const HeroSlides = ({ mainText, subText, textColor, direction }: HeroSlideData) 
         exit="exit"
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="relative w-full font-bold leading-[1]">
-        <div className="text-center text-[10rem] -indent-[1rem] mb-4">
-          <ShinyText text={mainText} textColor={textColor} speed={12} />
+        <div className="text-center text-[12.5rem] -indent-[1rem] mb-4">
+          <ShinyText className="shiny-text" text={mainText} textColor={textColor} speed={12} />
         </div>
         <div className="text-center text-outline text-transparent text-7xl">
-          <h1>{subText}</h1>
+          <h1 className="tiny-text">{subText}</h1>
         </div>
       </motion.div>
     </AnimatePresence>

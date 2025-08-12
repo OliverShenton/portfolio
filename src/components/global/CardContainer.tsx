@@ -1,10 +1,10 @@
 type CardContainerProps = {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 };
 
 const CardContainer = ({ children, className }: CardContainerProps) => {
-  return <article className={`${className} bg-[#171b23]`}>{children}</article>;
+  return <article className={`${className} bg-[var(--card-background)]`}>{children}</article>;
 };
 
 export default CardContainer;

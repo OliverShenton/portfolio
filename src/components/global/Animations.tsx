@@ -55,3 +55,6 @@ export const slideVariants: Variants = {
     },
   }),
 };
+
+// Skill card animation
+// export const skillCardVariants;

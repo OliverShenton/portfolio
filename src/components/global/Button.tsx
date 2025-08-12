@@ -49,7 +49,7 @@ const buttonVariants = {
   "card-button":
     "absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10",
   "hero-arrow-button":
-    "p-3 rounded-full border border-[var(--tertiary-highlight)] bg-[#141414] hover:brightness-200 transition-all duration-300",
+    "p-3 rounded-full border border-neutral-800 bg-[#171b23] hover:brightness-200 transition-all duration-300",
   "project-card-button":
     "border border-gray-600 p-3 text-2xl rounded-xl bg-stone-900 hover:brightness-200 transition-all duration-300 flex gap-2 items-center justify-center ",
 };

@@ -4,7 +4,7 @@ import Section from "../global/SectionContainer";
 import SkillCard from "./SkillCard";
 import { skillsData } from "../../data/SkillsData";
 import SectionTitle from "../global/SectionTitle";
-import Carousel from "../about/Carousel";
+import Carousel from "./Carousel";
 
 const SkillsSection = () => {
   return (
