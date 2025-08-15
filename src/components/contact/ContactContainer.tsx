@@ -34,7 +34,7 @@ const ContactContainer = () => {
       {/* Title */}
       <div className="space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[var(--text)]">
-          Let's build something <span className="text-blue-500">GREAT</span> together
+          Let&apos;s build something <span className="text-blue-500">GREAT</span> together
         </h2>
         <p className="text-sm md:text-md lg:text-lg text-gray-300">
           React • JavaScript & TypeScript • UI/UX

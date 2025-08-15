@@ -1,21 +1,21 @@
-"use client";
+// "use client";
 
 import SectionContainer from "@/components/global/SectionContainer";
-import SectionTitle from "@/components/global/SectionTitle";
+// import SectionTitle from "@/components/global/SectionTitle";
 import ProjectCard from "@/components/projects/ProjectCard";
-import ProjectFilter from "@/components/projects/ProjectFilter";
+// import ProjectFilter from "@/components/projects/ProjectFilter";
 import { projectData } from "@/data/ProjectData";
-// import { Metadata } from "next";
-import { useState } from "react";
+import { Metadata } from "next";
+// import { useState } from "react";
 
-// export const metadata: Metadata = {
-//   title: "Oliver Shenton | All Projects",
-//   description:
-//     "A showcase of Oli's portfolio projects - sleek, high-performance web apps crafted with React, TypeScript, and thoughtful UI design.",
-// };
+export const metadata: Metadata = {
+  title: "Oliver Shenton | All Projects",
+  description:
+    "A showcase of Oli's portfolio projects - sleek, high-performance web apps crafted with React, TypeScript, and thoughtful UI design.",
+};
 
 const ProjectsPage = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  // const [activeFilter, setActiveFilter] = useState("All");
 
   return (
     <SectionContainer id="projects-page" relative>
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
           </p>
         </div>
         <div className="flex-1 items-end justify-end">
-          <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} />
+          {/* <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} /> */}
         </div>
       </div>
       {/* <SectionTitle

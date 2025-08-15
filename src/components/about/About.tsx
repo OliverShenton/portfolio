@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutData } from "@/data/AboutData";
+// import { AboutData } from "@/data/AboutData";
 import Section from "../global/SectionContainer";
 import SectionTitle from "../global/SectionTitle";
 
