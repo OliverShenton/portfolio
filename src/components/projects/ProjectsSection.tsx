@@ -8,7 +8,10 @@ const ProjectsSection = () => {
   return (
     <SectionContainer id="projects" ariaLabelledBy="projects-heading" relative>
       {/* Background */}
-      <div id="about-background" className="absolute inset-0 bg-cover bg-center opacity-25 z-0" />
+      <div
+        id="projects-background"
+        className="absolute inset-0 bg-cover bg-center opacity-25 z-0"
+      />
 
       {/* Title */}
       <SectionTitle

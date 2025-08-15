@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer/FooterSection";
 import Header from "@/components/header/Header";
+import Hr from "@/components/global/Hr";
 
 export const metadata: Metadata = {
   title: "Oliver Shenton | Frontend Developer Portfolio",
@@ -15,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col">
         <Header />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
+        <Hr />
         <Footer />
       </body>
     </html>

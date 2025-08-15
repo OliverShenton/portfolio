@@ -2,13 +2,14 @@
 
 import { socialsData } from "@/data/SocialData";
 import { LinkButton } from "../global/Button";
+import { motion } from "motion/react";
 
 const FooterSocialNavigation = () => {
   return (
     <nav aria-label="Social media links" className="z-10">
       <ul className="flex flex-wrap items-center justify-center gap-6">
         {socialsData.map((link) => (
-          <li key={link.id}>
+          <motion.li key={link.id} whileHover={{ y: -5 }} transition={{ duration: 0.15 }}>
             <LinkButton
               href={link.href}
               title={link.title}
@@ -18,7 +19,7 @@ const FooterSocialNavigation = () => {
               className={`${link.hoverColor} hover:text-[var(--text)]`}>
               {link.icon}
             </LinkButton>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </nav>

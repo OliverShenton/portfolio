@@ -1,3 +1,4 @@
+import ContactContainer from "@/components/contact/ContactContainer";
 import SectionContainer from "@/components/global/SectionContainer";
 import { Metadata } from "next";
 
@@ -9,10 +10,12 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <SectionContainer id="contact-page" relative>
-      <></>
+    <SectionContainer id="contact-page">
+      {/* Background */}
+      <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
+
       {/* Content */}
-      {/* <div className="relative min-h-[100dvh] flex items-center justify-center">Hi</div> */}
+      <ContactContainer />
     </SectionContainer>
   );
 };

@@ -23,6 +23,7 @@ type ButtonProps = {
 
 type RouterButtonProps = {
   href: string;
+  title?: string;
   children: React.ReactNode;
   className?: string;
   ariaLabel?: string;
@@ -102,6 +103,7 @@ export const Button = ({
 export const RouterButton = ({
   href,
   children,
+  title,
   className,
   ariaLabel,
   variant = "nothing",
@@ -110,7 +112,7 @@ export const RouterButton = ({
     <Link
       href={href}
       aria-label={ariaLabel}
-      prefetch={true}
+      title={title}
       className={`${className} ${buttonStyle} ${buttonVariants[variant]}`}>
       {children}
     </Link>

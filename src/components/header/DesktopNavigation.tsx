@@ -25,10 +25,10 @@ const DesktopNavigation = () => {
                 {isActive && <FaCircle className="text-lime-400 text-sm w-2 h-2 rounded-full" />}
                 <span
                   className={`relative group ${
-                    isActive ? "text-white" : "text-gray-300"
+                    isActive ? "text-white " : "text-gray-300"
                   } transition-colors duration-300`}>
                   {link.link}
-                  <span className="absolute left-1/2 -bottom-0.5 h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-blue-500 transform -translate-x-1/2" />
+                  <span className="absolute left-1/2 -bottom-0.5 h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-amber-500 transform -translate-x-1/2" />
                 </span>
               </RouterButton>
             </li>

@@ -48,7 +48,7 @@ const HeroSection = () => {
       />
 
       {/* Dots - Slide indicators */}
-      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 items-center gap-2">
+      <div className="hidden w-[768px]:flex absolute bottom-8 left-1/2 -translate-x-1/2 items-center gap-2">
         {heroTextData.map((_, i) => (
           <motion.div
             key={i}
@@ -70,7 +70,7 @@ const HeroSection = () => {
 
       {/* Arrow buttons */}
       <motion.div
-        className="flex flex-col gap-4 text-5xl absolute bottom-12 right-12 z-10"
+        className="hidden md:flex flex-col gap-4 text-5xl absolute bottom-12 right-12 z-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}>
