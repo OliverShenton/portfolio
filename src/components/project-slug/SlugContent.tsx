@@ -1,6 +1,6 @@
 import { ProjectCaseStudy } from "@/schemas/ProjectSchema";
 import Image from "next/image";
-import { SlugHr, SlugImageGallery, SlugLabel, SlugSection } from "./SlugComponents";
+import { SlugHr, SlugImageGallery, SlugSection } from "./SlugComponents";
 
 const SlugContent = ({
   title,

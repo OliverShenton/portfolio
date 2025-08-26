@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer/FooterSection";
 import Header from "@/components/header/Header";
-import Hr from "@/components/global/Hr";
+// import Hr from "@/components/global/Hr";
 
 export const metadata: Metadata = {
   title: "Oliver Shenton | Frontend Developer Portfolio",
