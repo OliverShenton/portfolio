@@ -1,7 +1,7 @@
-import { FaPhoneAlt } from "react-icons/fa";
+// import { FaPhoneAlt } from "react-icons/fa";
 import CardContainer from "../global/CardContainer";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+// import { MdEmail } from "react-icons/md";
+// import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
 
 // const contactDetails = [
