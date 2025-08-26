@@ -77,7 +77,7 @@ const ContactForm = () => {
         name={message}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="border p-4 h-25 max-h-25 min-h-25"
+        className="max-h-25 min-h-25 p-4 border border-neutral-800 rounded-xl focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
         placeholder="You Message..."
       />
       <button

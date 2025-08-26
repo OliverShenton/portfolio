@@ -15,7 +15,7 @@ const FormInput = ({ id, type = "text", value, onChange, placeholder }: FormInpu
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="p-4 border border-neutral-600 rounded-xl bg-[#121212] z-20"
+      className="p-4 border border-neutral-800 rounded-xl focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
     />
   );
 };

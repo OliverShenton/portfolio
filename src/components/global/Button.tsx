@@ -44,7 +44,7 @@ const buttonVariants = {
   "primary-button":
     "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-600 to-orange-500 text-white shadow-lg shadow-neutral-800 hover:bg-gradient-to-l hover:brightness-105 transition-all duration-300",
   "secondary-button":
-    "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-all shadow-neutral-800 hover:bg-neutral-900 shadow-lg curation-300",
+    "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-all shadow-neutral-800 hover:brightness-150 shadow-lg curation-300",
   "more-button":
     "px-6 py-3 font-medium flex items-center gap-2 border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-colors shadow-neutral-800 shadow-lg",
   "card-button":
@@ -52,7 +52,7 @@ const buttonVariants = {
   "hero-arrow-button":
     "p-3 rounded-full border border-neutral-800 bg-[#171b23] hover:brightness-200 transition-all duration-300",
   "project-card-button":
-    "border border-gray-600 p-3 text-2xl rounded-xl bg-stone-900 hover:brightness-200 transition-all duration-300 flex gap-2 items-center justify-center ",
+    "border border-gray-600 p-3 text-2xl rounded-xl bg-stone-900 hover:brightness-150 transition-all duration-300 flex gap-2 items-center justify-center",
 };
 
 // Link button

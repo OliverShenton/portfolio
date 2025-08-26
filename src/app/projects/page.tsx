@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
 
       {/* Title */}
-      <div className="flex items-center justify-between w-full pt-10">
+      {/* <div className="flex items-center justify-between w-full pt-10">
         <div className="flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[var(--text)]">
             All Projects
@@ -34,9 +34,9 @@ const ProjectsPage = () => {
           </p>
         </div>
         <div className="flex-1 items-end justify-end">
-          {/* <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} /> */}
+          <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} />
         </div>
-      </div>
+      </div> */}
       {/* <SectionTitle
         title="All Projects"
         subtitle="Browse a collection of all my work - and filter through my professional projects, my personal projects, projects I have designed, and projects I have developed."
@@ -49,13 +49,16 @@ const ProjectsPage = () => {
       {/* Project cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 pt-20 -mt-10">
         {projectData.map((project, index) => (
-          <div key={project.id} className={`transition-app ${index % 2 !== 0 ? "md:pt-10" : ""}`}>
+          <div
+            key={project.title}
+            className={`transition-app ${index % 2 !== 0 ? "md:pt-10" : ""}`}>
             <ProjectCard
-              bgColor={project.bgColor}
+              backgroundColor={project.backgroundColor}
               role={project.role}
-              image={project.images[0]}
+              cover={project.cover}
               title={project.title}
-              github={project.github}
+              slug={project.slug}
+              repo={project.repo}
             />
           </div>
         ))}

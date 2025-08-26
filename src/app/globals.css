@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0f1115;
+  --background: #2e2a31;
   --secondary-background: #12161d;
   --card-background: #171b23;
-  --text: #f3f5f7;
+  --text: #ffffff;
   --keyboard-focus: #0071e3;
   --highlight: #4b5563;
 }
@@ -24,7 +24,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text, #f5f5f7);
-  background: radial-gradient(circle, var(--secondary-background), var(--background));
+  /* background: radial-gradient(circle, var(--secondary-background), var(--background)); */
+  background-color: var(--background);
   letter-spacing: 0.25px;
   box-sizing: border-box;
 }
@@ -67,7 +68,7 @@ body {
 }
 
 #footer-section {
-  background-color: var(--background, #0f1115);
+  background-color: #1c1c1c;
 }
 
 /* Hero subtext outline */
@@ -116,7 +117,8 @@ body {
 /* distance = min width (200px) * number of items in map (7) */
 /* Duration = distance answer (1400px) / speed of px a sec (60) = duration for aniamtion time */
 
-#projects-background {
+#projects-background,
+#slug-background {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3cpath d='M1440 0L854.44 0L1440 269.29z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M854.44 0L1440 269.29L1440 406.33000000000004L725.3000000000001 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M725.3000000000001 0L1440 406.33000000000004L1440 438.99L490.7900000000001 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M490.7900000000001 0L1440 438.99L1440 457.87L373.43000000000006 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L717.76 560L0 284.98z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 284.98L717.76 560L830.01 560L0 177.93z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 177.93L830.01 560L924.3 560L0 158.84z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 158.84000000000003L924.3 560L1033.5 560L0 101.81000000000003z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
