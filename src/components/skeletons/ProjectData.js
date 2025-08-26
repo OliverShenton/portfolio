@@ -1,30 +1,30 @@
-const skeleton = [
-  {
-    title: "",
-    slug: "",
-    cover: { src: "", alt: "", caption: "" },
-    role: "",
-    repo: "",
-    backgroundColor: "",
+// const skeleton = [
+//   {
+//     title: "",
+//     slug: "",
+//     cover: { src: "", alt: "", caption: "" },
+//     role: "",
+//     repo: "",
+//     backgroundColor: "",
 
-    projectType: "",
-    PersonalClient: "",
-    year: "",
-    lastUpdated: "",
-    duration: "",
-    status: "",
-    demo: "",
+//     projectType: "",
+//     PersonalClient: "",
+//     year: "",
+//     lastUpdated: "",
+//     duration: "",
+//     status: "",
+//     demo: "",
 
-    description: "",
-    problem: "",
-    solution: "",
-    audience: [""],
+//     description: "",
+//     problem: "",
+//     solution: "",
+//     audience: [""],
 
-    features: [{ feature: "", done: true }],
-    pages: [{ feature: "", done: true }],
+//     features: [{ feature: "", done: true }],
+//     pages: [{ feature: "", done: true }],
 
-    techstack: [""],
+//     techstack: [""],
 
-    gallery: [{ src: "", alt: "" }],
-  },
-];
+//     gallery: [{ src: "", alt: "" }],
+//   },
+// ];

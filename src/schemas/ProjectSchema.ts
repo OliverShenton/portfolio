@@ -9,8 +9,6 @@ export interface FeatureItem {
   done: boolean;
 }
 
-export interface TechItem {}
-
 export interface ImageItem {
   src: StaticImageData | string;
   alt: string;
