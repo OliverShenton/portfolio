@@ -1,7 +1,7 @@
 export interface Base {
   children: React.ReactNode;
-  className: string;
-  ariaLabel: string;
+  className?: string;
+  ariaLabel?: string;
   variant?: keyof typeof buttonVariants;
 }
 
