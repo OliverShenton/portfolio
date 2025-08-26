@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`flex flex-col ${inter.className}`}>
         {/* Vercel insights */}
         <Analytics />
-        <SpeedInsights />;
+        <SpeedInsights />
         <Header />
         <main className="flex-1">{children}</main>
         <Hr />
