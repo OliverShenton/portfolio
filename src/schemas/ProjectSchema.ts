@@ -2,6 +2,14 @@ import { StaticImageData } from "next/image";
 
 export type Role = "Design & Development";
 export type ProjectStatus = "Completed" | "In Progress" | "On Hold";
+export type PersonalClient = "Personal" | "Client";
+
+export interface FeatureItem {
+  feature: string;
+  done: boolean;
+}
+
+export interface TechItem {}
 
 export interface ImageItem {
   src: StaticImageData | string;
@@ -21,16 +29,25 @@ export interface ProjectCard {
 export interface ProjectCaseStudy extends ProjectCard {
   // Overview
   projectType: string;
+  personalClient: PersonalClient;
+  year: number;
+  lastUpdated: string;
   duration: string;
   status: ProjectStatus;
-  year: number;
-  links: string;
+  demo: string;
 
   //   Context
   description: string;
-  purpose: string;
   problem: string;
-  audience: string;
+  solution: string;
+  audience: string[];
+
+  // Scope
+  features: FeatureItem[];
+  pages: FeatureItem[];
+
+  // Tech stack
+  techstack: string[];
 
   //   Image gallery
   gallery?: ImageItem[];

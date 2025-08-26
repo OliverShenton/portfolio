@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
 
       {/* Title */}
-      {/* <div className="flex items-center justify-between w-full pt-10">
+      <div className="flex items-center justify-between w-full pt-10">
         <div className="flex-1">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 text-[var(--text)]">
             All Projects
@@ -34,20 +34,12 @@ const ProjectsPage = () => {
           </p>
         </div>
         <div className="flex-1 items-end justify-end">
-          <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} />
+          {/* <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} /> */}
         </div>
-      </div> */}
-      {/* <SectionTitle
-        title="All Projects"
-        subtitle="Browse a collection of all my work - and filter through my professional projects, my personal projects, projects I have designed, and projects I have developed."
-        className="pt-10"
-      /> */}
-
-      {/* Projects filter */}
-      {/* <ProjectFilter activeFilter={activeFilter} onChange={setActiveFilter} /> */}
+      </div>
 
       {/* Project cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 pt-20 -mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 pt-20 -mt-10">
         {projectData.map((project, index) => (
           <div
             key={project.title}

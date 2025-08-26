@@ -27,7 +27,7 @@ export const ProjectCard = ({
           />
 
           {/* Image */}
-          <div className="relative p-8 z-20">
+          <div className="relative p-2 sm:p-4 md:p-8 z-20">
             <Image
               src={cover.src}
               alt={title}
@@ -41,7 +41,7 @@ export const ProjectCard = ({
       {/* Title & CTA */}
       <div className="flex items-center justify-between p-4">
         <div className="flex flex-col gap-2">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">{title}</h3>
           <p className="text-gray-300 text-sm">{role}</p>
         </div>
         <div className="flex items-center gap-4">

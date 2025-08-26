@@ -26,14 +26,19 @@ const SlugPage = ({ params }: { params: Promise<{ slug: string }> }) => {
         role={project.role}
         repo={project.repo}
         projectType={project.projectType}
+        personalClient={project.personalClient}
         duration={project.duration}
         status={project.status}
         year={project.year}
-        links={project.links}
+        lastUpdated={project.lastUpdated}
+        demo={project.demo}
         description={project.description}
-        purpose={project.purpose}
         problem={project.problem}
+        solution={project.solution}
         audience={project.audience}
+        features={project.features}
+        pages={project.pages}
+        techstack={project.techstack}
         gallery={project.gallery}
       />
     </SectionContainer>
