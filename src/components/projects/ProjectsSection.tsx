@@ -1,6 +1,4 @@
-import { projectData } from "@/components/projects/ProjectData";
 import SectionContainer from "../global/SectionContainer";
-import ProjectCard from "./ProjectCard";
 import { RouterButton } from "../global/Button";
 import SectionTitle from "../global/SectionTitle";
 import ProjectGrid from "./ProjectGrid";

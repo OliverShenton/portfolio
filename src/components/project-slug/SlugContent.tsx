@@ -10,7 +10,6 @@ import {
   SlugSection,
   SlugTechStack,
 } from "./SlugComponents";
-import { motion } from "motion/react";
 
 const SlugContent = ({
   title,

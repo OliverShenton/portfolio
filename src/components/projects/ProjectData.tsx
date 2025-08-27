@@ -7,12 +7,11 @@ import mindfulpathImg2 from "../../../public/images/projects/mindful-path/image-
 import mindfulpathImg3 from "../../../public/images/projects/mindful-path/image-3.png";
 
 // QuickBites
-import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
+// import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
 
 // BookBarter
-import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";
+// import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";
 
-// import { StaticImageData } from "next/image";
 import { ProjectCaseStudy } from "@/schemas/ProjectSchema";
 
 export const projectData: ProjectCaseStudy[] = [
