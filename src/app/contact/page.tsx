@@ -1,4 +1,5 @@
 import ContactContainer from "@/components/contact/ContactContainer";
+import Hr from "@/components/global/Hr";
 import SectionContainer from "@/components/global/SectionContainer";
 import { Metadata } from "next";
 
@@ -13,6 +14,8 @@ const ContactPage = () => {
     <SectionContainer id="contact-page">
       {/* Background */}
       <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
+
+      <Hr />
 
       {/* Content */}
       <ContactContainer />

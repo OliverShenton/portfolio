@@ -1,3 +1,5 @@
+"use client";
+
 import { ProjectCaseStudy } from "@/schemas/ProjectSchema";
 import Image from "next/image";
 import {
@@ -8,6 +10,7 @@ import {
   SlugSection,
   SlugTechStack,
 } from "./SlugComponents";
+import { motion } from "motion/react";
 
 const SlugContent = ({
   title,
@@ -64,7 +67,7 @@ const SlugContent = ({
       <Image
         src={cover.src}
         alt={cover.alt}
-        className="border-2 border-neutral-700 rounded-xl shadow-sm shadow-black/50"
+        className="border-2 border-neutral-700 rounded-xl shadow-sm shadow-black/50 z-10"
       />
       <div className="max-w-6xl mx-auto w-full">
         <SlugHr />

@@ -10,7 +10,7 @@ const FooterSection = () => {
           <p className="text-base text-center">&copy; Oliver Shenton. All rights reserved.</p>
           <FooterSocialNavigation />
         </div>
-        <Hr />
+        <Hr opaque />
         <div className="flex flex-col items-center justify-center text-sm text-gray-300 gap-2">
           <p>Deployed on Vercel</p>
           <p>Styled by Tailwind</p>

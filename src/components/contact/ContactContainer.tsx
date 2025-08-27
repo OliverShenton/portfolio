@@ -1,5 +1,5 @@
 // import { FaPhoneAlt } from "react-icons/fa";
-import CardContainer from "../global/CardContainer";
+import CardContainer from "./CardContainer";
 // import { MdEmail } from "react-icons/md";
 // import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
@@ -34,7 +34,6 @@ const ContactContainer = () => {
       {/* Left side */}
       <div className="flex-1 w-full">
         {/* Title */}
-
         <h2 className="text-5xl mb-4 font-semibold text-left">Get In Touch.</h2>
         <p className="text-4xl text-left">
           Let&apos;s build something <span className="text-blue-500">great</span> together.

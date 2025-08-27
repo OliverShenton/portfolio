@@ -39,7 +39,7 @@ export const ProjectCard = ({
       </div>
 
       {/* Title & CTA */}
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between p-4 border-b border-neutral-700">
         <div className="flex flex-col gap-2">
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">{title}</h3>
           <p className="text-gray-300 text-sm">{role}</p>

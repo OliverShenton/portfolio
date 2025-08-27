@@ -22,6 +22,7 @@ const ContactSection = () => {
         }}>
         {/* Background */}
         <div id="hero-background" className="absolute inset-0 bg-cover bg-center opacity-25 z-0" />
+
         <div className="relative z-10 text-center space-y-8 w-3/4 md:w-2/3 mx-auto">
           <h2 id="contact-heading" className="font-bold text-2xl md:text-3xl lg:text-4xl">
             Let&apos;s Create Something Amazing Together.

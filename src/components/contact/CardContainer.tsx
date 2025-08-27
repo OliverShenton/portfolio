@@ -6,7 +6,7 @@ type CardContainerProps = {
 const CardContainer = ({ children, className }: CardContainerProps) => {
   return (
     <article
-      className={`${className} text-center bg-neutral-900/75 border border-neutral-800 w-full rounded-xl flex gap-12 z-10 shadow-sm shadow-black`}>
+      className={`${className} text-center bg-neutral-900/75 border border-neutral-800 w-full rounded-xl flex flex-col md:flex-row gap-2 md:gap-12 z-10 shadow-sm shadow-black`}>
       {children}
     </article>
   );

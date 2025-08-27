@@ -1,8 +1,9 @@
-import { projectData } from "@/data/ProjectData";
+import { projectData } from "@/components/projects/ProjectData";
 import SectionContainer from "../global/SectionContainer";
 import ProjectCard from "./ProjectCard";
 import { RouterButton } from "../global/Button";
 import SectionTitle from "../global/SectionTitle";
+import ProjectGrid from "./ProjectGrid";
 
 const ProjectsSection = () => {
   return (
@@ -20,22 +21,7 @@ const ProjectsSection = () => {
       />
 
       {/* Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 gap-x-12">
-        {projectData.slice(0, 4).map((project, index) => (
-          <div
-            key={project.title}
-            className={`transition-app ${index % 2 !== 0 ? "md:pt-10" : ""}`}>
-            <ProjectCard
-              backgroundColor={project.backgroundColor}
-              role={project.role}
-              cover={project.cover}
-              title={project.title}
-              slug={project.slug}
-              repo={project.repo}
-            />
-          </div>
-        ))}
-      </div>
+      <ProjectGrid slice={4} />
 
       {/* More projects button */}
       <RouterButton href="/projects" variant="secondary-button">

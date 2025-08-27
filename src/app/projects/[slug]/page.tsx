@@ -2,7 +2,7 @@
 
 import SectionContainer from "@/components/global/SectionContainer";
 import SlugContent from "@/components/project-slug/SlugContent";
-import { projectData } from "@/data/ProjectData";
+import { projectData } from "@/components/projects/ProjectData";
 import { notFound } from "next/navigation";
 import { use } from "react";
 

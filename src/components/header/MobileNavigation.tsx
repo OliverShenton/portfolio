@@ -1,4 +1,4 @@
-import { homePageNavigationData } from "@/data/NavigationData";
+import { homePageNavigationData } from "@/components/header/NavigationData";
 import { socialsData } from "@/data/SocialData";
 import { FocusTrap } from "focus-trap-react";
 import { motion } from "motion/react";
@@ -20,7 +20,7 @@ const MobileNavigation = ({ onClose }: { onClose: () => void }) => {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
-        className="hamburger-menu fixed inset-0 z-40 flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-[var(--background)]/95 to-[var(--background)]/80 backdrop-blur-md px-4 overflow-y-auto pt-15 pb-6"
+        className="hamburger-menu fixed inset-0 z-30 flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-[var(--background)]/95 to-[var(--background)]/80 backdrop-blur-md px-4 overflow-y-auto pt-15 pb-6"
         initial={{ y: "-100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: "-100%", opacity: 0 }}

@@ -120,7 +120,7 @@ const Header = () => {
       <nav
         id="mobile-navigation-dropdown"
         aria-label="Mobile navigation dropdown"
-        className="flex gap-6 text-gray-300 z-50">
+        className="flex gap-6 text-gray-300 z-40">
         <AnimatePresence>{openMenu && <MobileNavigation onClose={closeMenu} />}</AnimatePresence>
       </nav>
     </>

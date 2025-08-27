@@ -1,4 +1,4 @@
-import { homePageNavigationData } from "@/data/NavigationData";
+import { homePageNavigationData } from "@/components/header/NavigationData";
 import SocialNavigation from "./HeaderSocialNavigation";
 import { RouterButton } from "../global/Button";
 import { usePathname } from "next/navigation";

@@ -45,7 +45,7 @@ const About = () => {
         className="tracking-wide"
       />
       <div className="max-w-3xl">
-        <p id="about-text" className="text-2xl text-center leading-relaxed">
+        <p id="about-text" className="text-xl lg:text-2xl text-center leading-relaxed">
           Hello, and welcome to my portfolio. My name is Oliver Shenton and I am a frontend
           developer. I build modern, responsive websites, utilising React, Next.js, Tailwind, and
           Framer Motion - bringing clean design and smooth user experiences to life.

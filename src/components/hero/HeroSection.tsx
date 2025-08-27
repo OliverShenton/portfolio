@@ -1,6 +1,6 @@
 "use client";
 
-import { heroTextData } from "@/data/HeroData";
+import { heroTextData } from "@/components/hero/HeroData";
 import SectionContainer from "../global/SectionContainer";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";

@@ -2,7 +2,7 @@
 
 import Section from "../global/SectionContainer";
 import SkillCard from "./SkillCard";
-import { skillsData } from "../../data/SkillsData";
+import { skillsData } from "./SkillsData";
 import SectionTitle from "../global/SectionTitle";
 import Carousel from "./Carousel";
 

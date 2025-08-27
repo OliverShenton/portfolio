@@ -1,13 +1,16 @@
 // Portfolio
-import portfolioImg1 from "../../public/images/projects/portfolio/image-1.png";
+import portfolioImg1 from "../../../public/images/projects/portfolio/image-1.png";
 
 // MindfulPath
-import mindfulpathImg1 from "../../public/images/projects/mindful-path/image-1.png";
-import mindfulpathImg2 from "../../public/images/projects/mindful-path/image-2.png";
-import mindfulpathImg3 from "../../public/images/projects/mindful-path/image-3.png";
+import mindfulpathImg1 from "../../../public/images/projects/mindful-path/image-1.png";
+import mindfulpathImg2 from "../../../public/images/projects/mindful-path/image-2.png";
+import mindfulpathImg3 from "../../../public/images/projects/mindful-path/image-3.png";
 
 // QuickBites
-// import quickBitesImg1 from "../../public/images/projects/quick-bites/image-1.png";
+import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
+
+// BookBarter
+import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";
 
 // import { StaticImageData } from "next/image";
 import { ProjectCaseStudy } from "@/schemas/ProjectSchema";
@@ -42,10 +45,10 @@ export const projectData: ProjectCaseStudy[] = [
     features: [
       { feature: "Responsive UI with a modern design", done: true },
       { feature: "Accessibility (labels, focus states, keyboard nav)", done: true },
-      { feature: "Project filtering/search", done: true },
       { feature: "Animations", done: true },
       { feature: "Contact form with validation", done: true },
       { feature: "Skills carousel", done: true },
+      { feature: "Project case studies", done: true },
     ],
     pages: [
       { feature: "Home (hero, about, projects, skills, contact)", done: true },
@@ -53,7 +56,26 @@ export const projectData: ProjectCaseStudy[] = [
       { feature: "Project Slugs (overview, context, scope, techstack, gallery)", done: true },
       { feature: "Contact (form)", done: true },
     ],
-    techstack: ["HTML", "CSS", "Tailwind CSS", "Next JS"],
+    techstack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "React Icons",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Git & GitHub",
+      "Vercel (deployment)",
+      "Accessibility (WCAG basics, alt text, semantic HTML)",
+      "Basic SEO (metadata, OpenGraph tags)",
+      "Responsive Design (mobile-first)",
+      "Component Architecture",
+      "Image Optimization (Next/Image)",
+      "Static Site Generation (SSG)",
+      "Mock Data & Dynamic Routing",
+    ],
     gallery: [{ src: portfolioImg1, alt: "Portfolio hero" }],
   },
   {
@@ -110,20 +132,25 @@ export const projectData: ProjectCaseStudy[] = [
       { feature: "Contact/Support (form + knowledge base)", done: false },
     ],
     techstack: [
-      "Next JS",
-      " React 18",
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
       "TypeScript",
+      "React",
+      "Next.js",
+      "React Icons",
       "Tailwind CSS",
       "Framer Motion",
-      " React Icons",
-      "Supabase",
-      "Vercel",
-      "Stripe",
-      "Git",
-      "Github",
+      "Git & GitHub",
+      "RESTful APIs (static data simulated)",
+      "Vercel (deployment)",
+      "Accessibility (WCAG basics, alt text, semantic HTML)",
+      "Basic SEO (metadata, OpenGraph tags)",
+      "Responsive Design (mobile-first)",
+      "Component Architecture",
+      "Image Optimization (Next/Image)",
+      "Static Site Generation (SSG)",
+      "Mock Data & Dynamic Routing",
     ],
     gallery: [
       { src: mindfulpathImg1, alt: "Login screen" },
@@ -136,15 +163,15 @@ export const projectData: ProjectCaseStudy[] = [
   //   slug: "quick-bites",
   //   cover: { src: quickBitesImg1, alt: "QuickBites hero", caption: "" },
   //   role: "Design & Development",
-  //   repo: "",
+  //   repo: "N/A",
   //   backgroundColor: "#ffd700",
-  //   projectType: "",
+  //   projectType: "Blog",
   //   personalClient: "Personal",
   //   duration: "N/A",
   //   status: "In Progress",
   //   year: 2025,
   //   lastUpdated: "N/A",
-  //   demo: "",
+  //   demo: "N/A",
   //   description:
   //     "QuickBites is a modern recipe website that showcases a curated collection of fast, healthy, and delicious meals. It features a user-friendly layout, filterable recipe listings, detailed slug pages for each dish, and social proof elemtns like awrds and testimonials - all styled with a clean, responsive UI.",
   //   solution:
@@ -158,94 +185,114 @@ export const projectData: ProjectCaseStudy[] = [
   //     "Parents in need of quick and reliable family meals",
   //     "Anyone who wants to cook fast without sacrificing taste or quality",
   //   ],
-  //   features: [{ feature: "", done: true }],
-  //   pages: [{ feature: "", done: true }],
-  //   techstack: [],
+  //   features: [
+  //     { feature: "Responsive hero section with featured recipe", done: true },
+  //     { feature: "Awards & recognition display with icons and motion", done: true },
+  //     { feature: "Favourite recipes grid with CTA to view more", done: true },
+  //     { feature: "Dynamic recipe listing with hover effects", done: true },
+  //     { feature: "Filter/search bar for recipes (by tags, time, etc)", done: true },
+  //     { feature: "Individual recipe slug pages with full details", done: true },
+  //     { feature: "Meet the Team section with avatars and socials", done: true },
+  //     { feature: "User testimonials section for social proof", done: true },
+  //     { feature: "Static ratings from external review sites", done: true },
+  //     { feature: "Reusable card components (recipes, team, testimonials)", done: true },
+  //     { feature: "Clean, mobile-first layout and accessibility features", done: true },
+  //   ],
+  //   pages: [
+  //     { feature: "Home (hero, awards, featured recipes, testimonials)", done: true },
+  //     { feature: "Recipes (filterable grid of recipes)", done: true },
+  //     { feature: "Recipe Slug (hero, detailed recipe info)", done: true },
+  //     { feature: "About (brand story, team bios, optional contact)", done: true },
+  //     { feature: "404 / Fallback (custom not found page)", done: true },
+  //   ],
+  //   techstack: [
+  //     "HTML5",
+  //     "CSS3",
+  //     "JavaScript (ES6+)",
+  //     "TypeScript",
+  //     "React",
+  //     "Next.js (App Router)",
+  //     "Tailwind CSS",
+  //     "Framer Motion",
+  //     "Git & GitHub",
+  //     "RESTful APIs (static data simulated)",
+  //     "Vercel (deployment)",
+  //     "Accessibility (WCAG basics, alt text, semantic HTML)",
+  //     "Basic SEO (metadata, OpenGraph tags)",
+  //     "Responsive Design (mobile-first)",
+  //     "Component Architecture",
+  //     "Image Optimization (Next/Image)",
+  //     "Static Site Generation (SSG)",
+  //     "Mock Data & Dynamic Routing",
+  //   ],
   //   gallery: [{ src: quickBitesImg1, alt: "Hero" }],
   // },
 
+  // {
+  //   title: "BookBarter",
+  //   slug: "book-barter",
+  //   cover: { src: bookBarterImg1, alt: "BookBarter Hero", caption: "" },
+  //   role: "Design & Development",
+  //   repo: "",
+  //   backgroundColor: "#ffb347",
+  //   projectType: "",
+  //   personalClient: "Personal",
+  //   year: 2025,
+  //   lastUpdated: "",
+  //   duration: "",
+  //   status: "In Progress",
+  //   demo: "",
+  //   description: "",
+  //   problem: "",
+  //   solution: "",
+  //   audience: [""],
+  //   features: [{ feature: "", done: true }],
+  //   pages: [{ feature: "", done: true }],
+  //   techstack: [""],
+  //   gallery: [{ src: bookBarterImg1, alt: "" }],
+  // },
+
+  // {
+  //   title: "",
+  //   slug: "",
+  //   cover: { src: "", alt: "", caption: "" },
+  //   role: "",
+  //   repo: "",
+  //   backgroundColor: "",
+
+  //   projectType: "",
+  //   personalClient: "",
+  //   year: "",
+  //   lastUpdated: "",
+  //   duration: "",
+  //   status: "",
+  //   demo: "",
+
+  //   description: "",
+  //   problem: "",
+  //   solution: "",
+  //   audience: [""],
+
+  //   features: [{ feature: "", done: true }],
+  //   pages: [{ feature: "", done: true }],
+
+  //   techstack: [""],
+
+  //   gallery: [{ src: "", alt: "" }],
+  // },
+
   // =======================================================================
   // =======================================================================
   // =======================================================================
   // =======================================================================
   // =======================================================================
 
-  // {
-  //   id: 1,
-  //   title: "Portfolio",
-  //   slug: "portfolio",
-  //   gallery: [portfolioImg1],
-  //   role: "Design & Development",
-  //   repo: "https://github.com/OliverShenton/portfolio",
-  //   demo: "https://oliver-shenton.com/",
-  //   bgColor: "#00bfff",
-  //   websiteType:
-  //     "Personal / Professional brand site centered on curated work samples, and case studies.",
-  //   progress: "Completed",
-  //   description: "",
-  //   purpose: "",
-  //   problem: "",
-  //   features: [""],
-  //   pages: ["Home - Hero, About, Projects, Skills, Contact", "Projects", "Contact"],
-  //   techstack: ["HTML", "CSS", "Tailwind", "JavaScript", "TypeScript", "React", "Next JS"],
-  //   contribution: "",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Mindful Path",
-  //   slug: "mindfulpath",
-  //   role: "Design & Development",
-  //   gallery: [
-  //     { src: mindfulpathImg1, alt: "Login screen" },
-  //     { src: mindfulpathImg2, alt: "" },
-  //     { src: mindfulpathImg3, alt: "" },
-  //   ],
-  //   // gallery: [mindfulpathImg1, mindfulpathImg2, mindfulpathImg3],
-  //   repo: "https://github.com/OliverShenton/mindful-path",
-  //   demo: "https://mindful-path-mu.vercel.app/",
-  //   bgColor: "#b026ff",
-  //   websiteType: "SaaS-style web app with a marketing site and logged-in dashboard.",
-  //   progress: "In Progress",
-  //   description:
-  //     "MindfulPath is a mental wellness and meditation platform aimed at busy professionals who want to improve focus, reduce stress, and build healthier habits. It provides guided meditations, breathing exercises, daily journaling, and expert articles on mindfulness.",
-  //   purpose:
-  //     "The primary goal of the site is to educate users and generate subscriptions for premium guided content.",
-  //   problem:
-  //     "Users find it hard to keep a consistent practice; existing apps feel noisy and unfocused.",
-  //   features: [
-  //     "User authentication",
-  //     "Dashboard with meditation progress",
-  //     "Search and filter for guided meditations",
-  //     "Blog with categories and tags",
-  //     "Dark mode toggle",
-  //     "Pricing with stripe integration",
-  //   ],
-  //   pages: [
-  //     "Home - Hero with CTA, features, testimonials, pricing preview.",
-  //     "About - Company story, mission, team photos.",
-  //     "Blog/Resources - Articles on mindfulness, stress, productivity",
-  //     "Pricing - Free vs Premium breakdown",
-  //     "Sign Up / Login - Authentication with email and social login.",
-  //     "Dashboard (auth only) - Personalised meditation plan, progress tracker, saved sessions.",
-  //     "Admin Panel - Manage content, users.",
-  //   ],
-  //   techstack: ["Next JS", "Tailwind", "HTML", "CSS", "JavaScript", "TypeScript"],
-  //   contribution: "",
-  // },
   // {
   //   id: 3,
   //   bgColor: "#ffb347",
   //   title: "BookBarter",
   //   role: "Design & Development",
   //   images: [bookbarterImg1],
-  //   github: "/",
-  // },
-  // {
-  //   id: 4,
-  //   bgColor: "#ffd700",
-  //   title: "QuickBites",
-  //   role: "Design & Development",
-  //   images: [quickBitesImg1],
   //   github: "/",
   // },
   // {
