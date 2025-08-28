@@ -38,7 +38,7 @@ const ContactForm = () => {
   if (state.errors) {
     return (
       <div className="h-full flex flex-col items-center justify-center gap-8 p-8 border rounded text-center bg-[var(--card-background)] border-neutral-800 w-full shadow-sm shadow-black  md:p-12 z-10">
-        <p>Your message failed to send. Let's try again.</p>
+        <p>Your message failed to send. Let&apos;s try again.</p>
         <button
           onClick={reset}
           className="px-5 py-3 rounded bg-red-500 hover:bg-red-700 text-white cursor-pointer">
