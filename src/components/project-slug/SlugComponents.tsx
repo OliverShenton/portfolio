@@ -1,8 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
 // Base classes
-const titleClass = "text-gray-400 text-[15px]";
-const textClass = "text-gray-100 text-[17px]";
+const titleClass = "text-[var(--secondary-text)] text-[15px]";
+const textClass = "text-[var(--text)] text-[17px]";
 
 // Section component
 export const SlugSection = ({
@@ -72,7 +72,7 @@ export const SlugHr = () => {
 };
 
 // Image gallery component
-type ImageItem = { src: StaticImageData | string; alt?: string };
+type ImageItem = { src: StaticImageData | string; alt: string };
 
 type SlugImageGalleryProps = {
   gallery?: ImageItem[];
@@ -82,7 +82,14 @@ export const SlugImageGallery = ({ gallery = [] }: SlugImageGalleryProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {gallery.map((g: ImageItem, idx: number) => (
-        <Image key={idx} src={g.src} alt={g.alt ?? ""} />
+        <div
+          key={idx}
+          className="relative hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <Image src={g.src} alt={g.alt} className="mb-2 rounded-xl border-neutral-800" />
+          <p className="absolute bottom-4 left-2 px-2 py-1 border border-neutral-800 bg-black/50 rounded-full text-sm text-[var(--secondary-text)] ">
+            {g.alt}
+          </p>
+        </div>
       ))}
     </div>
   );

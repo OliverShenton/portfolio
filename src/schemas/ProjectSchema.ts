@@ -12,7 +12,6 @@ export interface FeatureItem {
 export interface ImageItem {
   src: StaticImageData | string;
   alt: string;
-  caption?: string;
 }
 
 export interface ProjectCard {

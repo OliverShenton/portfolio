@@ -1,5 +1,6 @@
 // Portfolio
 import portfolioImg1 from "../../../public/images/projects/portfolio/image-1.png";
+import portfolioImg2 from "../../../public/images/projects/portfolio/image-2.png";
 
 // MindfulPath
 import mindfulpathImg1 from "../../../public/images/projects/mindful-path/image-1.png";
@@ -18,7 +19,7 @@ export const projectData: ProjectCaseStudy[] = [
   {
     title: "Portfolio",
     slug: "portfolio",
-    cover: { src: portfolioImg1, alt: "Portfolio hero", caption: "" },
+    cover: { src: portfolioImg1, alt: "Portfolio hero" },
     role: "Design & Development",
     repo: "https://github.com/OliverShenton/portfolio",
     backgroundColor: "#00bfff",
@@ -75,12 +76,15 @@ export const projectData: ProjectCaseStudy[] = [
       "Static Site Generation (SSG)",
       "Mock Data & Dynamic Routing",
     ],
-    gallery: [{ src: portfolioImg1, alt: "Portfolio hero" }],
+    gallery: [
+      { src: portfolioImg1, alt: "Portfolio hero" },
+      { src: portfolioImg2, alt: "Portfolio projects page" },
+    ],
   },
   {
     title: "MindfulPath",
     slug: "mindful-path",
-    cover: { src: mindfulpathImg1, alt: "MindfulPath hero", caption: "" },
+    cover: { src: mindfulpathImg1, alt: "MindfulPath hero" },
     role: "Design & Development",
     repo: "https://github.com/OliverShenton/mindful-path",
     backgroundColor: "#b026ff",

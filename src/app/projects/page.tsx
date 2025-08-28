@@ -16,7 +16,10 @@ const ProjectsPage = () => {
   return (
     <SectionContainer id="projects-page" relative>
       {/* Background */}
-      <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
+      <div
+        id="projects-page-background"
+        className="absolute inset-0 bg-cover bg-center z-0 h-full"
+      />
 
       <Hr />
       {/* Title */}

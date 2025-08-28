@@ -1,4 +1,4 @@
-import ContactContainer from "@/components/contact/ContactContainer";
+import ContactContainer from "@/components/contact/ContactCard";
 import Hr from "@/components/global/Hr";
 import SectionContainer from "@/components/global/SectionContainer";
 import { Metadata } from "next";
@@ -13,7 +13,10 @@ const ContactPage = () => {
   return (
     <SectionContainer id="contact-page">
       {/* Background */}
-      <div id="projects-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
+      <div
+        id="contact-page-background"
+        className="absolute inset-0 bg-cover bg-center z-0 h-full"
+      />
 
       <Hr />
 

@@ -16,7 +16,7 @@ const SlugPage = ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <SectionContainer id="slug-page" relative>
       {/* Background */}
-      <div id="slug-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
+      <div id="slug-page-background" className="absolute inset-0 bg-cover bg-center z-0 h-full" />
 
       {/* Main content */}
       <SlugContent
