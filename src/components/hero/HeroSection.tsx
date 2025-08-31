@@ -5,7 +5,7 @@ import SectionContainer from "../global/SectionContainer";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import HeroSlides from "./HeroSlides";
-import HeroBackground from "./HeroBackground";
+// import HeroBackground from "./HeroBackground";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Button } from "../global/Button";
 
@@ -37,7 +37,7 @@ const HeroSection = () => {
   return (
     <SectionContainer id="hero" fullScreen relative>
       {/* Animated background */}
-      <HeroBackground />
+      {/* <HeroBackground /> */}
 
       {/* Hero slides */}
       <HeroSlides

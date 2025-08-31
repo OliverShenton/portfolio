@@ -37,7 +37,7 @@ const DesktopNavigation = () => {
       </ul>
 
       {/* Navigation separator */}
-      <div className="border-l border-gray-600 h-4" />
+      <div className="border-l border-[var(--secondary-text)] h-4 rounded-full" />
 
       {/* Social links navigation */}
       <SocialNavigation />

@@ -6,16 +6,11 @@ import ProjectGrid from "./ProjectGrid";
 const ProjectsSection = () => {
   return (
     <SectionContainer id="projects" ariaLabelledBy="projects-heading" relative>
-      {/* Background */}
-      <div
-        id="projects-background"
-        className="absolute inset-0 bg-cover bg-center opacity-25 z-0"
-      />
-
       {/* Title */}
       <SectionTitle
-        title="Selected Projects"
-        subtitle="Check out a curated selection showcasing my best work."
+        title="My Best Projects"
+        subtitle="Curated showcase with code and context"
+        markerColor="text-amber-500 border-amber-500"
       />
 
       {/* Content */}

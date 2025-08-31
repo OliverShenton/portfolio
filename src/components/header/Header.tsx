@@ -66,7 +66,7 @@ const Header = () => {
         <div className="max-w-[88rem] mx-auto flex items-center justify-between p-4 md:px-6">
           {/* Title */}
           <Link href="/">
-            <h1 className="text-xl md:text-2xl z-50 uppercase font-bold cursor-pointer hover:text-amber-500">
+            <h1 className="text-xl md:text-2xl z-50 uppercase font-bold cursor-pointer hover:text-amber-500 transition-colors duration-300">
               Oliver Shenton
             </h1>
           </Link>

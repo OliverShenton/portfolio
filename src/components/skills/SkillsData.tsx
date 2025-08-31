@@ -1,60 +1,61 @@
-import { BsUniversalAccess } from "react-icons/bs";
+import { CiDatabase, CiGrid42 } from "react-icons/ci";
 import { FaReact } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
 import { GiWireframeGlobe } from "react-icons/gi";
-import { IoIosCode } from "react-icons/io";
 import { IoSpeedometerOutline } from "react-icons/io5";
-import { MdOutlineWebhook } from "react-icons/md";
 
 export const skillsData = [
   {
     id: 1,
-    title: "React Specialist",
+    title: "React & Next.js",
     icon: <FaReact title="React Icon" />,
-    description: "Mastery of hooks, context, composition, and scalable component architecture.",
+    description:
+      "Component architecture, server components, routing, and code-splitting foir fast, maintainable UIs.",
     hoverShadowColor: "hover:shadow-[#61dafb]",
     hoverIconColor: "group-hover:text-[#61dafb]",
   },
   {
     id: 2,
     title: "JavaScript & TypeScript",
-    icon: <IoIosCode title="JS and TS Icon" />,
+    icon: <FaCode title="JS and TS Icon" />,
     description:
-      "Writing clean, modern JavaScript and building robust, type-safe applications with TypeScript",
+      "Modern JavaScript patterns with strict TypeScript for safe, refactor-friendly code.",
     hoverShadowColor: "hover:shadow-[#f7df2e]",
     hoverIconColor: "group-hover:text-[#f7df2e]",
   },
   {
     id: 3,
     title: "Responsive Design",
-    icon: <BsUniversalAccess title="Responsive Design Icon" />,
+    icon: <CiGrid42 title="Responsive Design Icon" />,
     description:
-      "Crafting mobile-first experiences with fluid layouts, breakpoints, and adaptive grids.",
+      "Mobil-first layouts with fluid scales, container queries, and adaptive grids across breakpoints.",
     hoverShadowColor: "hover:shadow-[#00bfa6]",
     hoverIconColor: "group-hover:text-[#00bfa6]",
   },
   {
     id: 4,
-    title: "UI/UX Craftmanship",
+    title: "UI/UX Craftsmanship",
     icon: <GiWireframeGlobe title="UI and UX Icon" />,
     description:
-      "Designing with pixel-perfect precision, intuitive usability, and thoughtful micro-interactions.",
+      "Token-driven theming, accessible components, and polished micro-interactions that feel intentional.",
     hoverShadowColor: "hover:shadow-[#ff4081]",
     hoverIconColor: "group-hover:text-[#ff4081]",
   },
   {
     id: 5,
-    title: "State Management",
-    icon: <MdOutlineWebhook title="State Management Icon" />,
-    description: "Managing local and shared states with React hooks, and Context.",
+    title: "State & Data",
+    icon: <CiDatabase title="State Management Icon" />,
+    description:
+      "React Query, forms, and local/global state (Redux) with optimistic updates and caching.",
     hoverShadowColor: "hover:shadow-[#3eaf7c]",
     hoverIconColor: "group-hover:text-[#3eaf7c]",
   },
   {
     id: 6,
-    title: "Performance & Optimisation",
+    title: "Performance & Accessibility",
     icon: <IoSpeedometerOutline title="Performance and Optimisation Icon" />,
     description:
-      "Enhancing application performance with smart rendering, lazy-loading, and React best practises.",
+      "Web Vitals budgets, image strategy, and a11y patterns to keep p75 LCP < 2s and axe ≥ 95.",
     hoverShadowColor: "hover:shadow-[#ff6d00]",
     hoverIconColor: "group-hover:text-[#ff6d00]",
   },

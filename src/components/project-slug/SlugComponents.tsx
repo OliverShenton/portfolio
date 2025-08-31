@@ -86,7 +86,7 @@ export const SlugImageGallery = ({ gallery = [] }: SlugImageGalleryProps) => {
           key={idx}
           className="relative hover:scale-105 transition-transform duration-300 cursor-pointer">
           <Image src={g.src} alt={g.alt} className="mb-2 rounded-xl border-neutral-800" />
-          <p className="absolute bottom-4 left-2 px-2 py-1 border border-neutral-800 bg-black/50 rounded-full text-sm text-[var(--secondary-text)] ">
+          <p className="absolute bottom-4 left-2 px-2 py-1 border border-neutral-800 bg-black/75 rounded-full text-sm text-[var(--secondary-text)] ">
             {g.alt}
           </p>
         </div>

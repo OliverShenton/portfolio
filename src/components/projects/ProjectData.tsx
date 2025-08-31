@@ -1,6 +1,7 @@
 // Portfolio
 import portfolioImg1 from "../../../public/images/projects/portfolio/image-1.png";
 import portfolioImg2 from "../../../public/images/projects/portfolio/image-2.png";
+import portfolioImg3 from "../../../public/images/projects/portfolio/image-3.png";
 
 // MindfulPath
 import mindfulpathImg1 from "../../../public/images/projects/mindful-path/image-1.png";
@@ -8,7 +9,7 @@ import mindfulpathImg2 from "../../../public/images/projects/mindful-path/image-
 import mindfulpathImg3 from "../../../public/images/projects/mindful-path/image-3.png";
 
 // QuickBites
-// import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
+import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
 
 // BookBarter
 // import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";
@@ -79,6 +80,7 @@ export const projectData: ProjectCaseStudy[] = [
     gallery: [
       { src: portfolioImg1, alt: "Portfolio hero" },
       { src: portfolioImg2, alt: "Portfolio projects page" },
+      { src: portfolioImg3, alt: "Contact page & contact form" },
     ],
   },
   {
@@ -161,75 +163,75 @@ export const projectData: ProjectCaseStudy[] = [
       { src: mindfulpathImg3, alt: "Reset password screen" },
     ],
   },
-  // {
-  //   title: "QuickBites",
-  //   slug: "quick-bites",
-  //   cover: { src: quickBitesImg1, alt: "QuickBites hero", caption: "" },
-  //   role: "Design & Development",
-  //   repo: "N/A",
-  //   backgroundColor: "#ffd700",
-  //   projectType: "Blog",
-  //   personalClient: "Personal",
-  //   duration: "N/A",
-  //   status: "In Progress",
-  //   year: 2025,
-  //   lastUpdated: "N/A",
-  //   demo: "N/A",
-  //   description:
-  //     "QuickBites is a modern recipe website that showcases a curated collection of fast, healthy, and delicious meals. It features a user-friendly layout, filterable recipe listings, detailed slug pages for each dish, and social proof elemtns like awrds and testimonials - all styled with a clean, responsive UI.",
-  //   solution:
-  //     "The goal of QuickBites is to provide users with a seamless and enjoyable way to discover and cook nutritious meals quickly. It focuses on accessibility, performance, and user experience to make cooking approachable for everyone.",
-  //   problem:
-  //     "Busy people often struggle to find reliable, healthy recipes that don't require excessive time or obscure ingredients. Most recipe sites are bloated, cluttered with ads, or overwhelming to navigate.",
-  //   audience: [
-  //     "Busy professionals looking for healthy meal prep ideas",
-  //     "Students or beginners trying to cook at home",
-  //     "Fitness enthusiasts interested in nutritional balance",
-  //     "Parents in need of quick and reliable family meals",
-  //     "Anyone who wants to cook fast without sacrificing taste or quality",
-  //   ],
-  //   features: [
-  //     { feature: "Responsive hero section with featured recipe", done: true },
-  //     { feature: "Awards & recognition display with icons and motion", done: true },
-  //     { feature: "Favourite recipes grid with CTA to view more", done: true },
-  //     { feature: "Dynamic recipe listing with hover effects", done: true },
-  //     { feature: "Filter/search bar for recipes (by tags, time, etc)", done: true },
-  //     { feature: "Individual recipe slug pages with full details", done: true },
-  //     { feature: "Meet the Team section with avatars and socials", done: true },
-  //     { feature: "User testimonials section for social proof", done: true },
-  //     { feature: "Static ratings from external review sites", done: true },
-  //     { feature: "Reusable card components (recipes, team, testimonials)", done: true },
-  //     { feature: "Clean, mobile-first layout and accessibility features", done: true },
-  //   ],
-  //   pages: [
-  //     { feature: "Home (hero, awards, featured recipes, testimonials)", done: true },
-  //     { feature: "Recipes (filterable grid of recipes)", done: true },
-  //     { feature: "Recipe Slug (hero, detailed recipe info)", done: true },
-  //     { feature: "About (brand story, team bios, optional contact)", done: true },
-  //     { feature: "404 / Fallback (custom not found page)", done: true },
-  //   ],
-  //   techstack: [
-  //     "HTML5",
-  //     "CSS3",
-  //     "JavaScript (ES6+)",
-  //     "TypeScript",
-  //     "React",
-  //     "Next.js (App Router)",
-  //     "Tailwind CSS",
-  //     "Framer Motion",
-  //     "Git & GitHub",
-  //     "RESTful APIs (static data simulated)",
-  //     "Vercel (deployment)",
-  //     "Accessibility (WCAG basics, alt text, semantic HTML)",
-  //     "Basic SEO (metadata, OpenGraph tags)",
-  //     "Responsive Design (mobile-first)",
-  //     "Component Architecture",
-  //     "Image Optimization (Next/Image)",
-  //     "Static Site Generation (SSG)",
-  //     "Mock Data & Dynamic Routing",
-  //   ],
-  //   gallery: [{ src: quickBitesImg1, alt: "Hero" }],
-  // },
+  {
+    title: "QuickBites",
+    slug: "quick-bites",
+    cover: { src: quickBitesImg1, alt: "QuickBites hero" },
+    role: "Design & Development",
+    repo: "N/A",
+    backgroundColor: "#ffd700",
+    projectType: "Blog",
+    personalClient: "Personal",
+    duration: "N/A",
+    status: "In Progress",
+    year: 2025,
+    lastUpdated: "N/A",
+    demo: "N/A",
+    description:
+      "QuickBites is a modern recipe website that showcases a curated collection of fast, healthy, and delicious meals. It features a user-friendly layout, filterable recipe listings, detailed slug pages for each dish, and social proof elemtns like awrds and testimonials - all styled with a clean, responsive UI.",
+    solution:
+      "The goal of QuickBites is to provide users with a seamless and enjoyable way to discover and cook nutritious meals quickly. It focuses on accessibility, performance, and user experience to make cooking approachable for everyone.",
+    problem:
+      "Busy people often struggle to find reliable, healthy recipes that don't require excessive time or obscure ingredients. Most recipe sites are bloated, cluttered with ads, or overwhelming to navigate.",
+    audience: [
+      "Busy professionals looking for healthy meal prep ideas",
+      "Students or beginners trying to cook at home",
+      "Fitness enthusiasts interested in nutritional balance",
+      "Parents in need of quick and reliable family meals",
+      "Anyone who wants to cook fast without sacrificing taste or quality",
+    ],
+    features: [
+      { feature: "Responsive hero section with featured recipe", done: true },
+      { feature: "Awards & recognition display with icons and motion", done: true },
+      { feature: "Favourite recipes grid with CTA to view more", done: true },
+      { feature: "Dynamic recipe listing with hover effects", done: true },
+      { feature: "Filter/search bar for recipes (by tags, time, etc)", done: true },
+      { feature: "Individual recipe slug pages with full details", done: true },
+      { feature: "Meet the Team section with avatars and socials", done: true },
+      { feature: "User testimonials section for social proof", done: true },
+      { feature: "Static ratings from external review sites", done: true },
+      { feature: "Reusable card components (recipes, team, testimonials)", done: true },
+      { feature: "Clean, mobile-first layout and accessibility features", done: true },
+    ],
+    pages: [
+      { feature: "Home (hero, awards, featured recipes, testimonials)", done: true },
+      { feature: "Recipes (filterable grid of recipes)", done: true },
+      { feature: "Recipe Slug (hero, detailed recipe info)", done: true },
+      { feature: "About (brand story, team bios, optional contact)", done: true },
+      { feature: "404 / Fallback (custom not found page)", done: true },
+    ],
+    techstack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React",
+      "Next.js (App Router)",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Git & GitHub",
+      "RESTful APIs (static data simulated)",
+      "Vercel (deployment)",
+      "Accessibility (WCAG basics, alt text, semantic HTML)",
+      "Basic SEO (metadata, OpenGraph tags)",
+      "Responsive Design (mobile-first)",
+      "Component Architecture",
+      "Image Optimization (Next/Image)",
+      "Static Site Generation (SSG)",
+      "Mock Data & Dynamic Routing",
+    ],
+    gallery: [{ src: quickBitesImg1, alt: "Hero" }],
+  },
 
   // {
   //   title: "BookBarter",

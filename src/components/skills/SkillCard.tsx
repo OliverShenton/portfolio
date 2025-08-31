@@ -23,7 +23,7 @@ const SkillCard = ({
     <motion.article
       className={`border border-neutral-800 bg-neutral-900 overflow-hidden shadow-black shadow-[0px_3px_8px_rgba(0_0_0_0.24)] rounded-xl px-6 py-10 group text-center flex flex-col items-center ${hoverShadowColor} transition-shadow duration-300 h-full min-h-[231px]`}
       role="group"
-      whileHover={{ scale: 1.05, y: -4 }}
+      whileHover={{ scale: 1.01, y: -4 }}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       whileInView="visible"

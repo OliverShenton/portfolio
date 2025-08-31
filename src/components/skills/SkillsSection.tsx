@@ -4,17 +4,16 @@ import Section from "../global/SectionContainer";
 import SkillCard from "./SkillCard";
 import { skillsData } from "./SkillsData";
 import SectionTitle from "../global/SectionTitle";
-import Carousel from "./Carousel";
 
 const SkillsSection = () => {
   return (
-    <Section id="skills" relative>
+    <Section id="skills">
       <SectionTitle
-        title="Skills Overview"
-        subtitle="A snapshot of my frontend expertise and technical toolkit."
+        title="What I Do"
+        subtitle="Core strengths and daily toolkit"
+        markerColor="text-emerald-500 border-emerald-500"
       />
-      <Carousel />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 z-20">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 z-20">
         {skillsData.map((skill) => (
           <SkillCard
             key={skill.id}

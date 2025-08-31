@@ -1,20 +1,20 @@
-import Hr from "../global/Hr";
 import FooterSocialNavigation from "./FooterSocialNavigation";
 
 const FooterSection = () => {
   return (
-    <footer id="footer-section" className="relative z-30">
-      <div className="max-w-[88rem] mx-auto space-y-12 px-6 md:px-8 py-12">
-        {/* <Hr /> */}
-        <div className="flex flex-col md:flex-row gap-12 items-center justify-between text-gray-300">
-          <p className="text-base text-center">&copy; Oliver Shenton. All rights reserved.</p>
-          <FooterSocialNavigation />
-        </div>
-        <Hr opaque />
-        <div className="flex flex-col items-center justify-center text-sm text-gray-300 gap-2">
+    <footer
+      id="footer-section"
+      className="text-center bg-[#0e0c10] border-t border-white/5 text-stone-400 relative z-30">
+      <div className="space-y-12 px-6 md:px-8 py-12">
+        <p className="text-sm">
+          Design & code by Oliver Shenton. Built with care, shipped with curiosity.
+        </p>
+        <FooterSocialNavigation />
+        <div className="flex flex-col items-center justify-center text-sm gap-4">
           <p>Deployed on Vercel</p>
           <p>Styled by Tailwind</p>
         </div>
+        <p className="text-sm text-center">&copy; Oliver Shenton. All rights reserved.</p>
       </div>
     </footer>
   );

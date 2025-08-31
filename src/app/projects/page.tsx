@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 };
 
 const ProjectsPage = () => {
-  // const [activeFilter, setActiveFilter] = useState("All");
-
   return (
     <SectionContainer id="projects-page" relative>
       {/* Background */}
@@ -22,10 +20,12 @@ const ProjectsPage = () => {
       />
 
       <Hr />
+
       {/* Title */}
       <SectionTitle
-        title="All Projects"
-        subtitle=" A selection of my favourite projects, showcasing my skills in design and development."
+        title="All My Projects"
+        subtitle="Curated showcase with code and context"
+        markerColor="text-amber-500 border-amber-500"
       />
 
       {/* Project cards */}
