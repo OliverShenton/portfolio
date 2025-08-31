@@ -25,7 +25,7 @@ const ProjectsPage = () => {
       <SectionTitle
         title="All My Projects"
         subtitle="Curated showcase with code and context"
-        markerColor="text-amber-500 border-amber-500"
+        marker="amber"
       />
 
       {/* Project cards */}
