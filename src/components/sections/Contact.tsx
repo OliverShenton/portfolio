@@ -10,7 +10,7 @@ const Contact = () => {
       <SectionTitle
         title="Get In Touch"
         subtitle="Open for collaborations and opportunities"
-        marker="indigo"
+        marker="emerald"
       />
 
       <div

@@ -2,7 +2,6 @@
 
 import Section from "../ui/global/SectionContainer";
 import SectionTitle from "../ui/global/SectionTitle";
-import Techstack from "../ui/about/Techstack";
 import Details from "../ui/about/Details";
 
 const About = () => {
@@ -13,9 +12,6 @@ const About = () => {
 
       {/* Details */}
       <Details />
-
-      {/* Techstack */}
-      <Techstack />
     </Section>
   );
 };

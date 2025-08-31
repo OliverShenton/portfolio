@@ -1,8 +1,16 @@
+"use client";
+
 import { markerColor, type SectionTitle } from "@/schemas/SectionSchema";
+import { motion } from "motion/react";
 
 const SectionTitle = ({ title, subtitle, marker }: SectionTitle) => {
   return (
-    <div className={`w-full flex items-start justify-start text-left gap-4 md:gap-8`}>
+    <motion.div
+      className={`w-full flex items-start justify-start text-left gap-4 md:gap-8`}
+      initial={{ x: -25, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ type: "spring", stiffness: 60, damping: 15 }}>
       <div className={`border-l-4 py-1 px-4 ${markerColor[marker]}`}>
         {subtitle && (
           <h3
@@ -14,7 +22,7 @@ const SectionTitle = ({ title, subtitle, marker }: SectionTitle) => {
           {title}
         </h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

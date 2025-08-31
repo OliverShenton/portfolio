@@ -1,4 +1,4 @@
-import ContactContainer from "@/components/ui/contact/ContactCard";
+import ContactCard from "@/components/ui/contact/ContactCard";
 import Hr from "@/components/ui/global/Hr";
 import SectionContainer from "@/components/ui/global/SectionContainer";
 import { Metadata } from "next";
@@ -21,7 +21,7 @@ const ContactPage = () => {
       <Hr />
 
       {/* Content */}
-      <ContactContainer />
+      <ContactCard />
     </SectionContainer>
   );
 };

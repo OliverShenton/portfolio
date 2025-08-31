@@ -1,0 +1,3 @@
+// About section
+- Add filter
+- Add staggered animation

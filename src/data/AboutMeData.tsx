@@ -1,22 +1,29 @@
 export const Story =
-  "Hello - my name is Oliver. I am a frontend developer who thrives on turning designs into interactive experiences. I specialise in React and UI/UX, building web apps that are performant, accessible, and optimised.";
+  "I'm Oliver, a frontend developer who loves turning designs into fast, accessible, and interactive experiences. My focus is React and UI/UX design - crafting systems thats are amazing, and scale while also keeping interfaces intuitive.";
 
 export const Values = [
   { title: "Clarity over cleverness", text: "simple code is better than magic tricks." },
   { title: "Accessibility as a default", text: "everyone should be able to use what I build." },
-  { title: "Design systems thinking.", text: "consistency matters for scaling projects." },
+  { title: "Design systems thinking", text: "consistency matters for scaling projects." },
+  { title: "Collaboration over self", text: "the best ideas win when working together." },
   { title: "Continuous learning", text: "web development evolves daily. Keep up!" },
 ];
 
 export const Personality = [
-  { title: "Current Focus", text: "build real-world projects with employers and clients." },
   {
-    title: "Future goals",
-    text: "expanding my frontend mastery while building stronger backend skills - on the path to fullstack development.",
+    title: "Current Focus",
+    text: "building real-world products with React & Next.js for clients and employers.",
   },
-  { title: "Learning", text: "through a variety of personal projects, and online learning." },
   {
-    title: "Outside of Code",
-    text: "I love travelling the world, experiencing different cultures.",
+    title: "On the horizon",
+    text: "expanding backend knowledge to become a full-stack developer.",
+  },
+  {
+    title: "Always learning",
+    text: "sharpening skills through personal projects, testing practises, and online courses.",
+  },
+  {
+    title: "Beyond the screen",
+    text: "travelling, discovering cultures, and bringin fresh perspectives back into my work.",
   },
 ];
