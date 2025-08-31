@@ -1,15 +1,15 @@
 // Portfolio
-import portfolioImg1 from "../../../public/images/projects/portfolio/image-1.png";
-import portfolioImg2 from "../../../public/images/projects/portfolio/image-2.png";
-import portfolioImg3 from "../../../public/images/projects/portfolio/image-3.png";
+import portfolioImg1 from "../../public/images/projects/portfolio/image-1.png";
+import portfolioImg2 from "../../public/images/projects/portfolio/image-2.png";
+import portfolioImg3 from "../../public/images/projects/portfolio/image-3.png";
 
 // MindfulPath
-import mindfulpathImg1 from "../../../public/images/projects/mindful-path/image-1.png";
-import mindfulpathImg2 from "../../../public/images/projects/mindful-path/image-2.png";
-import mindfulpathImg3 from "../../../public/images/projects/mindful-path/image-3.png";
+import mindfulpathImg1 from "../../public/images/projects/mindful-path/image-1.png";
+import mindfulpathImg2 from "../../public/images/projects/mindful-path/image-2.png";
+import mindfulpathImg3 from "../../public/images/projects/mindful-path/image-3.png";
 
 // QuickBites
-import quickBitesImg1 from "../../../public/images/projects/quick-bites/image-1.png";
+import quickBitesImg1 from "../../public/images/projects/quick-bites/image-1.png";
 
 // BookBarter
 // import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";

@@ -1,10 +1,6 @@
-export const AboutData = [
-  { id: 1, title: "About Me", text: "", background: "bg-[#12161d]" },
-  { id: 2, title: "My Journey", text: "", background: "bg-[#0f1115]" },
-  { id: 3, title: "Tech Stack", text: "", background: "bg-[#12161d]" },
-];
+import { Techstack } from "@/schemas/TechstachSchema";
 
-export const techData = [
+export const techData: Techstack[] = [
   // --- Core foundations
   { tech: "HTML", level: "Core" },
   { tech: "CSS", level: "Core" },
@@ -20,11 +16,16 @@ export const techData = [
   { tech: "Vite", level: "Core" },
   { tech: "ESLint", level: "Core" },
   { tech: "Prettier", level: "Core" },
+  { tech: "Context API", level: "Core" },
+  { tech: "Visual Studio Code", level: "Core" },
+  { tech: "a11y", level: "Core" },
+  { tech: "Third Party APIs", level: "Capable" },
 
   // --- Forms, state, data
   { tech: "React Hook Form", level: "Capable" },
-  { tech: "TanStack Query", level: "Capable" },
-  { tech: "Redux Toolkit", level: "Capable" },
+  { tech: "Form Spree", level: "Capable" },
+  { tech: "TanStack Query", level: "Learning" },
+  { tech: "Redux Toolkit", level: "Learning" },
   { tech: "Zustand", level: "Learning" },
 
   // --- Testing & quality
@@ -36,9 +37,10 @@ export const techData = [
 
   // --- Backend-adjacent for full-stack Next.js
   { tech: "Node.js", level: "Familiar" },
+  { tech: "Web Sockets", level: "Familiar" },
   { tech: "Auth.js (NextAuth)", level: "Familiar" },
   { tech: "PostgreSQL", level: "Familiar" },
-  { tech: "Firbase", level: "Familiar" },
+  { tech: "Firebase", level: "Familiar" },
   { tech: "Supabase", level: "Familiar" },
   { tech: "MongoDB", level: "Familiar" },
 

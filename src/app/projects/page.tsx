@@ -1,7 +1,7 @@
-import Hr from "@/components/global/Hr";
-import SectionContainer from "@/components/global/SectionContainer";
-import SectionTitle from "@/components/global/SectionTitle";
-import ProjectGrid from "@/components/projects/ProjectGrid";
+import Hr from "@/components/ui/global/Hr";
+import SectionContainer from "@/components/ui/global/SectionContainer";
+import SectionTitle from "@/components/ui/global/SectionTitle";
+import ProjectGrid from "@/components/ui/projects/ProjectGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,16 +1,16 @@
-import SectionContainer from "../global/SectionContainer";
-import { RouterButton } from "../global/Button";
-import SectionTitle from "../global/SectionTitle";
-import ProjectGrid from "./ProjectGrid";
+import SectionContainer from "../ui/global/SectionContainer";
+import { RouterButton } from "../ui/global/Button";
+import SectionTitle from "../ui/global/SectionTitle";
+import ProjectGrid from "../ui/projects/ProjectGrid";
 
-const ProjectsSection = () => {
+const Projects = () => {
   return (
     <SectionContainer id="projects" ariaLabelledBy="projects-heading" relative>
       {/* Title */}
       <SectionTitle
         title="My Best Projects"
         subtitle="Curated showcase with code and context"
-        markerColor="text-amber-500 border-amber-500"
+        marker="amber"
       />
 
       {/* Content */}
@@ -24,4 +24,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default Projects;

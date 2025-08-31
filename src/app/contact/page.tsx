@@ -1,6 +1,6 @@
-import ContactContainer from "@/components/contact/ContactCard";
-import Hr from "@/components/global/Hr";
-import SectionContainer from "@/components/global/SectionContainer";
+import ContactContainer from "@/components/ui/contact/ContactCard";
+import Hr from "@/components/ui/global/Hr";
+import SectionContainer from "@/components/ui/global/SectionContainer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

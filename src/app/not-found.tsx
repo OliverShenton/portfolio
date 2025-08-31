@@ -1,4 +1,4 @@
-import Section from "@/components/global/SectionContainer";
+import Section from "@/components/ui/global/SectionContainer";
 import Link from "next/link";
 
 const NotFound = () => {

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/footer/FooterSection";
-import Header from "@/components/header/Header";
+import Footer from "@/components/ui/footer/FooterSection";
+import Header from "@/components/ui/header/Header";
 import { Inter } from "next/font/google";
-import Hr from "@/components/global/Hr";
+import Hr from "@/components/ui/global/Hr";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 

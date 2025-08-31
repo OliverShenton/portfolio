@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { projectData } from "./ProjectData";
+import { projectData } from "../../../data/ProjectData";
 
 const ProjectGrid = ({ slice }: { slice: number }) => {
   return (

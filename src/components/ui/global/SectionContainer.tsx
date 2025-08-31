@@ -1,14 +1,7 @@
-type SectionContainerProps = {
-  id: string;
-  children: React.ReactNode;
-  ariaLabel?: string;
-  ariaLabelledBy?: string;
-  fullScreen?: boolean;
-  relative?: boolean;
-  className?: string;
-};
+import type { SectionContainer as SectionContainerProps } from "@/schemas/SectionSchema";
 
-const SectionContainer = ({
+// Section setup
+export const SectionContainer = ({
   id,
   children,
   ariaLabel,

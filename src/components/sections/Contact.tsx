@@ -1,17 +1,18 @@
-import { RouterButton } from "../global/Button";
-import Hr from "../global/Hr";
-import SectionContainer from "../global/SectionContainer";
-import SectionTitle from "../global/SectionTitle";
+import { RouterButton } from "../ui/global/Button";
+import Hr from "../ui/global/Hr";
+import SectionContainer from "../ui/global/SectionContainer";
+import SectionTitle from "../ui/global/SectionTitle";
 
-const ContactSection = () => {
+const Contact = () => {
   return (
     <SectionContainer id="contact" ariaLabelledBy="contact-heading">
       {/* Title */}
       <SectionTitle
         title="Get In Touch"
         subtitle="Open for collaborations and opportunities"
-        markerColor="text-indigo-500 border-indigo-500"
+        marker="indigo"
       />
+
       <div
         className="
           relative overflow-hidden rounded-xl w-full
@@ -45,4 +46,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Contact;

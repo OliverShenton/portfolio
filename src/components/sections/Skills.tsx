@@ -1,17 +1,18 @@
 "use client";
 
-import Section from "../global/SectionContainer";
-import SkillCard from "./SkillCard";
-import { skillsData } from "./SkillsData";
-import SectionTitle from "../global/SectionTitle";
+import Section from "../ui/global/SectionContainer";
+import SectionTitle from "../ui/global/SectionTitle";
+import SkillCard from "../ui/skills/SkillCard";
+import { skillsData } from "../ui/skills/SkillsData";
 
-const SkillsSection = () => {
+const Skills = () => {
   return (
     <Section id="skills">
+      {/* Title */}
       <SectionTitle
         title="What I Do"
         subtitle="Core strengths and daily toolkit"
-        markerColor="text-emerald-500 border-emerald-500"
+        marker="emerald"
       />
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 z-20">
         {skillsData.map((skill) => (
@@ -29,4 +30,4 @@ const SkillsSection = () => {
   );
 };
 
-export default SkillsSection;
+export default Skills;

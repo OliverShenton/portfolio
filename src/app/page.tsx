@@ -1,9 +1,8 @@
-import About from "@/components/about/About";
-// import Hero from "@/components/hero/HeroSection";
-import Projects from "@/components/projects/ProjectsSection";
-import ContactSection from "@/components/contact/ContactSection";
-import Skills from "@/components/skills/SkillsSection";
-import Hr from "@/components/global/Hr";
+import Hr from "@/components/ui/global/Hr";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
       <Hr opaque />
       <Skills />
       <Hr opaque />
-      <ContactSection />
+      <Contact />
     </>
   );
 }
