@@ -2,18 +2,8 @@ import type { ProjectCard as ProjectCardProps } from "@/schemas/ProjectSchema";
 import { LinkButton, RouterButton } from "../global/Button";
 import { FaCode, FaInfo } from "react-icons/fa";
 import Image from "next/image";
-import { hover } from "motion";
 
-const hoverClass = "transition-all duration-300";
-
-export const ProjectCard = ({
-  title,
-  slug,
-  cover,
-  role,
-  repo,
-  backgroundColor,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ title, slug, cover, role, repo }: ProjectCardProps) => {
   return (
     <LinkButton href={`/projects/${encodeURIComponent(slug)}`}>
       <article className="relative overflow-hidden bg-[var(--card-background)] p-8 rounded-xl shadow-sm shadow-black border border-neutral-900 hover:border-neutral-700 hover:shadow-md transition-all duration-300">
