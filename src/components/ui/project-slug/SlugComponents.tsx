@@ -19,9 +19,7 @@ export const SlugSection = ({
   grid?: boolean;
 }) => {
   return (
-    <section
-      aria-labelledby={id}
-      className="relative grid gap-8 leading-relaxed py-12 max-w-5xl mx-auto">
+    <section aria-labelledby={id} className="relative grid gap-8 py-12 max-w-5xl mx-auto">
       <h2 id={id} className="text-xl lg:text-2xl font-bold tracking-tight">
         {title}
       </h2>

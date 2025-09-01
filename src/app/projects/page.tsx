@@ -1,4 +1,3 @@
-import Hr from "@/components/ui/global/Hr";
 import SectionContainer from "@/components/ui/global/SectionContainer";
 import SectionTitle from "@/components/ui/global/SectionTitle";
 import ProjectGrid from "@/components/ui/projects/ProjectGrid";
@@ -18,8 +17,6 @@ const ProjectsPage = () => {
         id="projects-page-background"
         className="absolute inset-0 bg-cover bg-center z-0 h-full"
       />
-
-      <Hr />
 
       {/* Title */}
       <SectionTitle

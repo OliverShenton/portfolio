@@ -1,6 +1,9 @@
 "use client";
 
-import { childVariants, parentVariants } from "@/components/animations/StaggeredLoad";
+import {
+  techstackChildVariants,
+  techstackParentVariants,
+} from "@/components/animations/StaggeredLoad";
 import { techData } from "@/data/TechstackData";
 import { hoverColor, levelColor } from "@/schemas/TechstachSchema";
 import { motion } from "motion/react";
@@ -14,7 +17,7 @@ const Techstack = () => {
   return (
     <motion.div
       className="flex flex-wrap gap-4 md:gap-6 items-center justify-center"
-      variants={parentVariants}
+      variants={techstackParentVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}>
@@ -22,7 +25,7 @@ const Techstack = () => {
         <motion.div
           key={t.tech}
           className={`${tagClass} group`}
-          variants={childVariants}
+          variants={techstackChildVariants}
           whileHover={{ scale: 1.05, y: -5 }}
           transition={{ duration: 0.2 }}>
           <div className="flex items-center space-x-2">

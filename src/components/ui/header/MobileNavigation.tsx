@@ -1,4 +1,4 @@
-import { homePageNavigationData } from "@/components/ui/header/NavigationData";
+import { homePageNavigationData } from "@/data/NavigationData";
 import { socialsData } from "@/data/SocialData";
 import { FocusTrap } from "focus-trap-react";
 import { motion } from "motion/react";

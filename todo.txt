@@ -1,3 +1,21 @@
+// Skills section
+- Filter to Add
+
+// Projects case studies
+- Animate top to bottom
+- Video for each project as first gallery
+- Images are clickable and bring up fulls creen modal with image plus 'x' to close
+- Button needs animating
+
+// Hero section
+- Full screen
+- Image of me on right
+- Maybe a slightly noisy background?
+- Left slide show of key words - 'React', 'UI/UX', 'JS & TS'.
+- Small arrows below on right side as so < >. To shuffle through slid show.
+- Slide show should be centered / left
+
 // About section
-- Add filter
-- Add staggered animation
+ - Is those cards what I want?
+ - What else?
+ - Animations

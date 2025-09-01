@@ -11,8 +11,7 @@ import Link from "next/link";
 
 // Global Style
 const buttonStyle =
-  "cursor-pointer focus-outline-none focus-visible:ring-4 focus-visible:ring-blue-500 max-w-[250px] mx-auto w-full z-10";
-// };
+  "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--keyboard-focus)] max-w-[250px] mx-auto w-full z-10 min-w-[45px] min-h-[45px]";
 
 // Link button
 export const LinkButton = ({

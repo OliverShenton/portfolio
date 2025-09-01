@@ -1,4 +1,4 @@
-import { homePageNavigationData } from "@/components/ui/header/NavigationData";
+import { homePageNavigationData } from "@/data/NavigationData";
 import SocialNavigation from "./HeaderSocialNavigation";
 import { RouterButton } from "../global/Button";
 import { usePathname } from "next/navigation";
@@ -12,7 +12,7 @@ const DesktopNavigation = () => {
       id="desktop-navigation"
       aria-label="Desktop navigation"
       className="hidden md:flex items-center gap-6">
-      <ul className="flex items-center gap-8 text-sm" aria-label="Page links">
+      <ul className="flex items-center text-sm" aria-label="Page links">
         {homePageNavigationData.map((link) => {
           const isActive = pathname === link.href;
 
@@ -21,7 +21,7 @@ const DesktopNavigation = () => {
               <RouterButton
                 href={link.href}
                 ariaLabel={`${link.link} Page`}
-                className="flex items-center gap-2">
+                className="flex items-center gap-2 px-4">
                 {isActive && <FaCircle className="text-lime-400 text-sm w-2 h-2 rounded-full" />}
                 <span
                   className={`relative group ${

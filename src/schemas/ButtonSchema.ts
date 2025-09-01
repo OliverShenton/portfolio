@@ -29,7 +29,7 @@ export const buttonVariants = {
   "primary-button":
     "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-600 to-orange-500 text-white shadow-lg shadow-neutral-800 hover:bg-gradient-to-l hover:brightness-105 transition-all duration-300",
   "secondary-button":
-    "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-all shadow-neutral-800 hover:brightness-150 shadow-lg curation-300",
+    "px-6 py-4 rounded-xl font-medium flex items-center justify-center gap-2 border border-gray-500 text-[var(--secondary-text)] hover:border-[var(--text)] hover:text-[var(--text)] transition-all shadow-neutral-800 hover:brightness-150 shadow-sm hover:shadow-md duration-300",
   "more-button":
     "px-6 py-3 font-medium flex items-center gap-2 border border-gray-500 text-gray-200 hover:border-white hover:text-white transition-colors shadow-neutral-800 shadow-lg",
   "card-button":

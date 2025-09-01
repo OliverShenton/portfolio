@@ -1,5 +1,4 @@
 import ContactCard from "@/components/ui/contact/ContactCard";
-import Hr from "@/components/ui/global/Hr";
 import SectionContainer from "@/components/ui/global/SectionContainer";
 import { Metadata } from "next";
 
@@ -17,8 +16,6 @@ const ContactPage = () => {
         id="contact-page-background"
         className="absolute inset-0 bg-cover bg-center z-0 h-full"
       />
-
-      <Hr />
 
       {/* Content */}
       <ContactCard />

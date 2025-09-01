@@ -15,7 +15,7 @@ const Header = () => {
 
   const headerStyle = !scrolled
     ? "bg-transparent text-[var(--secondary-text)]"
-    : "backdrop-blur-md bg-[var(--background)]/60 text-[var(--text)] shadow-sm ring-1 ring-white/10";
+    : "backdrop-blur-md bg-[var(--background)]/50 text-[var(--text)] shadow-sm shadow-white/10";
 
   // Scroll progress hook
   useEffect(() => {

@@ -1,5 +1,3 @@
-"use client";
-
 import Section from "../ui/global/SectionContainer";
 import SectionTitle from "../ui/global/SectionTitle";
 import Techstack from "../ui/skills/Techstack";

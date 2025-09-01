@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import Hr from "@/components/ui/global/Hr";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import Fades from "@/components/ui/global/Fades";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <Header />
+        <Fades top bottom />
         <main className="flex-1">{children}</main>
         <Hr />
         <Footer />

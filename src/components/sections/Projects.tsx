@@ -17,6 +17,7 @@ const Projects = () => {
       <ProjectGrid slice={4} />
 
       {/* More projects button */}
+
       <RouterButton href="/projects" variant="secondary-button">
         More Projects
       </RouterButton>

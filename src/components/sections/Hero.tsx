@@ -1,3 +1,21 @@
+import SectionContainer from "../ui/global/SectionContainer";
+
+// const { mainText, subText, textColor } = heroTextData[currentSlide];
+const Hero = () => {
+  return (
+    <SectionContainer id="hero" fullScreen className="z-30">
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="flex-1 flex items-center justify-center">
+          <h1>React Developer</h1>
+        </div>
+        <div className="flex-1">bi</div>
+      </div>
+    </SectionContainer>
+  );
+};
+
+export default Hero;
+
 // "use client";
 
 // import { heroTextData } from "@/components/ui/hero/HeroData";
