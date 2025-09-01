@@ -1,5 +1,4 @@
 import type { SectionContainer as SectionContainerProps } from "@/schemas/SectionSchema";
-import { motion } from "motion/react";
 import Hr from "./Hr";
 
 // Section setup

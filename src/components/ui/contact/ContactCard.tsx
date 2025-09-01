@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
 import Hr from "../global/Hr";
-import { motion } from "motion/react";
 import CardBase from "../global/CardBase";
 
 const contactDetails = [
@@ -70,14 +69,6 @@ const ContactCard = () => {
         <ContactForm />
       </div>
     </CardBase>
-    // <motion.article
-    //   className="text-center border bg-[var(--card-background)] border w-full rounded-xl flex flex-col md:flex-row gap-10 md:gap-15 shadow-sm shadow-black p-6 md:p-12 z-10"
-    //   initial={{ y: 20, opacity: 0 }}
-    //   animate={{ y: 0, opacity: 1 }}
-    //   transition={{ delay: 0.1, duration: 0.3 }}>
-
-    // </motion.article>
-    //
   );
 };
 
