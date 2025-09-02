@@ -1,7 +1,7 @@
 import CardContainer from "../layouts/CardContainer";
 
-import Img1 from "../../../../public/images/developer/image-1.png";
-import Image from "next/image";
+// import Img1 from "../../../../public/images/developer/image-1.png";
+// import Image from "next/image";
 import { LinkButton } from "../global/Button";
 import { Personality, Values } from "@/data/AboutMeData";
 
