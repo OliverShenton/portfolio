@@ -6,6 +6,7 @@
 - Video for each project as first gallery
 - Images are clickable and bring up fulls creen modal with image plus 'x' to close
 - Button needs animating
+- Pages and features to not stretch
 
 // Hero section
 - Full screen

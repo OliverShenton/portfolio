@@ -1,7 +1,9 @@
 // Portfolio
 import portfolioImg1 from "../../public/images/projects/portfolio/image-1.png";
-import portfolioImg2 from "../../public/images/projects/portfolio/image-2.png";
-import portfolioImg3 from "../../public/images/projects/portfolio/image-3.png";
+import portfolioImg4 from "../../public/images/projects/portfolio/image-4.png";
+import portfolioImg5 from "../../public/images/projects/portfolio/image-5.png";
+import portfolioImg6 from "../../public/images/projects/portfolio/image-6.png";
+import portfolioImg7 from "../../public/images/projects/portfolio/image-7.png";
 
 // MindfulPath
 import mindfulpathImg1 from "../../public/images/projects/mindful-path/image-1.png";
@@ -10,6 +12,13 @@ import mindfulpathImg3 from "../../public/images/projects/mindful-path/image-3.p
 
 // QuickBites
 import quickBitesImg1 from "../../public/images/projects/quick-bites/image-1.png";
+
+// Weather Wizard
+import weatherWizardImg1 from "../../public/images/projects/weather-tracker/image-1.png";
+import weatherWizardImg2 from "../../public/images/projects/weather-tracker/image-2.png";
+import weatherWizardImg3 from "../../public/images/projects/weather-tracker/image-3.png";
+import weatherWizardImg4 from "../../public/images/projects/weather-tracker/image-4.png";
+import weatherWizardImg5 from "../../public/images/projects/weather-tracker/image-5.png";
 
 // BookBarter
 // import bookBarterImg1 from "../../../public/images/projects/book-barter/image-1.png";
@@ -79,8 +88,10 @@ export const projectData: ProjectCaseStudy[] = [
     ],
     gallery: [
       { src: portfolioImg1, alt: "Portfolio hero" },
-      { src: portfolioImg2, alt: "Portfolio projects page" },
-      { src: portfolioImg3, alt: "Contact page & contact form" },
+      { src: portfolioImg4, alt: "Skill section" },
+      { src: portfolioImg5, alt: "Contact section" },
+      { src: portfolioImg6, alt: "Projects page" },
+      { src: portfolioImg7, alt: "Contact page & contact form" },
     ],
   },
   {
@@ -95,7 +106,7 @@ export const projectData: ProjectCaseStudy[] = [
     year: 2025,
     lastUpdated: "24 August 2025",
     duration: "12 weeks",
-    status: "In Progress",
+    status: "On Hold",
     demo: "https://mindful-path-mu.vercel.app/",
     description:
       "MindfulPath is a mental wellness and meditation platform aimed at busy professionals who want to improve focus, reduce stress, and build healthier habits. It provides guided meditations, breathing exercises, daily journaling, and expert articles on mindfulness.",
@@ -173,7 +184,7 @@ export const projectData: ProjectCaseStudy[] = [
     projectType: "Blog",
     personalClient: "Personal",
     duration: "N/A",
-    status: "In Progress",
+    status: "On Hold",
     year: 2025,
     lastUpdated: "N/A",
     demo: "N/A",
@@ -232,6 +243,122 @@ export const projectData: ProjectCaseStudy[] = [
     ],
     gallery: [{ src: quickBitesImg1, alt: "Hero" }],
   },
+  {
+    title: "Weather Wizard",
+    slug: "weather-wizard",
+    cover: { src: weatherWizardImg3, alt: "Weather Wizard" },
+    role: "Design & Development",
+    repo: "https://github.com/OliverShenton/weather-tracker",
+    projectType: "Web app",
+    personalClient: "Personal",
+    year: 2023,
+    lastUpdated: "N/A",
+    duration: "N/A",
+    status: "Completed",
+    demo: "",
+    description:
+      "A responsive weather tracking app built with React. It provides real-time weather updates, a five-day forecast, and quick access to popular world capitals. Designed with a simple, clean itnerfacem it makes it easy for users to check current conditions anywhere in the world.",
+    problem:
+      "Most weather apps are either too cluttered with information or locked behind premium subscriptions. I wanted to create a lightweight, accessible alternative that focuses on clarity and usability while practising API integration and UI development.",
+    solution:
+      "I designed and developed a weather tracker that consumes open weather APIs, with a focus on an intuitive interface. Users can search for any city, get weather for their current location, or quickly check common global destinations. A built-in dark mode ensures readability at any time of day.",
+    audience: ["General users wanting to quick weather checks", "Travellers planning trips"],
+    features: [
+      { feature: "Date & time", done: true },
+      { feature: "Dark mode toggle", done: true },
+      { feature: "Location search bar", done: true },
+      { feature: "Get current location", done: true },
+      { feature: "Popular locations", done: true },
+      { feature: "Current day forecast", done: true },
+      { feature: "Five day forecast", done: true },
+    ],
+    pages: [{ feature: "Home - Search, popular cities, and forecasts", done: true }],
+    techstack: ["HTML", "CSS", "JavaScript", "React", "Open Weather API"],
+    gallery: [
+      { src: weatherWizardImg1, alt: "Weather Wizard" },
+      { src: weatherWizardImg2, alt: "Location picker" },
+      { src: weatherWizardImg3, alt: "Location Search bar" },
+      { src: weatherWizardImg4, alt: "Dark mode toggle" },
+      { src: weatherWizardImg5, alt: "Dark mode & location" },
+    ],
+  },
+  // {
+  //   title: "Skill Foundry",
+  //   slug: "skill-foundry",
+  //   cover: {
+  //     src: "",
+  //     alt: "Screenshot of SkillFoundry dashboard and marketing site",
+  //   },
+  //   role: "Design & Development",
+  //   repo: "",
+  //   backgroundColor: "#0F172A", // slate/dark neutral
+  //   projectType: "Marketing site + SaaS web app with authenticated dashboard.",
+  //   personalClient: "Personal",
+  //   year: 2025,
+  //   lastUpdated: "2025-09-01",
+  //   duration: "4 weeks",
+  //   status: "In Progress",
+  //   demo: "",
+  //   description:
+  //     "SkillFoundry is a hands-on learning platform where junior developers complete scoped real-world projects, guided through planning, delivery, and publishing portfolio-ready case studies.",
+  //   problem:
+  //     "Junior developers often struggle to showcase real-world experience, while companies lack low-risk ways to evaluate them.",
+  //   solution:
+  //     "SkillFoundry bridges the gap with project briefs, structured workflows, mentor reviews, and verified portfolio case studies.",
+  //   audience: [
+  //     "Junior developers preparing for jobs",
+  //     "Mentors and bootcamp instructors",
+  //     "Companies evaluating candidates",
+  //   ],
+  //   features: [
+  //     { feature: "Public marketing site with SEO-ready pages", done: true },
+  //     { feature: "Browse and filter real project briefs", done: true },
+  //     { feature: "Authenticated dashboard with project workflow", done: true },
+  //     { feature: "Kanban task management with drag-and-drop", done: false },
+  //     { feature: "File upload and inline mentor reviews", done: false },
+  //     { feature: "Portfolio builder with one-click case study publishing", done: false },
+  //     { feature: "Light/Dark mode toggle", done: true },
+  //   ],
+  //   pages: [
+  //     { feature: "Home", done: true },
+  //     { feature: "Browse Projects", done: true },
+  //     { feature: "Project Detail", done: true },
+  //     { feature: "Pricing", done: false },
+  //     { feature: "Blog / Resources", done: false },
+  //     { feature: "Case Study (public)", done: false },
+  //     { feature: "Dashboard", done: true },
+  //     { feature: "Workspace (kanban)", done: false },
+  //     { feature: "Submissions & Reviews", done: false },
+  //     { feature: "Profile & Portfolio", done: false },
+  //     { feature: "Auth (Sign In/Up, Reset)", done: true },
+  //   ],
+  //   techstack: [
+  //     "Next.js 14",
+  //     "TypeScript",
+  //     "React",
+  //     "Tailwind CSS",
+  //     "shadcn/ui + Radix UI",
+  //     "React Query",
+  //     "Zustand",
+  //     "Supabase (Auth, DB, Storage)",
+  //     "Vercel Deployment",
+  //     "Jest + React Testing Library",
+  //     "Playwright (e2e)",
+  //     "GitHub Actions (CI/CD)",
+  //   ],
+  //   gallery: [
+  //     { src: "", alt: "SkillFoundry Home Page" },
+  //     {
+  //       src: "",
+  //       alt: "Browse Projects screen with filters",
+  //     },
+  //     {
+  //       src: "",
+  //       alt: "User dashboard with active projects",
+  //     },
+  //     { src: "", alt: "Case Study page preview" },
+  //   ],
+  // },
 
   // {
   //   title: "BookBarter",
@@ -291,68 +418,4 @@ export const projectData: ProjectCaseStudy[] = [
   // =======================================================================
   // =======================================================================
   // =======================================================================
-
-  // {
-  //   id: 3,
-  //   bgColor: "#ffb347",
-  //   title: "BookBarter",
-  //   role: "Design & Development",
-  //   images: [bookbarterImg1],
-  //   github: "/",
-  // },
-  // {
-  //   id: 5,
-  //   bgColor: "#8fbc8f",
-  //   title: "Brew & Bloom Café",
-  //   role: "Design & Development",
-  //   images: [brewandbloomImg1],
-  //   github: "https://github.com/OliverShenton/brew-and-bloom-cafe",
-  // },
-  // {
-  //   id: 6,
-  //   bgColor: "#9370db",
-  //   title: "BookMe Studio",
-  //   role: "Design & Development",
-  //   images: [bookmestudioImg1],
-  //   github: "/",
-  // },
-  // {
-  //   id: 7,
-  //   bgColor: "#4682b4",
-  //   title: "Chat Room",
-  //   role: "Design & Development",
-  //   images: [chatroomImg1],
-  //   github: "https://github.com/OliverShenton/os-nodejs-chat-app",
-  // },
-  // {
-  //   id: 8,
-  //   bgColor: "#ffd580",
-  //   title: "Tic-Tac-Toe",
-  //   role: "Design & Development",
-  //   images: [tictactoeImg1],
-  //   github: "/",
-  // },
-  // {
-  //   id: 9,
-  //   bgColor: "#87cefa",
-  //   title: "Weather Wizard",
-  //   role: "Design & Development",
-  //   images: [weatherwizardImg1],
-  //   github: "https://github.com/OliverShenton/weather-tracker",
-  // },
-  // {
-  //   id: 9,
-  //   title: "QuickBites",
-  //   description:
-  //     "QuickBites is a fictional food blog for busy professionals. It shares fast, healthy, and budget-friendly recipes that can be made in under 30 minutes. It's aimed at people who love good food but don't have hours to spend in the kitchen.",
-  //   purpose: "",
-  //   websiteType: "Blog",
-  //   design: [],
-  //   pageRequirements: [],
-  //   targetAudience: [],
-  //   functionalRequirements: [],
-  //   nonFucntionalRequirements: [],
-  //   contentExpectations: "",
-  //   designAssetsAndBranding: "",
-  // },
 ];

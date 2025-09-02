@@ -103,10 +103,10 @@ type SlugCardProps = {
 
 export const SlugCard = ({ title, feature = [] }: SlugCardProps) => {
   return (
-    <div className="border border-neutral-700 rounded-xl p-4 grid gap-4 flex-1">
+    <div className="border border-neutral-700 rounded-xl flex flex-col p-4 gap-4 flex-1">
       <p className={titleClass}>{title}</p>
       {feature.map((f: FeatureItem, idx: number) => (
-        <article key={idx} className="flex gap-2 text-sm">
+        <article key={idx} className="flex gap-2 text-sm items-center self-start">
           <p>{f.done ? "✅" : "⚪"}</p>
           <p>{f.feature}</p>
         </article>

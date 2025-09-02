@@ -10,9 +10,9 @@
   --hr-color: #737373;
 
   /* Card */
-  --card-background: #171717;
-  --border-color: #0a0a0a;
-  --border-color-hover: #404040;
+  --card-background: #262626;
+  --border-color: #171717;
+  --border-color-hover: #737373;
 }
 
 html {

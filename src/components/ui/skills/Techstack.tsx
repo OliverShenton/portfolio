@@ -9,7 +9,7 @@ import { hoverColor, levelColor } from "@/schemas/TechstachSchema";
 import { motion } from "motion/react";
 
 const tagClass =
-  "flex items-center px-3 sm:px-4 py-1 sm:py-2 border border-neutral-700 bg-[var(--card-background)] rounded-full sm:rounded-xl space-x-2 hover:brightness-110";
+  "flex items-center px-3 sm:px-4 py-1 sm:py-2 border border-[var(--border-color-hover)] bg-[var(--card-background)] rounded-full sm:rounded-xl space-x-2 hover:brightness-110";
 
 const spanClass = "text-[10px] sm:text-[12px]";
 

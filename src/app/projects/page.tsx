@@ -1,5 +1,5 @@
-import SectionContainer from "@/components/ui/global/SectionContainer";
 import SectionTitle from "@/components/ui/global/SectionTitle";
+import SectionContainer from "@/components/ui/layouts/SectionContainer";
 import ProjectGrid from "@/components/ui/projects/ProjectGrid";
 import { Metadata } from "next";
 

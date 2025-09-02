@@ -1,5 +1,5 @@
 import ContactCard from "@/components/ui/contact/ContactCard";
-import SectionContainer from "@/components/ui/global/SectionContainer";
+import SectionContainer from "@/components/ui/layouts/SectionContainer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

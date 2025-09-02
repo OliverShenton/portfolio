@@ -1,5 +1,5 @@
 import { RouterButton } from "../global/Button";
-import CardBase from "../global/CardBase";
+import CardBase from "../layouts/CardContainer";
 import Hr from "../global/Hr";
 
 const Poster = () => {

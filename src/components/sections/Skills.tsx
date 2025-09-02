@@ -1,10 +1,10 @@
-import Section from "../ui/global/SectionContainer";
 import SectionTitle from "../ui/global/SectionTitle";
+import SectionContainer from "../ui/layouts/SectionContainer";
 import Techstack from "../ui/skills/Techstack";
 
 const Skills = () => {
   return (
-    <Section id="skills">
+    <SectionContainer id="skills">
       {/* Title */}
       <SectionTitle title="How I Code" subtitle="What powers my work" marker="indigo" />
 
@@ -16,7 +16,7 @@ const Skills = () => {
 
       {/* Skill cards */}
       {/* <CardLayout /> */}
-    </Section>
+    </SectionContainer>
   );
 };
 

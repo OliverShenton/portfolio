@@ -2,14 +2,21 @@
 
 import { motion } from "motion/react";
 
-interface CardBaseProps {
+interface CardContainerProps {
   children: React.ReactNode;
   id?: string;
   className?: string;
+  background?: string;
   animated?: boolean;
 }
 
-const CardBase = ({ children, id, className, animated }: CardBaseProps) => {
+const CardContainer = ({
+  children,
+  id,
+  className,
+  background = "bg-[var(--card-background)]",
+  animated,
+}: CardContainerProps) => {
   const variants = {
     hidden: { opacity: 0, y: 10 },
     show: { opacity: 1, y: 0 },
@@ -18,7 +25,7 @@ const CardBase = ({ children, id, className, animated }: CardBaseProps) => {
   return (
     <motion.article
       id={id}
-      className={`relative overflow-hidden bg-[var(--card-background)] border border-[var(--border-color)] hover:border-[--border-color-hover] rounded-xl w-full z-10 shadow-sm shadow-black/25 ${className}`}
+      className={`relative overflow-hidden border border-[var(--border-color)] hover:border-[--border-color-hover] rounded-xl w-full z-10 shadow-sm shadow-black/25 ${background} ${className}`}
       variants={animated ? variants : undefined}
       initial={animated ? "hidden" : undefined}
       whileInView={animated ? "show" : undefined}
@@ -29,4 +36,4 @@ const CardBase = ({ children, id, className, animated }: CardBaseProps) => {
   );
 };
 
-export default CardBase;
+export default CardContainer;

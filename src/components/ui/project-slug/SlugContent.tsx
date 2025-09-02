@@ -5,11 +5,12 @@ import Image from "next/image";
 import {
   SlugCard,
   SlugHr,
-  SlugImageGallery,
+  // SlugImageGallery,
   SlugLabel,
   SlugSection,
   SlugTechStack,
 } from "./SlugComponents";
+import ImageGallery from "./ImageGallery";
 
 const SlugContent = ({
   title,
@@ -101,7 +102,7 @@ const SlugContent = ({
         <SlugHr />
 
         <SlugSection id="slug-image-gallery" title="Image Gallery">
-          <SlugImageGallery gallery={gallery} />
+          <ImageGallery gallery={gallery} />
         </SlugSection>
 
         <SlugHr />

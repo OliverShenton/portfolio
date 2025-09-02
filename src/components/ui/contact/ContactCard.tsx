@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
 import Hr from "../global/Hr";
-import CardBase from "../global/CardBase";
+import CardBase from "../layouts/CardContainer";
 
 const contactDetails = [
   {

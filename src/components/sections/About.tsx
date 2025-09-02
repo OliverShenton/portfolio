@@ -1,18 +1,18 @@
 "use client";
 
-import Section from "../ui/global/SectionContainer";
 import SectionTitle from "../ui/global/SectionTitle";
 import Details from "../ui/about/Details";
+import SectionContainer from "../ui/layouts/SectionContainer";
 
 const About = () => {
   return (
-    <Section id="about" relative>
+    <SectionContainer id="about" relative>
       {/* Title */}
       <SectionTitle title="About Me" subtitle="Who I am and what I value" marker="rose" />
 
       {/* Details */}
       <Details />
-    </Section>
+    </SectionContainer>
   );
 };
 export default About;

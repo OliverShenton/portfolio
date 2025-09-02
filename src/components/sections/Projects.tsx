@@ -1,6 +1,6 @@
-import SectionContainer from "../ui/global/SectionContainer";
 import { RouterButton } from "../ui/global/Button";
 import SectionTitle from "../ui/global/SectionTitle";
+import SectionContainer from "../ui/layouts/SectionContainer";
 import ProjectGrid from "../ui/projects/ProjectGrid";
 
 const Projects = () => {

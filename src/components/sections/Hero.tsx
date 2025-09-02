@@ -1,15 +1,14 @@
-import SectionContainer from "../ui/global/SectionContainer";
+import Image from "next/image";
+import Background from "../ui/hero/Background";
+import SectionContainer from "../ui/layouts/SectionContainer";
 
-// const { mainText, subText, textColor } = heroTextData[currentSlide];
+import Img1 from "../../../public/images/developer/image-1.png";
+
 const Hero = () => {
   return (
-    <SectionContainer id="hero" fullScreen className="z-30">
-      <div className="flex flex-col md:flex-row w-full">
-        <div className="flex-1 flex items-center justify-center">
-          <h1>React Developer</h1>
-        </div>
-        <div className="flex-1">bi</div>
-      </div>
+    <SectionContainer id="hero" fullScreen className="z-30 relative">
+      <Background />
+      <Image src={Img1} alt="person" className="relative" />
     </SectionContainer>
   );
 };
