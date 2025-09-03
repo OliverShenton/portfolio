@@ -1,6 +1,12 @@
+"use client";
+
 import { RouterButton } from "../global/Button";
 import CardBase from "../layouts/CardContainer";
 import Hr from "../global/Hr";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+const arrowStyle =
+  "inline-block opacity-0 w-0 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0 group-hover:ml-2";
 
 const Poster = () => {
   return (
@@ -18,8 +24,11 @@ const Poster = () => {
           React • JavaScript &amp; TypeScript • UI/UX
         </p>
         <Hr opaque />
-        <RouterButton href="/contact" variant="primary-button">
-          Contact Me
+        <RouterButton href="/contact" variant="primary-button" className="group ">
+          <span>Contact Me</span>
+          <span className={arrowStyle}>
+            <FaLongArrowAltRight />
+          </span>
         </RouterButton>
       </div>
     </CardBase>

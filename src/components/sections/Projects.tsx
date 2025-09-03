@@ -1,6 +1,7 @@
 import { RouterButton } from "../ui/global/Button";
 import SectionTitle from "../ui/global/SectionTitle";
 import SectionContainer from "../ui/layouts/SectionContainer";
+import MoreButton from "../ui/projects/MoreButton";
 import ProjectGrid from "../ui/projects/ProjectGrid";
 
 const Projects = () => {
@@ -17,10 +18,7 @@ const Projects = () => {
       <ProjectGrid slice={4} />
 
       {/* More projects button */}
-
-      <RouterButton href="/projects" variant="secondary-button">
-        More Projects
-      </RouterButton>
+      <MoreButton />
     </SectionContainer>
   );
 };

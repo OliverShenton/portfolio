@@ -24,7 +24,7 @@ export const techData: Techstack[] = [
   // --- Forms, state, data
   { tech: "React Hook Form", level: "Capable" },
   { tech: "Form Spree", level: "Capable" },
-  { tech: "TanStack Query", level: "Learning" },
+  { tech: "TanStack Query", level: "Capable" },
   { tech: "Redux Toolkit", level: "Learning" },
   { tech: "Zustand", level: "Learning" },
 

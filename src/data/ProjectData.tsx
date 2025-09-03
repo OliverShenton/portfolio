@@ -36,7 +36,7 @@ export const projectData: ProjectCaseStudy[] = [
     projectType: "Personal portfolio for showcasing work to potential employers and clients.",
     personalClient: "Personal",
     year: 2025,
-    lastUpdated: "26 August 2025",
+    lastUpdated: "03 September 2025",
     duration: "N/A",
     status: "In Progress",
     demo: "https://oliver-shenton.com/",

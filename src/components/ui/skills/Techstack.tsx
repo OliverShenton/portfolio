@@ -34,7 +34,7 @@ const Techstack = () => {
             </span>
             <span className={`${spanClass} ${levelColor[t.level]} ${hoverColor[t.level]}`}>•</span>
           </div>
-          <span className="text-[12px] sm:text-sm md:text-base">{t.tech}</span>
+          <span className="text-[12px] sm:text-sm md:text-[15px]">{t.tech}</span>
         </motion.div>
       ))}
     </motion.div>
