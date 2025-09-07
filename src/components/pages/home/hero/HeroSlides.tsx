@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import ShinyText from "@/components/ui/global/ShinyText";
-import { use } from "react";
 import { useMotionVariants } from "@/components/ui/global/Animations";
 
 type HeroSlideData = {
