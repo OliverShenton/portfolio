@@ -1,6 +1,6 @@
-import Poster from "../ui/contact/Poster";
-import SectionTitle from "../ui/global/SectionTitle";
-import SectionContainer from "../ui/layouts/SectionContainer";
+import Poster from "../contact/Poster";
+import SectionTitle from "../../../ui/global/SectionTitle";
+import SectionContainer from "../../../ui/layouts/SectionContainer";
 
 const Contact = () => {
   return (

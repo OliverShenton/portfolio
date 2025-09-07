@@ -1,7 +1,7 @@
-import SectionTitle from "../ui/global/SectionTitle";
-import SectionContainer from "../ui/layouts/SectionContainer";
-import MoreButton from "../ui/projects/MoreButton";
-import ProjectGrid from "../ui/projects/ProjectGrid";
+import SectionTitle from "../../../ui/global/SectionTitle";
+import SectionContainer from "../../../ui/layouts/SectionContainer";
+import MoreButton from "../projects/MoreButton";
+import ProjectGrid from "../projects/ProjectGrid";
 
 const Projects = () => {
   return (

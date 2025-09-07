@@ -1,6 +1,6 @@
-import SectionTitle from "../ui/global/SectionTitle";
-import SectionContainer from "../ui/layouts/SectionContainer";
-import Techstack from "../ui/skills/Techstack";
+import SectionTitle from "../../../ui/global/SectionTitle";
+import SectionContainer from "../../../ui/layouts/SectionContainer";
+import Techstack from "../skills/Techstack";
 
 const Skills = () => {
   return (

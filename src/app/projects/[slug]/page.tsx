@@ -1,7 +1,7 @@
 "use client";
 
 import SectionContainer from "@/components/ui/layouts/SectionContainer";
-import SlugContent from "@/components/ui/project-slug/SlugContent";
+import SlugContent from "@/components/pages/projects/project-slug/SlugContent";
 import { projectData } from "@/data/ProjectData";
 import { notFound } from "next/navigation";
 import { use } from "react";

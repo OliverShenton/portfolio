@@ -1,5 +1,7 @@
 // Portfolio
 import portfolioImg1 from "../../public/images/projects/portfolio/image-1.png";
+import portfolioImg2 from "../../public/images/projects/portfolio/image-2.png";
+import portfolioImg3 from "../../public/images/projects/portfolio/image-3.png";
 import portfolioImg4 from "../../public/images/projects/portfolio/image-4.png";
 import portfolioImg5 from "../../public/images/projects/portfolio/image-5.png";
 import portfolioImg6 from "../../public/images/projects/portfolio/image-6.png";
@@ -36,8 +38,8 @@ export const projectData: ProjectCaseStudy[] = [
     projectType: "Personal portfolio for showcasing work to potential employers and clients.",
     personalClient: "Personal",
     year: 2025,
-    lastUpdated: "03 September 2025",
-    duration: "N/A",
+    lastUpdated: "07 September 2025",
+    duration: "Ongoing",
     status: "In Progress",
     demo: "https://oliver-shenton.com/",
     description:
@@ -74,6 +76,7 @@ export const projectData: ProjectCaseStudy[] = [
       "React",
       "Next.js",
       "React Icons",
+      "React Bits (animated component library)",
       "Tailwind CSS",
       "Framer Motion",
       "Git & GitHub",
@@ -87,7 +90,9 @@ export const projectData: ProjectCaseStudy[] = [
       "Mock Data & Dynamic Routing",
     ],
     gallery: [
-      { src: portfolioImg1, alt: "Portfolio hero" },
+      { src: portfolioImg1, alt: "Portfolio hero - React text" },
+      { src: portfolioImg2, alt: "Portfolio hero - UI/UX text" },
+      { src: portfolioImg3, alt: "Portfolio hero - Frontend text" },
       { src: portfolioImg4, alt: "Skill section" },
       { src: portfolioImg5, alt: "Contact section" },
       { src: portfolioImg6, alt: "Projects page" },

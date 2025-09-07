@@ -1,8 +1,8 @@
 "use client";
 
-import SectionTitle from "../ui/global/SectionTitle";
-import Details from "../ui/about/Details";
-import SectionContainer from "../ui/layouts/SectionContainer";
+import SectionTitle from "../../../ui/global/SectionTitle";
+import SectionContainer from "../../../ui/layouts/SectionContainer";
+import Details from "../about/Details";
 
 const About = () => {
   return (

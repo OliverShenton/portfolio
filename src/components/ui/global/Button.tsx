@@ -10,8 +10,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 
 // Global Style
-const buttonStyle =
-  "cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--keyboard-focus)] max-w-[250px] mx-auto w-full z-10 min-w-[45px] min-h-[45px]";
+const buttonStyle = "cursor-pointer max-w-[250px] mx-auto z-10 min-w-[45px] min-h-[45px] w-full";
 
 // Link button
 export const LinkButton = ({
@@ -31,6 +30,7 @@ export const LinkButton = ({
       target={target}
       rel={target === "_blank" ? "noopener noreferrer" : undefined}
       role="button"
+      type="button"
       aria-label={ariaLabel}
       className={`${className} ${buttonStyle} ${buttonVariants[variant]}`}
       {...props}>
@@ -51,6 +51,7 @@ export const Button = ({
     <button
       onClick={onClick}
       aria-label={ariaLabel}
+      type="button"
       className={`${className} ${buttonStyle} ${buttonVariants[variant]}`}>
       {children}
     </button>
@@ -71,6 +72,8 @@ export const RouterButton = ({
       href={href}
       aria-label={ariaLabel}
       title={title}
+      role="button"
+      type="button"
       className={`${className} ${buttonStyle} ${buttonVariants[variant]}`}>
       {children}
     </Link>

@@ -1,7 +1,7 @@
 "use client";
 
 import ProjectCard from "./ProjectCard";
-import { projectData } from "../../../data/ProjectData";
+import { projectData } from "../../../../data/ProjectData";
 import { motion } from "motion/react";
 import {
   projectCardChildVariants,

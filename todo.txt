@@ -5,16 +5,15 @@
 - Animate top to bottom
 - Video for each project as first gallery
 - Button needs animating
+- Image gallery, arrows to scroll between
 
-// Hero section
-- Full screen
-- Image of me on right
-- Maybe a slightly noisy background?
-- Left slide show of key words - 'React', 'UI/UX', 'JS & TS'.
-- Small arrows below on right side as so < >. To shuffle through slid show.
-- Slide show should be centered / left
+
 
 // About section
  - Is those cards what I want?
  - What else?
  - Animations
+
+ // Header
+ - Correct all accessiblity
+ - "Skip to main content link" on tab

@@ -18,6 +18,7 @@ export const SectionContainer = ({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       className={relative ? "relative" : ""}>
+      <Hr opaque />
       <div
         className={`flex flex-col items-center justify-center px-4 md:px-6 py-20 xl:py-32 gap-8 md:gap-12 lg:gap-20 max-w-[88rem] mx-auto ${
           fullScreen ? "min-h-[100dvh]" : ""

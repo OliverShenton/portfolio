@@ -4,8 +4,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
-import Hr from "../global/Hr";
-import CardBase from "../layouts/CardContainer";
+import Hr from "../../../ui/global/Hr";
+import CardBase from "../../../ui/layouts/CardContainer";
 
 const contactDetails = [
   {

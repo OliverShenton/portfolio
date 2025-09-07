@@ -1,6 +1,6 @@
 import SectionTitle from "@/components/ui/global/SectionTitle";
 import SectionContainer from "@/components/ui/layouts/SectionContainer";
-import ProjectGrid from "@/components/ui/projects/ProjectGrid";
+import ProjectGrid from "@/components/pages/home/projects/ProjectGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

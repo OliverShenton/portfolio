@@ -107,7 +107,7 @@ export const SlugCard = ({ title, feature = [] }: SlugCardProps) => {
       <p className={titleClass}>{title}</p>
       {feature.map((f: FeatureItem, idx: number) => (
         <article key={idx} className="flex gap-2 text-sm items-center self-start">
-          <p>{f.done ? "✅" : "⚪"}</p>
+          <p>{f.done ? "✅" : "🔜"}</p>
           <p>{f.feature}</p>
         </article>
       ))}

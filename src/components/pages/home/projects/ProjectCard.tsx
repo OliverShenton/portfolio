@@ -1,5 +1,5 @@
 import type { ProjectCard as ProjectCardProps } from "@/schemas/ProjectSchema";
-import { LinkButton, RouterButton } from "../global/Button";
+import { LinkButton, RouterButton } from "../../../ui/global/Button";
 import { FaCode, FaInfo } from "react-icons/fa";
 import Image from "next/image";
 

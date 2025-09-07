@@ -1,4 +1,4 @@
-import ContactCard from "@/components/ui/contact/ContactCard";
+import ContactCard from "@/components/pages/home/contact/ContactCard";
 import SectionContainer from "@/components/ui/layouts/SectionContainer";
 import { Metadata } from "next";
 

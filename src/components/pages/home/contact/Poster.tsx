@@ -1,8 +1,8 @@
 "use client";
 
-import { RouterButton } from "../global/Button";
-import CardBase from "../layouts/CardContainer";
-import Hr from "../global/Hr";
+import { RouterButton } from "../../../ui/global/Button";
+import CardBase from "../../../ui/layouts/CardContainer";
+import Hr from "../../../ui/global/Hr";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const arrowStyle =
