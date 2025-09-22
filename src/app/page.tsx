@@ -1,17 +1,18 @@
-// import About from "@/components/pages/home/sections/About";
-import Contact from "@/components/pages/home/sections/Contact";
-import Hero from "@/components/pages/home/sections/Hero";
-import Projects from "@/components/pages/home/sections/Projects";
-import Skills from "@/components/pages/home/sections/Skills";
+// import AboutSection from "@/components/section/AboutSection";
+
+import ContactSection from "@/components/section/ContactSection";
+import HeroSection from "@/components/section/HeroSection";
+import ProjectsSection from "@/components/section/ProjectsSection";
+import TechstackSection from "@/components/section/TechstackSection";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      {/* <About /> */}
-      <Projects />
-      <Skills />
-      <Contact />
+      <HeroSection />
+      {/* <AboutSection /> */}
+      <ProjectsSection />
+      <TechstackSection />
+      <ContactSection />
     </>
   );
 }

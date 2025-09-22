@@ -1,4 +1,4 @@
-import SectionContainer from "@/components/ui/layouts/SectionContainer";
+import SectionContainer from "@/components/global/SectionContainer";
 import Link from "next/link";
 
 const NotFound = () => {

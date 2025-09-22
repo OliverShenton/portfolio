@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/ui/global/SectionTitle";
-import SectionContainer from "@/components/ui/layouts/SectionContainer";
-import ProjectGrid from "@/components/pages/home/projects/ProjectGrid";
+import SectionContainer from "@/components/global/SectionContainer";
+import SectionTitle from "@/components/global/SectionTitle";
+import ProjectGrid from "@/components/projects/ProjectGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,11 +22,11 @@ const ProjectsPage = () => {
       <SectionTitle
         title="All My Projects"
         subtitle="Curated showcase with code and context"
-        marker="amber"
+        color="amber"
       />
 
       {/* Project cards */}
-      <ProjectGrid slice={10} />
+      <ProjectGrid maxVisible={1} />
     </SectionContainer>
   );
 };

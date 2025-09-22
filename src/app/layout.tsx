@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/ui/footer/FooterSection";
-import Header from "@/components/ui/header/Header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import Fades from "@/components/ui/global/Fades";
+import Fades from "@/components/global/ScreenBorderFades";
 
 const inter = Inter({ subsets: ["latin"] });
 
