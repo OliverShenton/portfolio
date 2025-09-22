@@ -4,7 +4,7 @@ import ProjectGrid from "@/components/projects/ProjectGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oliver Shenton | All Projects",
+  title: "All Projects | Oliver Shenton",
   description:
     "A showcase of Oli's portfolio projects - sleek, high-performance web apps crafted with React, TypeScript, and thoughtful UI design.",
 };

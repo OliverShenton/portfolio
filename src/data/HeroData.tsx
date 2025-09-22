@@ -1,4 +1,4 @@
-export const heroTextData = [
+export const heroData = [
   {
     id: 1,
     mainText: "React",

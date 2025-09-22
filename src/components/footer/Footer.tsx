@@ -1,3 +1,4 @@
+import CustomHr from "../global/CustomHr";
 import FooterSocialNavigation from "./FooterSocialNavigation";
 
 const Footer = () => {
@@ -6,6 +7,7 @@ const Footer = () => {
       id="footer"
       aria-label="Footer"
       className="text-center bg-[var(--background)] text-[var(--secondary-text)] text-sm z-30">
+      <CustomHr opaque />
       <div className="space-y-12 px-4 py-12 md:px-6">
         <p>Design & code by Oliver Shenton. built with care, and shipped with curiosity.</p>
         <FooterSocialNavigation />

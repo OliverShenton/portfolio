@@ -1,15 +1,16 @@
 import { motion, useReducedMotion } from "motion/react";
 import Orb from "./Orb";
 
-const Background = () => {
+const GlowingCircle = () => {
   const prefersReducedMotion = useReducedMotion();
 
   return (
     <>
+      <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-purple-500 to-blue-500 opacity-30 blur-3xl" />
       <motion.div
         className="absolute px-4 md:px-6 py-24 xl:py-32 w-full h-full z-10"
         initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 0.25, y: 0 }}
         transition={{ duration: 0.5 }}>
         <Orb
           hoverIntensity={1}
@@ -26,4 +27,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default GlowingCircle;

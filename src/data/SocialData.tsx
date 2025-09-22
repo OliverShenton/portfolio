@@ -10,7 +10,6 @@ export const socialData: SocialItem[] = [
     href: "https://github.com/OliverShenton",
     textColor: "github",
     backgroundColor: "github",
-    // variant: "footer-social-link",
   },
   {
     title: "LinkedIn",
@@ -18,7 +17,6 @@ export const socialData: SocialItem[] = [
     href: "https://www.linkedin.com/in/olivershenton/",
     textColor: "linkedin",
     backgroundColor: "linkedin",
-    // variant: "footer-social-link",
   },
   {
     title: "Email",
@@ -26,27 +24,23 @@ export const socialData: SocialItem[] = [
     href: "mailto:olivermshenton@outlook.com",
     textColor: "email",
     backgroundColor: "email",
-    // variant: "footer-social-link",
   },
   {
     title: "Phone",
     icon: <FaPhone />,
     href: "tel:+447473826533",
     backgroundColor: "phone",
-    // variant: "footer-social-link",
   },
   {
     title: "Location",
     icon: <FaLocationDot />,
     href: "https://www.google.com/maps/place/Sandbach/",
     backgroundColor: "location",
-    // variant: "footer-social-link",
   },
   {
     title: "Portfolio PDF",
     icon: <FaFilePdf />,
     href: "https://github.com/OliverShenton/cv/blob/main/Oliver%20Shenton.pdf",
     backgroundColor: "portfolio",
-    // variant: "footer-social-link",
   },
 ];

@@ -1,9 +1,10 @@
 import SectionContainer from "@/components/global/SectionContainer";
 import ContactCard from "@/components/contact/ContactCard";
 import { Metadata } from "next";
+import ContactFormContainer from "@/components/contact/ContactFormContainer";
 
 export const metadata: Metadata = {
-  title: "Oliver Shenton | Get In Touch",
+  title: "Get In Touch | Oliver Shenton",
   description:
     "Contact Oli for web development projects, questions, or collaborations. Send a message easily via the built-in contact form.",
 };
@@ -18,7 +19,7 @@ const ContactPage = () => {
       />
 
       {/* Content */}
-      <ContactCard />
+      <ContactFormContainer />
     </SectionContainer>
   );
 };
