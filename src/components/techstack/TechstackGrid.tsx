@@ -1,11 +1,11 @@
 "use client";
 
-import { techstackData } from "@/data/techstackData";
 import TechstackCard from "./TechstackCard";
 import TechstackSearchBar from "./TechstackSearchBar";
 import { useMemo, useState } from "react";
 import { TechItem, Techstack as TechstackProps } from "@/schema/TechstackSchema";
 import { useDebounce } from "../hooks/useDebounce";
+import { techstackData } from "@/data/techstackData";
 
 // Change queries to lowercase
 const lowercaseString = (s: string) => {

@@ -28,7 +28,7 @@ const HeroSection = () => {
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
-  const { mainText, subText, textColor } = heroTextData[currentSlide];
+  // const { mainText, subText, textColor } = heroTextData[currentSlide];
 
   return (
     <SectionContainer id="hero-section" fullScreen>
