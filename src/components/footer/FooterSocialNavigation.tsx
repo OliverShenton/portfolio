@@ -1,6 +1,6 @@
 "use client";
 
-import { socialData } from "../../data/socialData";
+import socialData from "@/data/socialData";
 import { LinkButton } from "../global/Button";
 import { iconBackground } from "@/schema/SocialSchema";
 import { motion } from "motion/react";
