@@ -3,7 +3,7 @@ import { FaFilePdf, FaGithub, FaLinkedinIn, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-const socialData: SocialItem[] = [
+export const socialData: SocialItem[] = [
   {
     title: "Github",
     icon: <FaGithub />,
@@ -44,5 +44,3 @@ const socialData: SocialItem[] = [
     backgroundColor: "portfolio",
   },
 ];
-
-export default socialData;

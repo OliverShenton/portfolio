@@ -1,35 +1,9 @@
 "use client";
 
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
 import Hr from "../global/CustomHr";
 import CardBase from "../global/CardContainer";
-
-const contactDetails = [
-  {
-    id: 1,
-    icon: <FaPhoneAlt size={25} />,
-    title: "Call Me",
-    text: "(+44)7473826533",
-    href: "tel:+447473826533",
-  },
-  {
-    id: 2,
-    icon: <MdEmail size={25} />,
-    title: "Email Me",
-    text: "olivermshenton@outlook.com",
-    href: "mailto:olivermshenton@outlook.com",
-  },
-  {
-    id: 3,
-    icon: <FaLocationDot size={25} />,
-    title: "My Address",
-    text: "Sandbach, Cheshire, CW11",
-    href: "https://www.google.com/maps/place/Sandbach/",
-  },
-];
+import { contactData } from "@/data/contactData";
 
 const ContactFormContainer = () => {
   return (
@@ -46,8 +20,8 @@ const ContactFormContainer = () => {
 
         {/* Quick contact links */}
         <address className="grid gap-6 md:gap-8">
-          {contactDetails.map((c) => (
-            <div key={c.id} className="flex items-center gap-4">
+          {contactData.map((c) => (
+            <div key={c.title} className="flex items-center gap-4">
               <span>{c.icon}</span>
               <a
                 href={c.href}

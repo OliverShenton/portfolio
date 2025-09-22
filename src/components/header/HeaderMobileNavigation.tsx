@@ -1,7 +1,7 @@
 import { navigationData } from "@/data/navigationData";
 import { LinkButton, RouterButton } from "../global/Button";
 import CustomHr from "../global/CustomHr";
-import socialData from "@/data/socialData";
+import { socialData } from "@/data/socialData";
 
 const HeaderMobileNavigation = () => {
   return (

@@ -24,7 +24,7 @@ const Poster = () => {
           React • JavaScript &amp; TypeScript • UI/UX
         </p>
         <Hr opaque />
-        <RouterButton href="/contact" variant="primary-button" className="group ">
+        <RouterButton title="Contact me" href="/contact" variant="primary" className="group ">
           <span>Contact Me</span>
           <span className={arrowStyle}>
             <FaLongArrowAltRight />
