@@ -15,7 +15,7 @@ const GlowingCircle = () => {
         variants={HerofadeUpAnimationOpaque}
       />
       <motion.div
-        className="absolute px-4 md:px-6 py-24 xl:py-32 w-full h-full z-10"
+        className="absolute px-4 md:px-6 py-24 xl:py-32 w-full h-full z-10 overflow-hidden"
         initial="initial"
         animate="animate"
         transition={HerofadeUpAnimationOpaque.transition}
