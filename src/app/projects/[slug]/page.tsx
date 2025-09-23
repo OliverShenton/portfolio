@@ -1,8 +1,8 @@
 import CasestudyContent from "@/components/casestudy/CasestudyContent";
-import SectionContainer from "@/components/global/SectionContainer";
 import { GetAllProjects } from "@/components/projects/ProjectHelper";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import SectionContainer from "@/components/global/SectionContainer";
 
 type Params = { slug: string };
 
@@ -51,6 +51,8 @@ const ProjectsSlugPage = async ({ params }: { params: Promise<Params> }) => {
         lastUpdated={project.lastUpdated}
         demo={project.demo}
         description={project.description}
+        problem={project.problem}
+        solution={project.solution}
         audience={project.audience}
         features={project.features}
         pages={project.pages}

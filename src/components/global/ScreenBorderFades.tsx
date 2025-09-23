@@ -1,4 +1,4 @@
-const fadeStyle = "fixed from-[var(--background)] to-transparent z-30";
+const fadeStyle = "fixed from-[var(--background)] to-transparent z-30 pointer-events-none";
 
 const ScreenBorderFades = () => {
   return (

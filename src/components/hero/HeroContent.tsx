@@ -3,7 +3,7 @@ import { LinkButton } from "../global/Button";
 const HeroContent = () => {
   return (
     <>
-      <div className="text-center px-4 sm:px-6 lg:px-8 space-y-4 md:space-y-8 mb-8 md:mb-16">
+      <div className="text-center px-4 sm:px-6 lg:px-8 space-y-4 md:space-y-8 mb-8 md:mb-16 z-10 pointer-events-none">
         <h1 className="text-[var(--text)] text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold tracking-widest leading-10 sm:leading-14 md:leading-18 lg:leading-22 mx-auto max-w-5xl ">
           Creating Interfaces <br /> with Elegance &amp; Precision
         </h1>
@@ -12,7 +12,7 @@ const HeroContent = () => {
           experiences.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-8 z-10 w-full max-w-xl -mt-8 md:-mt-24">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8 z-10 w-full max-w-xl -mt-8 md:-mt-24 pointer-events-none">
         <LinkButton
           href="#projects-section"
           title="My Projects"

@@ -6,7 +6,9 @@ interface Props {
 
 const CasestudySection = ({ title, children, grid }: Props) => {
   return (
-    <section aria-labelledby={title} className="relative grid gap-8 py-12 max-w-5xl mx-auto w-full">
+    <section
+      aria-labelledby={title}
+      className="relative grid gap-16 max-w-5xl mx-auto w-full items-center">
       <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
       <div
         id="slug-content-grid"

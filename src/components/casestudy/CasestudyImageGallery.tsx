@@ -1,3 +1,5 @@
+"use client";
+
 import Modal from "@/components/global/Modal";
 import { AnimatePresence, motion } from "motion/react";
 import Image, { StaticImageData } from "next/image";
@@ -6,10 +8,10 @@ import { useState } from "react";
 type ImageItem = { src: StaticImageData | string; alt: string };
 
 type ImageGalleryProps = {
-  gallery?: ImageItem[];
+  gallery: ImageItem[];
 };
 
-const ImageGallery = ({ gallery = [] }: ImageGalleryProps) => {
+const CasestudyImageGallery = ({ gallery = [] }: ImageGalleryProps) => {
   const [selected, setSelected] = useState<ImageItem | null>(null);
 
   return (
@@ -19,9 +21,9 @@ const ImageGallery = ({ gallery = [] }: ImageGalleryProps) => {
           <div
             key={g.alt}
             onClick={() => setSelected(g)}
-            className="relative cursor-pointer rounded-xl overflow-hidden border border-[var(--border-color)] hover:border-[var(--border-color-hover)] hover:scale-102 transition-all duration-150">
+            className="relative cursor-pointer rounded-xl overflow-hidden border border-[var(--card-border)] hover:border-[var(--card-border-hover)] hover:scale-102 transition-all duration-150">
             <Image src={g.src} alt={g.alt} />
-            <p className="absolute bottom-4 left-4 px-3 py-1 rounded-full border border-[var(--border-color)] bg-[var(--card-background)] text-sm">
+            <p className="absolute bottom-4 left-4 bg-[#171717] border border-[#404040] px-4 py-3 rounded-xl z-10 text-sm">
               {g.alt}
             </p>
           </div>
@@ -48,4 +50,4 @@ const ImageGallery = ({ gallery = [] }: ImageGalleryProps) => {
   );
 };
 
-export default ImageGallery;
+export default CasestudyImageGallery;

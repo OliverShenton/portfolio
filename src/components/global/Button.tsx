@@ -7,7 +7,7 @@ import {
 import Link from "next/link";
 
 const baseButtonStyle =
-  "min-w-[44px] min-h-[44px] cursor-pointer rounded-xl flex items-center justify-center transition-all duration-300 font-medium";
+  "min-w-[44px] min-h-[44px] cursor-pointer rounded-xl flex items-center justify-center transition-all duration-300 font-medium pointer-events-auto";
 
 export const Button = ({
   children,

@@ -1,5 +1,4 @@
-// Skills section
-- Filter to Add
+
 
 // Projects case studies
 - Animate top to bottom

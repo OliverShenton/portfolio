@@ -4,6 +4,11 @@ export type Role = "Design" | "Development" | "Design & Development";
 export type Client = "Freelance" | "Personal" | "Company";
 export type Status = "Completed" | "In Progress" | "On Hold";
 
+export interface LinkItem {
+  link: string;
+  available: boolean;
+}
+
 export interface ImageItem {
   src: StaticImageData | string;
   alt: string;
@@ -24,7 +29,7 @@ export interface ProjectCard {
   slug: string;
   cover: ImageItem;
   role: Role;
-  repo: string;
+  repo: LinkItem;
 }
 
 export interface ProjectCasestudy extends ProjectCard {
@@ -34,9 +39,11 @@ export interface ProjectCasestudy extends ProjectCard {
   duration: string;
   lastUpdated: string;
   status: Status;
-  demo: string;
+  demo: LinkItem;
 
   description: string;
+  problem: string;
+  solution: string;
   audience: string[];
 
   features: FeatureItem[];
