@@ -1,4 +1,4 @@
-
+// Anmimations
 
 // Projects case studies
 - Animate top to bottom
