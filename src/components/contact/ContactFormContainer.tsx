@@ -7,7 +7,7 @@ import { contactData } from "@/data/contactData";
 
 const ContactFormContainer = () => {
   return (
-    <CardBase animated className="flex flex-col md:flex-row gap-10 p-6 md:p-12">
+    <CardBase className="flex flex-col md:flex-row gap-10 p-6 md:p-12">
       {/* Left side */}
       <div className="flex-1 w-full">
         {/* Title */}
