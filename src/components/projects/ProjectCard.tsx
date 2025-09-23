@@ -23,7 +23,7 @@ const ProjectCard = ({ title, slug, cover, role, repo }: ProjectCardProps) => {
           <p className="text-sm text-[var(--secondary-text)]">{role}</p>
         </div>
         <div className="flex items-center gap-4 w-full md:w-fit">
-          <LinkButton href={repo} variant="secondary" title="Github">
+          <LinkButton href={repo.link} variant="secondary" title="Github">
             <FaCode />
           </LinkButton>
           <RouterButton
