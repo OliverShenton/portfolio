@@ -7,20 +7,20 @@ export const MindfulPathCasestudy: ProjectCasestudy[] = [
     slug: "mindful-path",
     cover: { src: image1, alt: "MindfulPath hero" },
     role: "Design & Development",
-    repo: "https://github.com/OliverShenton/mindful-path",
+    repo: { link: "https://github.com/OliverShenton/mindful-path", available: true },
     projectType: "SaaS-style web app with a marketing site and logged-in dashboard.",
     client: "Personal",
     year: 2025,
     lastUpdated: "24 August 2025",
     duration: "12 weeks",
     status: "On Hold",
-    demo: "https://mindful-path-mu.vercel.app/",
+    demo: { link: "https://mindful-path-mu.vercel.app/", available: true },
     description:
       "MindfulPath is a mental wellness and meditation platform aimed at busy professionals who want to improve focus, reduce stress, and build healthier habits. It provides guided meditations, breathing exercises, daily journaling, and expert articles on mindfulness.",
-    // problem:
-    //   "Many people want to practise meditation but struggle. Feeling like they don't have enough minutes in a day, starting but not maintaining a habit, or existing apps feel overwhelming, cluttered, or hidden behind complex paywalls. MindfulPath solves this by offering quick sessions, easy onboarding, clear pricing, and an approachable design.",
-    // solution:
-    //   "The project exists to help individuals - especially busy professionals - build a consitent mindfulness practise. By combing sleek design with practical tools like reminders, progress dashboards, and a resource rich blog, MindfulPath lowers the barrier to entry for meditation and mental wellness.",
+    problem:
+      "Many people want to practise meditation but struggle. Feeling like they don't have enough minutes in a day, starting but not maintaining a habit, or existing apps feel overwhelming, cluttered, or hidden behind complex paywalls. MindfulPath solves this by offering quick sessions, easy onboarding, clear pricing, and an approachable design.",
+    solution:
+      "The project exists to help individuals - especially busy professionals - build a consitent mindfulness practise. By combing sleek design with practical tools like reminders, progress dashboards, and a resource rich blog, MindfulPath lowers the barrier to entry for meditation and mental wellness.",
     audience: [
       "Busy professionals and students looking for a quick, effective way to reduce stress and improve focus",
       "Anyone new to mindfulness who needs an approachable, well-designed entry point without friction",

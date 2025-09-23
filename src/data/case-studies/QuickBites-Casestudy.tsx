@@ -7,20 +7,20 @@ export const QuickBitesCasestudy: ProjectCasestudy[] = [
     slug: "quick-bites",
     cover: { src: image1, alt: "QuickBites hero" },
     role: "Design & Development",
-    repo: "N/A",
+    repo: { link: "N/A", available: false },
     projectType: "Blog",
     client: "Personal",
     duration: "N/A",
     status: "On Hold",
     year: 2025,
     lastUpdated: "N/A",
-    demo: "N/A",
+    demo: { link: "N/A", available: false },
     description:
       "QuickBites is a modern recipe website that showcases a curated collection of fast, healthy, and delicious meals. It features a user-friendly layout, filterable recipe listings, detailed slug pages for each dish, and social proof elemtns like awrds and testimonials - all styled with a clean, responsive UI.",
-    // solution:
-    //   "The goal of QuickBites is to provide users with a seamless and enjoyable way to discover and cook nutritious meals quickly. It focuses on accessibility, performance, and user experience to make cooking approachable for everyone.",
-    // problem:
-    //   "Busy people often struggle to find reliable, healthy recipes that don't require excessive time or obscure ingredients. Most recipe sites are bloated, cluttered with ads, or overwhelming to navigate.",
+    solution:
+      "The goal of QuickBites is to provide users with a seamless and enjoyable way to discover and cook nutritious meals quickly. It focuses on accessibility, performance, and user experience to make cooking approachable for everyone.",
+    problem:
+      "Busy people often struggle to find reliable, healthy recipes that don't require excessive time or obscure ingredients. Most recipe sites are bloated, cluttered with ads, or overwhelming to navigate.",
     audience: [
       "Busy professionals looking for healthy meal prep ideas",
       "Students or beginners trying to cook at home",
