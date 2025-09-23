@@ -1,5 +1,4 @@
 import SectionContainer from "@/components/global/SectionContainer";
-import ContactCard from "@/components/contact/ContactCard";
 import { Metadata } from "next";
 import ContactFormContainer from "@/components/contact/ContactFormContainer";
 
