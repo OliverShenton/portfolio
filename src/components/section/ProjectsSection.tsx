@@ -11,7 +11,7 @@ const ProjectsSection = () => {
         subtitle="Curated showcase with code and context"
         color="amber"
       />
-      <ProjectGrid maxVisible={1} />
+      <ProjectGrid maxVisible={2} />
       <ProjectsMoreButton />
     </SectionContainer>
   );

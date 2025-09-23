@@ -26,7 +26,7 @@ const ProjectsPage = () => {
       />
 
       {/* Project cards */}
-      <ProjectGrid maxVisible={1} />
+      <ProjectGrid maxVisible={2} />
     </SectionContainer>
   );
 };

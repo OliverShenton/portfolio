@@ -3,7 +3,7 @@ import image1 from "../../assets/casestudies/portfolio/image-1.png";
 
 export const PortfolioCasestudy: ProjectCasestudy[] = [
   {
-    title: "Frontend Developer Portfolio | Oliver Shenton",
+    title: "Portfolio",
     slug: "portfolio",
     cover: { src: image1, alt: "Home Page > Hero" },
     role: "Design & Development",
@@ -11,7 +11,7 @@ export const PortfolioCasestudy: ProjectCasestudy[] = [
     projectType: "A showcase of my work as a frontend developer.",
     client: "Personal",
     year: 2025,
-    lastUpdated: "23 September 2025",
+    lastUpdated: "23/09/2025",
     duration: "Ongoing",
     status: "In Progress",
     demo: { link: "https://oliver-shenton.com/", available: true },
@@ -27,7 +27,12 @@ export const PortfolioCasestudy: ProjectCasestudy[] = [
       "Clients seeking freelance or contract developers",
       "Peers and collaborators in the frontend community",
     ],
-    features: [],
+    features: [
+      { feature: "Interactive Hero", completed: true },
+      { feature: "Search bar for filtering techstack tags", completed: true },
+      { feature: "Contact card with working form using Form Spree API", completed: true },
+      { feature: "Animations using Framer Motion", completed: false },
+    ],
     pages: [
       { feature: "Home page - Hero, About, Projects, Techstack, Contact", completed: false },
       { feature: "Projects page", completed: true },
@@ -43,8 +48,10 @@ export const PortfolioCasestudy: ProjectCasestudy[] = [
       "Next.js",
       "React Icons",
       "React Bits (animated component library)",
+      "BGJar | Free svg backgrounds",
       "Tailwind CSS",
       "Framer Motion",
+      "Form Spree API",
       "Git & GitHub",
       "Vercel (deployment)",
       "Accessibility (WCAG basics, alt text, semantic HTML)",
@@ -57,6 +64,7 @@ export const PortfolioCasestudy: ProjectCasestudy[] = [
     ],
     gallery: [{ src: image1, alt: "Home Page > Hero" }],
     updateHistory: [
+      { date: "23/09/2025", description: "Deployment Fixes" },
       { date: "22/09/2025", description: "Major overhaul" },
       { date: "07/09/2025", description: "Hero and accesibility update" },
       { date: "03/09/2025", description: "Minor update" },

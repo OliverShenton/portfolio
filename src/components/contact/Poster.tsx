@@ -12,7 +12,6 @@ const Poster = () => {
   return (
     <CardBase
       id="contact-poster"
-      animated
       className="relative overflow-hidden rounded-xl w-full
         bg-[var(--card-background)] border border-neutral-800
         px-4 md:px-6 py-10 md:py-14 lg:py-20 xl:py-24">

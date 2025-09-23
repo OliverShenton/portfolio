@@ -6,8 +6,8 @@ import { ProjectCasestudy } from "@/schema/ProjectSchema";
 
 const AllProjects: ProjectCasestudy[] = [
   ...PortfolioCasestudy,
-  ...MindfulPathCasestudy,
-  ...QuickBitesCasestudy,
+  // ...MindfulPathCasestudy,
+  // ...QuickBitesCasestudy,
   ...WeatherWizardCasestudy,
 ];
 
