@@ -68,7 +68,11 @@ const CasestudyContent = ({
 
   return (
     <>
-      <Image src={cover.src} alt={title} className="rounded-xl max-w-6xl" />
+      <Image
+        src={cover.src}
+        alt={title}
+        className="rounded-xl w-full max-w-6xl mx-auto object-cover"
+      />
       <CustomHr opaque />
       <CasestudySection title="Overview" grid>
         {overviewData.map((o) => (
@@ -99,11 +103,13 @@ const CasestudyContent = ({
         <CasestudyImageGallery gallery={gallery} />
       </CasestudySection>
       <CustomHr opaque />
-      <CasestudySection title="Update History" grid>
-        {updateHistory.map((u, idx) => (
-          <CasestudyUpdateHistory key={idx} date={u.date} description={u.description} />
-        ))}
-      </CasestudySection>
+      <div className="hidden md:block w-full">
+        <CasestudySection title="Update History" grid>
+          {updateHistory.map((u, idx) => (
+            <CasestudyUpdateHistory key={idx} date={u.date} description={u.description} />
+          ))}
+        </CasestudySection>
+      </div>
     </>
   );
 };

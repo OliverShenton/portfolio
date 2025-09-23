@@ -11,7 +11,7 @@ const HeaderMobileNavigation = ({ onClose }: { onClose: () => void }) => {
   return (
     <FocusTrap focusTrapOptions={{ clickOutsideDeactivates: true, escapeDeactivates: false }}>
       <motion.nav
-        className="hamburger-menu fixed inset-0 flex md:hidden bg-[var(--background)]/100 z-40 min-h-[100dvh] items-center justify-center overflow-y-auto mt-16 py-8"
+        className="hamburger-menu fixed inset-0 flex md:hidden bg-[var(--background)]/100 z-40 min-h-[100dvh] items-center justify-center overflow-y-auto mt-16 py-8 backdrop-blur-md"
         role="dialog"
         aria-modal="true"
         initial={{ x: "-100%", opacity: 0 }}
