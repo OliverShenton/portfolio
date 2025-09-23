@@ -1,3 +1,5 @@
+"use client";
+
 import { SocialItem } from "@/schema/SocialSchema";
 import { FaFilePdf, FaGithub, FaLinkedinIn, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
