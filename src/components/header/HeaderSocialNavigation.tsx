@@ -4,7 +4,7 @@ import { iconText } from "@/schema/SocialSchema";
 
 const HeaderSocialNavigation = () => {
   return (
-    <ul className="flex items-center text-xl" aria-label="Social media links">
+    <ul className="flex items-center text-xl pr-4 md:pr-6" aria-label="Social media links">
       {socialData.slice(0, 3).map((s) => (
         <li key={s.title}>
           <LinkButton

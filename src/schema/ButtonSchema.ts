@@ -6,10 +6,7 @@ export interface BaseButton {
   ariaLabel?: string;
   variant?: "nothing" | "primary" | "secondary" | "header" | "header-social" | "footer-social";
   role?: "button" | "link" | "submit";
-}
-
-export interface Button extends BaseButton {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export interface LinkButton extends BaseButton {

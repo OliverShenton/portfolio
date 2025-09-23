@@ -1,36 +1,61 @@
+"use client";
+
 import { navigationData } from "@/data/navigationData";
 import { LinkButton, RouterButton } from "../global/Button";
 import CustomHr from "../global/CustomHr";
 import { socialData } from "@/data/socialData";
+import { FocusTrap } from "focus-trap-react";
+import { motion } from "motion/react";
 
-const HeaderMobileNavigation = () => {
+const HeaderMobileNavigation = ({ onClose }: { onClose: () => void }) => {
   return (
-    <nav className="hamburger-menu fixed inset-0 flex md:hidden bg-gradient-to-b from-[var(--background)]/90 to-[var(--background)]/70 z-40 min-h-[100dvh] items-center justify-center  overflow-y-auto mt-16 py-30">
-      <div className="text-center space-y-6 py-16">
-        <h2 className="text-sm text-gray-300">Page Links</h2>
-        <ul aria-label="Page links">
-          <li className="space-y-6">
-            {navigationData.map((n) => (
-              <RouterButton key={n.label} href={n.href} title={n.label} className="text-lg">
-                {n.label}
-              </RouterButton>
-            ))}
-          </li>
-        </ul>
-        <CustomHr />
-        <h2 className="text-sm text-gray-300">Social Links</h2>
-        <ul aria-label="Social media links" className="space-y-6">
-          {socialData.slice(0, 3).map((s) => (
-            <li key={s.title}>
-              <LinkButton href={s.href} title={s.title} className="text-lg">
-                {s.title}
-              </LinkButton>
+    <FocusTrap focusTrapOptions={{ clickOutsideDeactivates: true, escapeDeactivates: false }}>
+      <motion.nav
+        className="hamburger-menu fixed inset-0 flex md:hidden bg-[var(--background)]/100 z-40 min-h-[100dvh] items-center justify-center overflow-y-auto mt-16 py-8"
+        role="dialog"
+        aria-modal="true"
+        initial={{ x: "-100%", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: "-100%", opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        onKeyDown={(e) => {
+          if (e.key === "Escape") {
+            e.preventDefault();
+            onClose();
+          }
+        }}
+        tabIndex={-1}>
+        <div className="text-center space-y-6 py-16">
+          <h2 className="text-sm text-gray-300">Page Links</h2>
+          <ul aria-label="Page links">
+            <li className="space-y-6">
+              {navigationData.map((n) => (
+                <RouterButton
+                  key={n.label}
+                  href={n.href}
+                  title={n.label}
+                  onClick={onClose}
+                  className="text-lg">
+                  {n.label}
+                </RouterButton>
+              ))}
             </li>
-          ))}
-        </ul>
-        <CustomHr />
-      </div>
-    </nav>
+          </ul>
+          <CustomHr />
+          <h2 className="text-sm text-gray-300">Social Links</h2>
+          <ul aria-label="Social media links" className="space-y-6">
+            {socialData.slice(0, 3).map((s) => (
+              <li key={s.title}>
+                <LinkButton href={s.href} title={s.title} onClick={onClose} className="text-lg">
+                  {s.title}
+                </LinkButton>
+              </li>
+            ))}
+          </ul>
+          <CustomHr />
+        </div>
+      </motion.nav>
+    </FocusTrap>
   );
 };
 
@@ -55,22 +80,22 @@ export default HeaderMobileNavigation;
 //     <FocusTrap focusTrapOptions={{ clickOutsideDeactivates: true, escapeDeactivates: false }}>
 //       <motion.div
 //         ref={containerRef}
-//         role="dialog"
-//         aria-modal="true"
+// role="dialog"
+// aria-modal="true"
 //         aria-label="Mobile navigation menu"
 //         className="hamburger-menu fixed inset-0 z-40 flex flex-col items-center justify-center gap-10 bg-gradient-to-b from-[var(--background)]/95 to-[var(--background)]/80 backdrop-blur-md px-4 overflow-y-auto pt-15 pb-6"
-//         initial={{ y: "-100%", opacity: 0 }}
-//         animate={{ y: 0, opacity: 1 }}
-//         exit={{ y: "-100%", opacity: 0 }}
-//         transition={{ duration: 0.3, ease: "easeInOut" }}
+// initial={{ y: "-100%", opacity: 0 }}
+// animate={{ y: 0, opacity: 1 }}
+// exit={{ y: "-100%", opacity: 0 }}
+// transition={{ duration: 0.3, ease: "easeInOut" }}
 //         // Close menu on escape
-//         onKeyDown={(e) => {
-//           if (e.key === "Escape") {
-//             e.preventDefault();
-//             onClose();
-//           }
-//         }}
-//         tabIndex={-1}>
+// onKeyDown={(e) => {
+//   if (e.key === "Escape") {
+//     e.preventDefault();
+//     onClose();
+//   }
+// }}
+// tabIndex={-1}>
 //         {/* hr */}
 //         <hr className="border-gray-500/40 h-[1px] w-full" />
 

@@ -1,5 +1,5 @@
 import {
-  Button as ButtonProps,
+  BaseButton as ButtonProps,
   buttonVariants,
   LinkButton as LinkButtonProps,
   RouterButton as RouterButtonProps,
@@ -34,11 +34,13 @@ export const LinkButton = ({
   target = "_blank",
   role = "link",
   title,
+  onClick,
 }: LinkButtonProps) => {
   return (
     <a
       href={href}
       target={target}
+      onClick={onClick}
       rel={target === "_blank" ? "noopener noreferrer" : undefined}
       role={role}
       title={title}
@@ -55,12 +57,14 @@ export const RouterButton = ({
   href,
   role = "link",
   title,
+  onClick,
 }: RouterButtonProps) => {
   return (
     <Link
       href={href}
       role={role}
       title={title}
+      onClick={onClick}
       className={`${className} ${baseButtonStyle} ${buttonVariants[variant]}`}>
       {children}
     </Link>

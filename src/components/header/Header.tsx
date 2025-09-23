@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValueEvent, useScroll } from "motion/react";
+import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "motion/react";
 import HeaderDesktopNavigation from "./HeaderDesktopNavigation";
 import HeaderMobileNavigation from "./HeaderMobileNavigation";
 import HeaderTitle from "./HeaderTitle";
@@ -39,7 +39,9 @@ const Header = () => {
           {/* Visible on desktop, invisible on mobile */}
           <HeaderDesktopNavigation />
           {/* Visible on mobile, invisible on desktop */}
-          <motion.div className="flex md:hidden text-3xl" animate={{ rotate: openMenu ? -90 : 0 }}>
+          <motion.div
+            className="flex md:hidden text-3xl px-4 py-4 md:px-6"
+            animate={{ rotate: openMenu ? -90 : 0 }}>
             <Button onClick={toggleMenu}>
               <RxHamburgerMenu />
             </Button>
@@ -53,7 +55,9 @@ const Header = () => {
         />
       </header>
 
-      {openMenu && <HeaderMobileNavigation />}
+      <AnimatePresence initial={false} mode="wait">
+        {openMenu && <HeaderMobileNavigation onClose={toggleMenu} />}
+      </AnimatePresence>
     </>
   );
 };
