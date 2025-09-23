@@ -1,18 +1,10 @@
-// Animations
+! Urgent
+- A landscapeed phone results in the  page being unscrollable.
 
-// Projects case studies
-- Animate top to bottom
-- Video for each project as first gallery
-- Button needs animating
-- Image gallery, arrows to scroll between
+! To add
+- Aniamtions and staggers for everything.
+- Imporve exisitng case studies.
+- Add new case studies.
 
-
-
-// About section
- - Is those cards what I want?
- - What else?
- - Animations
-
- // Header
- - Correct all accessiblity
- - "Skip to main content link" on tab
+! Likes
+- Skill section has tags such as core, capable, fmailiar, and learning and the user can select them to view those specific tags.

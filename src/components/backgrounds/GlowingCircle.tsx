@@ -8,7 +8,7 @@ const GlowingCircle = () => {
   return (
     <>
       <motion.div
-        className="absolute max-w-[600px] max-h-[600px] rounded-full bg-gradient-to-r from-purple-500 to-blue-500 blur-3xl"
+        className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-purple-500 to-blue-500 blur-3xl"
         initial="initial"
         animate="animate"
         transition={HerofadeUpAnimationOpaque.transition}
