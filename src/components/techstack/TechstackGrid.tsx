@@ -33,9 +33,9 @@ const TechstackGrid = () => {
 
   // ToDo
   // Accessiblity function
-  const resultCount = useMemo(() => {
-    filteredGrid.reduce((sum, s) => sum + s.tech.length, 0);
-  }, [filteredGrid]);
+  // const resultCount = useMemo(() => {
+  //   filteredGrid.reduce((sum, s) => sum + s.tech.length, 0);
+  // }, [filteredGrid]);
 
   return (
     <div className="w-full z-10">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useId } from "react";
+// import { useId } from "react";
 import { GoSearch } from "react-icons/go";
 
 interface TechstackSearchBarProps {
@@ -12,7 +12,7 @@ const searchBarStyle =
   "flex items-center gap-4 bg-[#171717] border border-[#404040] hover:border-[var(--card-border-hover)] p-4 rounded-2xl shadow-sm transition-colors focus-within:border-[var(--card-border-hover)]";
 
 const TechstackSearchBar = ({ value, onChange }: TechstackSearchBarProps) => {
-  const id = useId();
+  // const id = useId();
 
   return (
     <form

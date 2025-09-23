@@ -6,10 +6,10 @@ interface CardContainerProps {
   id?: string;
   children: React.ReactNode;
   className?: string;
-  animated?: boolean;
+  // animated?: boolean;
 }
 
-const CardContainer = ({ id, children, className, animated }: CardContainerProps) => {
+const CardContainer = ({ id, children, className }: CardContainerProps) => {
   return (
     <motion.article
       id={id}
