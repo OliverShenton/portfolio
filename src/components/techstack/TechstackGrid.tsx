@@ -47,9 +47,9 @@ const TechstackGrid = () => {
         <p className="mt-6 text-sm text-gray-400">No matches. Try another term.</p>
       ) : (
         filteredGrid.map((f) => (
-          <div key={f.techstack} className={`space-y-4 mt-8 sm:mt-10 md:mt-12`}>
+          <div key={f.techstack} className={`space-y-4 md:space-y-8 mt-8 sm:mt-10 md:mt-12`}>
             <h3 className="text-lg font-semibold">{f.techstack}</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mb-8 sm:mb-10 md:mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-8 mb-8 sm:mb-10 md:mb-12">
               {f.tech.map((t) => (
                 <TechstackCard key={t.tech} tech={t.tech} level={t.level} />
               ))}

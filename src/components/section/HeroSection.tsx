@@ -7,7 +7,7 @@ import HeroContent from "../hero/HeroContent";
 
 const HeroSection = () => {
   return (
-    <SectionContainer id="hero-section" fullScreen relative className="overflow-hidden">
+    <SectionContainer id="hero-section" fullScreen relative>
       {/* Backgrounds */}
       <GlowingCircle />
       <DotGrid />
