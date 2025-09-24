@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import { LinkButton } from "../global/Button";
 import { HerofadeUpAnimation } from "../animations/Animations";
 import HeroText from "./HeroText";
 import HeroCTAs from "./HeroCTAs";

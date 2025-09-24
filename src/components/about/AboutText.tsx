@@ -1,6 +1,6 @@
 "use client";
 
-import { aboutData, aboutFacts, aboutTechData } from "@/data/aboutData";
+import { aboutFacts, aboutTechData } from "@/data/aboutData";
 import CardContainer from "../global/CardContainer";
 import { LinkButton } from "../global/Button";
 import { GoArrowUpRight } from "react-icons/go";
@@ -42,7 +42,7 @@ const AboutText = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-8">
         {aboutFacts.map((a) => (
-          <div className={`${baseStyle} flex items-center flex-1 gap-4`}>
+          <div key={a.label} className={`${baseStyle} flex items-center flex-1 gap-4`}>
             <div className="text-lg sm:text-xl md:text-2xl border border-[var(--card-border)] bg-indigo-500/50 p-4 rounded-full">
               {a.icon}
             </div>
