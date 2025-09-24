@@ -1,7 +1,7 @@
 const RadialGradient = () => {
   return (
     <div
-      className="absolute inset-0"
+      className="absolute inset-0 pointer-events-none h-full"
       style={{
         backgroundImage:
           "radial-gradient(300px 300px at 50% 50%, rgba(59,130,246,.12), transparent 60%), " +

@@ -9,11 +9,11 @@ const arrowStyle =
 
 const ContactCard = () => {
   return (
-    <CardContainer className="flex flex-col px-4 md:px-6 py-10 md:py-14 lg:py-20 xl:py-24">
+    <CardContainer width className="flex flex-col px-4 md:px-6 py-10 md:py-14 lg:py-20 xl:py-24">
       <RadialGradient />
       <div className="relative text-center space-y-6 md:space-y-12 mx-auto">
         <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl">
-          Let&apos;s Create Something <span className="text-indigo-500 uppercase">Amazing</span>{" "}
+          Let&apos;s Create Something <span className="text-indigo-500 uppercase">Amazing </span>
           Together
         </h3>
         <p className="text-sm md:text-base lg:text-lg text-[var(--secondary-text)]">

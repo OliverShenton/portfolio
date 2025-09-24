@@ -2,12 +2,12 @@
 
 import ContactForm from "./ContactForm";
 import Hr from "../global/CustomHr";
-import CardBase from "../global/CardContainer";
 import { contactData } from "@/data/contactData";
+import CardContainer from "../global/CardContainer";
 
 const ContactFormContainer = () => {
   return (
-    <CardBase className="flex flex-col md:flex-row gap-10 p-6 md:p-12">
+    <CardContainer width className="flex flex-col md:flex-row gap-10 p-6 md:p-12">
       {/* Left side */}
       <div className="flex-1 w-full">
         {/* Title */}
@@ -42,7 +42,7 @@ const ContactFormContainer = () => {
       <div className="flex-1 w-full">
         <ContactForm />
       </div>
-    </CardBase>
+    </CardContainer>
   );
 };
 
